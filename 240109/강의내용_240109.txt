@@ -1,0 +1,95 @@
+스마트 웹콘텐츠 UI/UX 디자인 & 퍼블리셔(피그마,Figma)
+
+1.내가 이 수업을 듣는 목적?
+- 6개월 (*수료 : 6월)
+- 그냥 시간이 남아서 들어보자!! (x)
+- 취업 (*진로)
+
+2.내가 이 수업을 듣고 취업할 수 있는 분야?
+- Web Designer : 고퀄리티의 수업 (*PSD / Figma)
+(*채용사이트 => Coding) / 2,790만원
+
+- UI/UX 기획자 : 잡코리아, 사람인 => 가장 적음
+(*1 : 3~400명 / 학사 (시.디 / 그래픽 / 디자인) => 해외석사
+(*프론트엔드 개발 3~4년 => 전직)
+/ 2,891만원
+
+- Web Publisher : 점점 단어를 사용하지 않는 추세 /
+직군이 없어지고 있는 추세 / 2,826만원
+
+- FrontEnd Dev : UI/UX영역을 전반적으로 담당하는 관리자
+(*개발 + 디자인) / 3,504만원
+
+*Figma : 많이 사용하는 것 / PSD / 협업 유리 (*Team Project)
+- 포토샵 2D 디자인 => Web & App 영역
+- Web & App => 컴포넌트 / 인스턴스 => 프로토타입 (*인터랙션)
+- Atomic Design System => 기업에서 구현하고자하는 Design 작은영역(*컬러 / 폰트스타일 / 서체 등)부터 메뉴얼화 시켜서 => 어떤 페이지 & 어떤 서비스 구현 일관성있는 디자인 스타일 유지 (*효율적)
+- 반무료
+
+*Figma
+- 2개의 Frame 생성해서 App Page 제작
+- Frame Size : iPhone 14 Plus
+- Button : Components > Variable
+- Prototype : Interaction 구현
+1) 첫번째 Frame 에서 "회원가입" 버튼 클릭 시, 두번째 Frame으로 이동
+2) 두번째 Frame 에서 "로그인" 버튼 클릭 시, 첫번째 Frame으로 이동
+- 기본 Font Style & Color : Style Guide 정의
+
+*수업 강의 => why? / A / P
+
+*확장프로그램 : color picker
+*플러그인 : iconify / feather icon / illustrations
+
+*학창시절에 학습한 좌표계 : 
+- 데카르트 좌표계
+- 웹좌표계 : 좌측 상단 0, 0
+- 레이아웃 그리드 : 화면 영역을 어떻게 효율적으로 사용할 것인가 고민
+(*몇 배수 할당 : 12배수 => 10과 가장 가까운 숫자 중에서 최대공약수를 많이 가지고 있는 숫자 12 / 1, 2, 3, 4, 6, 12)
+
+428 - 30 - 30 = 368 - 4 - 4 = 360
+4 + 4 = 8
+
+EZEN-UIUX-240109
+
+slack : 
+kimsh159357@naver.com
+https://join.slack.com/t/ezen-webstudy/shared_invite/zt-2a0tn1k13-wt5h2NSWEwy0E__9q5cmsA
+
+ezen-fed-230822 방 => x / 나가기
+채널 > 채널 추가 > 채널 탐색 > ezen-uiux-240109
+
+1.Q&A 및 공지사항 : Slack
+2.매일매일 수업한 자료는 : git-hub
+
+https://github.com/Divjason/EZEN-UIUX-240109
+
+1.Figma
+
+2.Git/Git-hub
+
+3.HTML5
+
+4.CSS3
+
+5.Responsive Web
+
+6.SCSS (=Sass)
+
+7.Javascript
+
+7.Firebase
+
+8.Typescript
+
+9.React.js
+
+10.Next.js
+
+11.Node.js
+
+
+
+
+
+
+
