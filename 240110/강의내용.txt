@@ -1,0 +1,60 @@
+1.smart animate를 적용할 때, 어떤 것을 주의해야하나요?
+prototype > smart animate
+- 이벤트가 발생하기 전 프레임 data
+- 이벤트가 발행된 후 프레임 data
+(*변경이 되었으면 하는 요소의 value를 제외하고 "나머지"는 동일하게 유지!!!)
+(*나머지 : 레이어 구조 & 세부 프레임 이름 등)
+- 각 요소의 네이밍 및 구조가 before 데이터와 after가 동일하게 가져가야한다!!!
+
+2.투명도 및 불투명도를 적용할 때, 각 도형마다 opacity / layer pass through는 무슨차이?
+- psd 혹은 adobe 영상 및 이미지 그래픽 툴 한 번 이상 사용해본 사람이라면
+
+3.components를 생성하고 variant를 추가한 이후에 variant 이름을 우측 속성패널에서 편집해야하는 이유?
+
+*space between 기능
+
+*plug-in : User Profile / unsplash
+
+*땡땡이 = spread operator = 말줄임표
+
+https://www.figma.com/file/0ZgEwjIescD1fHtx6xC03t/240109_App-Project?type=design&node-id=55%3A1862&mode=design&t=S1tgwBhoHSViFdWr-1
+
+*현재 내가 보고 있는 웹브라우저 안에 있는 모든 컨텐츠 내용은 html로 구성된 것이다
+*html : Hyper Text Markup Language
+=> html은 Markup 형식의 Hyper 기능이 탑재된 Text로 되어있는 Language!!!
+
+<html>
+	<head>
+
+</html>
+
+*Web Editor : html과 같은 코딩 언어를 보다 쉽고 효율적으로 작성할 수 있도록 만들어놓은 프로그램 / Atom / Brackets / Pycharm
+*F/E & PB => MS, Visual Studio Code => VS Code
+*무료 / 기능 다양
+
+*root folder
+
+*GUI 방식
+- Graphic User Interface
+
+*CLI 방식
+- Command Line Interface
+
+*키보드 => window 버튼 + R / cmd
+
+*특정 위치로 이동하는 명령어 => cd desktop
+
+*작업폴더를 만들어주는 명령어 => mkdir 240110
+
+*vs code Live server : alt + L + O
+
+*박스 구조화 = Box Model
+
+골뱅이 = 앳
+샵 = 해쉬
+
+font 다운로드 : 윤고딕 400 / 500
+
+
+
+

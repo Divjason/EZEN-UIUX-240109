@@ -1,0 +1,196 @@
+1.HTML5 
+- Web 구성하는데 가장 기본이 되는 언어!!!
+- TOEIC 900점 / 외국인 영어회화(?)
+- HTML5 문법 / 실전에 사용하는 것은(x)
+
+2.VS Code
+- emmet 기능 : 단축기능!!
+(*직접 코드를 하나에서 열까지 타이핑하지 않더라도 단축키만으로도 사용할 수 있음)
+
+- tag => 여는태그 & 닫는태그
+- 이렇게나 많은 html 태그를 실무자들은 다 사용할까? 절대 그럴일이 없다!!
+- 약 20개 정도
+- 이해먼저 => 외워서 사용
+
+*tag (태그 = h1)
+- 홑태그 (single tag) / 쌍태그 (multi tag)
+
+*property (속성 = id)
+*value (속성값 = header)
+
+*명시성 = 얼만큼 직관적으로 코드를 작성했는가
+
+*Clean Code = html5 = Code를 보고있는데, 글을 읽고 있는 느낌 (*논리정연하게 코드를 작성)
+
+*반드시 꼭 필수적으로 알아야하는 tag
+
+1) Text Tag = 5개
+- h(n) : n 숫자 = 1~6 / heading = 대표하는 것
+- 어떤 문서를 작성할 때 대표 타이틀을 지칭하고자 할 때
+
+- p : paragraph = 단락
+(*특별한 의미를 부여하지 않은 문자를 삽입하는 경우 = 더미 문자열 = dummy text)
+
+- br : break
+(*문자 단락 줄바꿈이 필요한 경우 사용)
+
+- hr : horizontal ruler
+(*단락간 선을 긋고 구분을 지어주고 싶을 때 사용)
+
+- a : anchor
+(*특정 텍스트 및 이미지를 클릭했을 때, 해당 페이지로 이동하게 만들어주고 싶을 때 사용)
+1) 첫번째 기능 : 외부페이지로 이동하고 싶은 경우!!
+2) 두번째 기능 : 내부페이지에서 내부페이지로 이동하고 싶은 경우!!
+(*Top으로 이동 기능 구현)
+
+*landing page = 랜딩 페이지 = 도착해야하는 페이지
+
+a태그를 사용할 때, 특정 위치로 이동시키고 싶다면, 반드시 id값을 활용해야하는데, 그때 id값 앞에 붙이는 수식어 "#"
+
+*절대로 Never 하나의 프로젝트 안에서는 동일한 이름의 id 속성값은 사용하지 않는다!!! 절대로!!!!!!
+
+*img src / alt
+
+주제 : 자유!!!
+상품 / 책 / 기타
+
+a, h, p, hr, br, img를 사용해서 페이지를 하나 만들어보세요!!
+
+b : bold => 텍스트를 두껍게 하고 싶을 때 사용하는 태그
+
+mark => 특정 텍스트를 돋보이게 하기위한 태그
+
+2) List Tag(*목록태그) = 3개
+ul : unorder list
+ol : order list
+li : list
+*order : 정렬된
+*중첩된 목록태그 사용의 경우!!!
+
+3) Table Tag(테이블태그) = 10개
+table : 테이블 태그를 작성하기 위해서 가장 바깥영역에 입력하는 태그
+tr : table row 약자 : 테이블의 행을 정의할 때 사용하는 태그
+th : table header 약자 : 각 행 혹은 각 열의 대표성을 띄고있는 셀을 지칭하고자 할 때
+td : table data 약자 : 각 행 혹은 각 열의 일반 보통의 셀을 지칭할 때 
+thead / tbody / tfoot : 각 table의 영역을 구분짓고 싶을 때 사용하는 태그
+caption : table 태그를 사용할 때, 해당 테이블의 제목을 입력하고자 할 때 사용 (*수평정렬)
+figure : figcaption을 사용하기 위해서 사용하는 태그
+figcaption : table 태그를 사용할 때, 테이블의 제목을 입력할 수 있음 (*좌측정렬)
+colgroup : 열을 그룹핑하고자 할 때 사용하는 태그
+col : 실제 colgroup안에 있는 각각의 열을 지칭하고자 할때
+colspan : 열을 병합하고 싶을 때
+rowspan : 행을 병합하고 싶을 때
+
+*row : 행 / column : 열
+
+*Style 적용 우선순위!!!!
+1.thead / tbody / tfoot
+2.colgroup > col
+
+*HTML5 에 적용된 문법
+(시멘틱 태그 = semantic tag = 의미를 부여하는 태그)
+=> 사람인, 잡코리아 취업지원
+=> html5 / 시멘틱 태그 준수!!
+
+인라인 스타일 시트 => HTML 문서안에 직접 css 스타일 적용한 것을 의미!! (*실무에서는 이렇게 작성x)
+
+내부 스타일 시트
+
+외부 스타일 시트
+
+*web 반응형 / 
+단위 : px / em / rem / % / vw / vh
+
+4) 이미지 & 비디오 & 오디오 태그
+- img : 
+> src : 이미지 경로를 가져오는 속성
+> alt : 이미지에 대한 정보를 정의할 수 있는 속성
+> width : 이미지의 너비 (*가로) 길이를 조정할 수 있는 속성
+> height : 이미지의 높이 (*세로) 길이를 조정할 수 있는 속성
+
+- img map(*지도)
+- map태그 : name속성의 값 = img usemap 속성의 값
+
+웹좌표계 VS 데카르트
+
+- audio :
+> src : 오디오 소스 경로를 가져오는 속성
+> controls : 오디오 재생도구를 출력시켜주는 속성
+> loop : 오디오 반복여부를 컨트롤해주는 속성
+> autoplay : 오디오 자동재생을 컨트롤해주는 속성
+
+- video :
+> src : 비디오 소스 경로를 가져오는 속성
+> controls : 비디오 재생도구를 출력시켜주는 속성
+> loop : 비디오 반복여부를 컨트롤해주는 속성
+> autoplay : 비디오 자동재생을 컨트롤해주는 속성
+> width / height
+
+*mockup data
+
+input
+
+git & git-hub
+=> 어제, 오늘 작업한 데이터를 업로드
+=> 자료를 참고해서 미션 해결!!!!
+
+git :
+1) 현재 작업중인 데이터의 버전관리를 도와주는 프로그램
+2) 내가 현재 작업하고 있는 컴퓨터 안에 설치를 하는 프로그램
+3) 현재 로컬 컴퓨터에 설치된 작업관리 프로그램
+
+git-hub :
+1) 로컬 컴퓨터에서 작업한 데이터를 클라우드 공간으로 호스팅하게 도와주는 장소
+
+<나의 로컬 컴퓨터에서 준비해야하는 1단계>
+
+1.git을 사용하려면 반드시 설치해야하는 프로그램
+- git bash
+
+2.vs code > 터미널 (ctrl +  ~) > git bash 모드 변경
+
+<웹에서 git-hub 계정 생성>
+
+1.구글 > 깃허브 검색 > 회원가입
+
+2.깃허브에서 내가 데이터를 저장할 공간을 생성
+(*공간 = 레파지토리 = repository)
+repository : EZEN-UIUXCLASS
+ID : Divjason
+Email : sejinpark@tcocs.com
+ 
+<나의 로컬 컴퓨터의 "git" 과 웹상의 "git-hub"를 연동>
+
+1.이미 공용컴퓨터에 누군가가 git을 사용했던 이력이 존재할 수 있음 => 기존 세팅되어있던 git 정도를 reset하고 가자!!!
+
+2.내 컴퓨터 > 좌측 하단 검색도구 > git bash > 관리자 권한 실행
+git config --system --unset credential.helper
+
+3.vs code
+> git bash > name & email 세팅
+> git config --global user.name Divjason
+> git config --global user.email sejinpark@tcocs.com
+> 내 git-hub 정보가 로컬컴퓨터에 정상적으로 세팅되었는가를 확인하는 절차 : git config --list
+
+4.내 컴퓨터에 git이라는 공간을 생성
+> git init
+
+5.나의 git과 나의 레파지토리 주소를 연동하는 방법
+> git remote add origin https://github.com/Divjason/EZEN-UIUXCLASS.git
+
+6.지금까지 내가 작업해온 데이터를 git 담는방법
+> git add .
+
+7.내 루트 폴더에 있는 데이터가 정상적으로 담겨있는지 확인하는 방법
+> git status
+
+8.git hub에 업로드하고자 하는 나의 데이터에 라벨을 붙이는 작업
+(*커밋 메세지를 작성)
+> git commit -m "240111"
+
+9.웹 상에 있는 나의 git hub 레파지토리로 데이터를 커밋하는 방법
+> git push origin master
+
+
+
+
