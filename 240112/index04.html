@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style04.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <div id="img">
+          <div id="textbox">
+            <h2>로그인 페이지</h2>
+            <h5>IP, PW를 입력해주세요!</h5>
+          </div>
+        </div>
+      </header>
+      <footer>
+        <form action="http://localhost:3000" method="post">
+          <p>
+            <label for="id">ID : </label>
+            <input class="inner_input" type="text" id="id" />
+          </p>
+          <p>
+            <label for="pw">PW : </label>
+            <input class="inner_input" type="text" id="pw" />
+          </p>
+          <div>
+            <input class="outer_input" type="submit" value="회원가입" />
+            <input class="outer_input" type="submit" value="로그인하기" />
+          </div>
+        </form>
+      </footer>
+    </div>
+  </body>
+</html>
