@@ -1,0 +1,14 @@
+:root {
+  --main-color: crimson;
+}
+
+#box1 {
+  width: 200px;
+  height: 200px;
+  background: var(--main-color);
+}
+#box2 {
+  width: 50vw;
+  height: 30vh;
+  background: var(--main-color);
+}

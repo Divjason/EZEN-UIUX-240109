@@ -1,0 +1,22 @@
+h1:first-of-type {
+  color: #f00;
+}
+h2:last-of-type {
+  color: #00f;
+}
+h3:first-of-type {
+  color: #0f0;
+}
+h1 {
+  background-color: #f00;
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+h1 {
+  background: linear-gradient(
+      rgba(211, 211, 211, 0.8),
+      rgba(211, 211, 211, 0.1)
+    ),
+    url("./img/iu_1.png") center/100px no-repeat;
+}

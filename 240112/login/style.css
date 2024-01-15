@@ -1,0 +1,23 @@
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+#img {
+  background: url("https://newsimg.hankookilbo.com/cms/articlerelease/2021/04/01/57f00c7a-6fb6-49b1-905f-2438e4f7897a.jpg")
+    center/300px no-repeat;
+}
+#textbox {
+  height: 300px;
+}
+#test {
+  position: absolute;
+  top: 350px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(211, 211, 211, 0.5);
+  width: 300px;
+  padding-bottom: 5px;
+  text-align: center;
+}
