@@ -1,0 +1,30 @@
+body > div {
+  width: 400px;
+  height: 100px;
+  border: 3px solid black;
+  position: relative;
+  overflow-y: scroll;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+.red {
+  background: #f00;
+  left: 10px;
+  top: 10px;
+  z-index: 10;
+}
+.green {
+  background: #0f0;
+  left: 50px;
+  top: 50px;
+  z-index: 5;
+}
+.blue {
+  background: #00f;
+  left: 90px;
+  top: 90px;
+  z-index: 1;
+}

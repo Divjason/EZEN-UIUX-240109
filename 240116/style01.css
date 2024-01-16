@@ -1,0 +1,23 @@
+/* @font-face {
+  font-family: "Nexonv1";
+  src: url("./font/MiConv.com__NEXON\ Lv1\ Gothic\ OTF\ Bold.ttf");
+}
+
+body {
+  font-family: Nexonv1;
+} */
+
+.a {
+  font-size: 32px;
+  font-style: italic;
+}
+.b {
+  font-size: 2em;
+}
+.c {
+  font-size: large;
+}
+.d {
+  font-size: small;
+  font-weight: bold;
+}

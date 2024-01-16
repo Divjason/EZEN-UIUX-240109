@@ -1,0 +1,174 @@
+1.Root Floder > 240116
+
+2.HTML5 & CSS3 Selector
+> 기본 & 기초 문법 60%
+> 응용 & 실전
+
+3.CSS3
+1) 색상
+- 표현단위 : HEX코드 / 컬러네임 / rgb / rgba / hsl / hsla
+- 인간 : 숫자를 셀 때, 1~10 / 11~20 => 10진법
+- 컴퓨터 : 16진법 => 총 16개의 숫자 단위를 활용해서 표현
+1 ~ 16 / 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f
+- 바이너리코드
+
+- 컬러의 삼원색 => 3가지 컬러의 조합으로 완성된다!
+- "R"ed / "G"reen / "B"lue
+
+- #RRGGBB => 1개의 최종 컬러 도출!!!
+- #ff0000
+
+- hsl = hue(색상) / saturation(채도) / lightness(명도)
+- hsla = a = alpha
+
+2) url(  ) : 함수 => 오락실 > 오락실 게임기 : 동전
+( 매개변수 or 인수 or 인자값)
+url( "문자열로 되어진 경로" )
+
+3) 가시속성 : 가시성 (*눈에 보여질 수 있는 속성)
+html 태그 : 2가지(block태그 / inline태그)
+
+> inline vs inline-block :
+1) inline :
+- width & height값을 적용받지 않는다
+- margin값의 경우에 좌.우측 값만 적용받는다
+
+2) inline-block :
+- width & height값을 모두 적용받는다
+- margin값의 경우에 상.하.좌.우측 모든 값을 적용받는다
+
+3) display vs visibility :
+- display : 영역의 흔적 자체를 없애거나 생성
+- visibility : 영역의 흔적은 살려두면서 보여지지 않게 할 수 있다
+
+4) opacity : 태그의 투명도를 조정할 수 있음
+(0~1까지 / 0은 100% 투명상태 & 1은 100% 불투명상태)
+
+4) 박스속성 :
+- 박스 안에 "컨텐츠" & "박스"와의 관계를 잘 이해!!!
+
+- margin : border를 기준으로 바깥쪽 영역을 의미한다
+- padding : border와 contents 사이의 영역을 의미한다
+
+*margin과 padding은 기본적으로 상.하.좌.우 값을 가져가는데 이때, 각 위치별 값을 상이하게 적용할 수 있다
+
+*margin & padding :
+1개일때 : 공통
+2개일때 : 상하.좌우
+3개일때 : 상.좌우.하
+4개일때 : 상.우.하.좌 (*상에서부터 시계방향)
+
+*box-sizing :
+- content-box : 안쪽에 정의해놓은 컨텐츠의 사이즈는 절대로 건드리지 않는 상태에서 마진, 패딩값을 추가하는 개념
+- border-box : 안쪽에 정의해놓은 컨텐츠의 사이즈가 바깥쪽 보더를 기준으로 마진과 패딩값에 따라서 가변적으로 변경되는 개념
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+5) 테두리 속성
+border : 3개의 속성을 하나로 합쳐서 사용하는 것일 일반적
+  /* border-width: 1px;
+  border-style: solid;
+  border-color: #000; */
+
+border-radius = corner-radius
+=> 좌.우 양측면 모서리를 둥글게 만드는 역할
+=> 좌.탑에서 시계방향으로 숫자를 상이하게 설정할 수 있음
+
+6) background 배경 속성
+-   /* background-image: url("./img/BackgroundFront.png"),
+    url("./img/BackgroundBack.png");
+  background-size: 100% 250px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0 50%;
+  background-color: #e7e7e7; */
+  background: url("./img/BackgroundFront.png") bottom/100% no-repeat fixed,
+    url("./img/BackgroundBack.png") bottom/100% no-repeat fixed;
+
+7) font 속성
+- font-size : 폰트의 크기를 정의한다
+- font-family : font 기업 제작 : 두껍게 / 얇게 / 중간
+- 외부에서 폰트를 가져올 때!!!
+1) Google font 
+2) 기업 및 브랜드 font
+
+*mobile simulator
+
+
+
+8) Position(*위치) 속성
+- 절대 위치 좌표 : html 여러개 복수 태그가 삽입되었을 때, 먼저 입력한 태그 먼저 출력 => 무시 => 절대 위치값을 부여 => 적용!!!
+- 상대 위치 좌표 : 상대 html 태그가 입력된 위치를 기준으로 내 위치값을 지정하겠다는 의미
+
+- CSS3 Animation : 2D / 3D : 공간감
+x, y축 / z축
+
+자식요소에 position : absolute (*절대위치좌표)를 적용한 상태에서 해당 자식요소의 부모요소에게 position : relative(*상대위치좌표)를 적용하게 되면, 자식요소는 부모요소를 기준으로 절대위치좌표를 갖게 된다!!!
+
+만약, html을 통해서 작성한 도형에 별도의 position값을 적용하지 않는다면, 기본 default값은 어떤 position 속성이 적용되는 것일까?
+position : static 
+
+9) float 속성 : 요즘에는 그렇게 많이 사용되지는 않는다!!!
+(*하지만, 알고는 있어야 한다!!!)
+float : 부유하다 / 표류하다
+> 뉴스기사를 웹 보여줄 때, 뉴스사진 + 뉴스텍스트
+*최근에는 flex & grid를 많이 사용
+
+10) shadow 속성 : 특정 도형을 만들었을 때, 그림자를 적용!!!!
+- text-shadow : 글자(*텍스트)에 그림자를 주고 싶을 때 사용
+
+- box-shadow : 도형(*박스그룹)에 그림자를 주고 싶을 때 사용
+
+11) Gradient 속성 :
+- 서로 다른 복수의 컬러를 자연스럽게 연출
+
+*-webkit- : 웹 브라우저마다 사용하는 방법이 다른 경우 접두어로 입력해서 사용하도록 만들어놓은 문법체계 / 크로스 브라우징 / 벤더 프리픽스
+(*추가적으로 알아두면 좋다!!!)
+
+*그라디언트를 적용하실 때에는 직접 코드를 입력하는 것도 좋지만, 실제 그라디언트 코드를 만들어주는 사이트를 활용하는 경우가 대부분이다!!
+https://www.colorzilla.com/gradient-editor/
+
+
+Wire-frame : 어떤 화면을 UI로 구현하고자 할 때, 바로 화면에 코드 & 디자인을 하지 않는다!!! => why? 명확하게 정해놓은 size 및 컬러, 레이아웃이 존재하지 않을 경우 작업자의 업무 효율성이 떨어지기 때문!!!! => 설계도면을 만들어서 작업!!!
+
+- wire : 선
+- frame : 구획
+
+<UI 기획/개발 FM 프로세스>
+
+(*웹 디자이너)
+1.채색이 되지 않은 상태의 와이어프레이밍
+> 실제 런칭하고자 하는 서비스의 전체적인 느낌 / 컨셉
+
+2.채색이 된 상태의 프로토타입
+> 보다 구체적인 UI T&M (*색상 / 스타일)
+> 스타일 가이드 & 컴포넌트 
+> 타이포그래피 (*폰트 서체 / 사이즈)
+> 로고 (*BI / Sub BI MODE)
+
+(*웹 퍼블리셔)
+3.퍼블리싱
+> VS code : html & CSS활용 웹앱 레이아웃 얹힐 것인가
+> Figma 툴을 활용해서 봤을 때와 실제 웹앱 화면에 구현
+
+(*웹 프론트엔드 개발자)
+4.프론트엔드 개발
+> 버튼 클릭했을 때, 혹은 마우스 오버했을 때 메뉴 나타나게!!
+> 외부 API 데이터를 가져와서 어떻게 출력하게 할 것인지
+
+피그마 > 플러그인 / 커뮤니티 (*플러그인 보다 더 다양한 소스!!!)
+
+https://ezencomgn.cafe24.com/
+
+
