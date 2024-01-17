@@ -1,0 +1,25 @@
+header {
+  width: 800px;
+  background: #f00;
+  margin: 0 auto;
+}
+section {
+  width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#aside {
+  width: 200px;
+  background: #00f;
+  float: left;
+}
+#content {
+  width: 400px;
+  background: #0f0;
+  float: left;
+}
+footer {
+  width: 800px;
+  margin: 0 auto;
+  background: teal;
+}

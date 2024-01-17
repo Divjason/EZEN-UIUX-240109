@@ -1,0 +1,71 @@
+@import url("./reset.css");
+
+/* background */
+#wrapper {
+  position: relative;
+  padding: 20px;
+  width: 100%;
+  height: 100vh; /* 100vh => 100% */
+  background: radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
+    url("./img/bg-2.jpg");
+}
+
+/* login */
+#login {
+  position: absolute;
+  right: 20px;
+}
+#login input {
+  padding: 8px 45px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+/* logo */
+#logo {
+  width: 300px;
+  height: 54px;
+  background: url("./img/Roblox-Logo_w.png") center/cover no-repeat;
+  margin: 90px auto 34px;
+}
+
+/* logon */
+#logon {
+  /* border: 1px solid #f00; */
+  width: 463px;
+  height: 624px;
+  margin: 0 auto 50px;
+  padding: 20px;
+  background: radial-gradient(rgba(35, 37, 39, 0.9), rgba(35, 37, 39, 1)),
+    url("./img/bg-1.JPG");
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  position: relative;
+}
+.inner_contents {
+  color: #fff;
+  font-size: 14px;
+}
+.title {
+  width: 423px;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  /* border: 1px solid #f00; */
+  margin-bottom: 30px;
+}
+#calendar {
+  margin: 10px 0 30px;
+  display: flex;
+  justify-content: space-around;
+}
+#calendar select {
+  width: 141px;
+  height: 40px;
+  background: #000;
+  color: #bdbebe;
+  font-size: 16px;
+}

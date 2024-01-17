@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Roblox</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- login -->
+      <header>
+        <form action="http://localhost:3000/login" method="post">
+          <div id="login">
+            <input type="submit" value="로그인" />
+          </div>
+        </form>
+      </header>
+
+      <!-- logo -->
+      <div id="logo"></div>
+
+      <!-- logon -->
+      <section id="logon">
+        <form action="http://localhost:3000/logon" method="post">
+          <article class="inner_contents title">가입하시고 즐겨보세요!</article>
+          <article class="inner_contents birthday">생년월일</article>
+          <div id="calendar">
+            <select name="year" id="year">
+              <option value="2024">2024년</option>
+            </select>
+            <select name="month" id="month">
+              <option value="jan">1월</option>
+            </select>
+            <select name="day" id="day">
+              <option value="01">01일</option>
+            </select>
+          </div>
+          <article class="inner_contents username">사용자 이름</article>
+          <article class="inner_contents userpassword">비밀번호</article>
+        </form>
+      </section>
+
+      <footer></footer>
+    </div>
+  </body>
+</html>

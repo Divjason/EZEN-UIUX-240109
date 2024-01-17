@@ -1,0 +1,27 @@
+html5 / css3 기초 문법 마무리!!!
+- 새로운 문법 : flex & grid
+- figma & html5 & css3 => 웹 브라우저 화면 기획/설계/UI 구현
+
+다양한 웹 페이지 기획.구현
+figma + design style gudie + 웹앱 페이지 구현
+(*프로젝트)
+
+=> +@ 반복연습 / 나만의 웹앱 페이지 연습
+
+=> 상세기술서!!!!
+(*내가 나중에 vs code를 열어서 코드를 입력하고자 할 때, class명 혹은 id명을 미리 작명해놓고 시작할 수 있으며, 사전에 어떤 방식으로 박스구조화를 할 지 결정했기 때문에 중간에 방향성이 틀어지는 일이 거의 없다!!! => 구현하고자 하는 UI에 대한 설계도면이 완성)
+
+(*웹 퍼블리셔)
+
+gnb : global(*전역) navigation bar/banner
+lnb : local(*지역) navigation bar/banner
+
+input id="a" / label for="a"
+
+wired : on roblox, kids learn
+
+roblox logo png
+playstation > wikipedia > developer forum > microsoft
+motley fool : where will roblox be in 5 years
+
+*확장프로그램 : pix grid ruler
