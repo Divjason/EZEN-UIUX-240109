@@ -1,0 +1,177 @@
+/* reset css */
+@import url("./reset.css");
+
+/* font css */
+@import url("https://fonts.googleapis.com/css2?family=Coiny&display=swap");
+
+#title {
+  font-family: "Coiny", system-ui;
+}
+
+/* header */
+#main_header {
+  /* border: 1px solid #f00; */
+  width: 960px;
+  height: 160px;
+  margin: 0 auto;
+  position: relative;
+}
+#main_header > #title {
+  position: absolute;
+  left: 20px;
+  top: 30px;
+}
+#main_header > #main_gnb {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#main_header > #main_lnb {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+}
+
+/* main_gnb */
+#main_gnb > ul {
+  overflow: hidden;
+}
+#main_gnb > ul > li {
+  float: left;
+}
+#main_gnb > ul > li > a {
+  display: block;
+  padding: 2px 10px;
+  border: 1px solid #000;
+}
+#main_gnb > ul > li:first-child > a {
+  border-radius: 10px 0 0 10px;
+}
+#main_gnb > ul > li:last-child > a {
+  border-radius: 0 10px 10px 0;
+}
+#main_gnb > ul > li > a:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* main_lnb */
+#main_lnb > ul {
+  overflow: hidden;
+}
+#main_lnb > ul > li {
+  float: left;
+}
+#main_lnb > ul > li > a {
+  display: block;
+  padding: 10px 20px;
+  border: 1px solid #000;
+}
+#main_lnb > ul > li:first-child > a {
+  border-radius: 10px 0 0 10px;
+}
+#main_lnb > ul > li:last-child > a {
+  border-radius: 0 10px 10px 0;
+}
+#main_lnb > ul > li > a:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* content */
+#content {
+  width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* section */
+#content > #main_section {
+  width: 750px;
+  float: left;
+}
+#main_section > .main_article {
+  margin-bottom: 10px;
+  padding: 20px;
+  border: 1px solid #000;
+}
+
+/* aside */
+#content > #main_aside {
+  width: 200px;
+  float: right;
+}
+#main_aside input:nth-of-type(1) {
+  display: none;
+}
+#main_aside input:nth-of-type(1) ~ div:nth-of-type(1) {
+  display: none;
+}
+#main_aside input:nth-of-type(1):checked ~ div:nth-of-type(1) {
+  display: block;
+}
+
+#main_aside input:nth-of-type(2) {
+  display: none;
+}
+#main_aside input:nth-of-type(2) ~ div:nth-of-type(2) {
+  display: none;
+}
+#main_aside input:nth-of-type(2):checked ~ div:nth-of-type(2) {
+  display: block;
+}
+
+.buttons {
+  overflow: hidden;
+}
+.buttons > label {
+  display: block;
+  float: left;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #000;
+  background: #000;
+  color: #fff;
+}
+
+#main_aside input:nth-of-type(1):checked ~ .buttons > label:nth-of-type(1) {
+  background: #fff;
+  color: #000;
+}
+#main_aside input:nth-of-type(2):checked ~ .buttons > label:nth-of-type(2) {
+  background: #fff;
+  color: #000;
+}
+
+.item {
+  overflow: hidden;
+  padding: 10px;
+  border: 1px solid #000;
+  border-top: none;
+}
+.item .thumbnail {
+  float: left;
+}
+.item .description {
+  float: left;
+  margin-left: 10px;
+}
+
+.item .description > strong {
+  display: block;
+  width: 120px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* footer */
+#main_footer {
+  width: 960px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #000;
+  text-align: center;
+}
