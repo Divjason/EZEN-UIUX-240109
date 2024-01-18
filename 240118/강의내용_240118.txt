@@ -1,0 +1,43 @@
+1.명색 => 웹 UI / 벤치마킹 / 자존심
+(*시디 & 산디)
+
+2.비겁 / 잘못x
+=> 다른 누군가의 디자인 "상업적인 목적"
+"카피"를 해서 사용한다 => 불법!!!
+
+=> 학습 / 비상업적인 목적 / 기한 정해진
+(*수료 => 6~1년)
+
+3.현실
+=> 누군가 잘 만들어놓은 디자인 및 레이아웃
+UI 컨텐츠를 가져다가 "커스터마이징" 잘해서
+다듬어 => 비상업적인 목적 / 포트폴리오 작업참고
+
+4.무 => 유
+=> 6개월 기한 내 포폴
+100 => 2~3명
+(*디자인 전공 / 중학교 / 평소 => 박람회 / 전시회)
+(*외국 웹페이지 / 서점 외국 레이아웃)
+
+fontawesome
+flaticon
+*확장프로그램 : mobile simulator
+url(https://ssl.pstatic.net/static/nid/login/m_sp_01_login_008d5216.png)
+
+css sprites generator
+
+우아한형제들 : 글꼴 다운로드
+TTF : True Type Font : 일반문서 (*2차원 베지어 곡선)
+OTF : Open Type Font : 고해상도 (3차원 베지어 곡선)
+
+*inline 태그 :
+- width / height 속성이 적용x
+- margin & padding 좌.우 적용만 가능!!!
+
+*inline-block 태그 :
+- width / height 속성 적용o
+- margin & padding 상.하.좌.우 적용만 가능!!!
+
+> a태그 block
+
+
