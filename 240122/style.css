@@ -201,6 +201,10 @@ figure #slide {
   display: flex;
   justify-content: space-between;
 }
+.inner-content-slide .slide-title {
+  margin-top: 15px;
+  font-size: 15px;
+}
 
 /* section-01event */
 .event img {
@@ -231,7 +235,117 @@ figure #slide {
 }
 
 /* section-03outside */
+.ouside .inner-content-slide img {
+  width: 185px;
+  border-radius: 10px;
+}
+
 /* section-04hot */
+.hot .inner-content-title {
+  margin-bottom: 14px;
+}
+.inner-content #inner-content-titlegroup {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#inner-content-titlegroup #badge {
+  display: flex;
+  gap: 10px;
+}
+#inner-content-titlegroup #badge span {
+  width: auto;
+  height: 100%;
+  border: 1px solid #efefef;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+#inner-content-titlegroup #badge span:first-child {
+  background: #1273e4;
+  color: #fff;
+}
+.hot .inner-content-slide img {
+  width: 281px;
+  height: 173px;
+  border-radius: 10px;
+}
+.inner-content-slide .slide-content-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 17px;
+}
+.inner-content-slide .slide-content-info .slide-content-info-top {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.inner-content-slide
+  .slide-content-info
+  .slide-content-info-top
+  div:first-child {
+  font-size: 14px;
+  color: #808080;
+}
+.inner-content-slide
+  .slide-content-info
+  .slide-content-info-top
+  div:nth-child(2) {
+  color: #333;
+  font-weight: 600;
+}
+.inner-content-slide
+  .slide-content-info
+  .slide-content-info-top
+  div:nth-child(3) {
+  color: #808080;
+  font-size: 14px;
+}
+.inner-content-slide
+  .slide-content-info
+  .slide-content-info-top
+  div:last-child
+  span:first-child {
+  background: #ffad0a;
+  font-size: 13px;
+  margin-right: 7px;
+  padding: 4px;
+  border-radius: 8px;
+}
+.inner-content-slide
+  .slide-content-info
+  .slide-content-info-top
+  div:last-child
+  span:last-child {
+  font-size: 15px;
+  color: #808080;
+}
+.inner-content-slide
+  .slide-content-info
+  .slide-content-info-bottom
+  div:first-child {
+  color: #808080;
+  font-size: 14px;
+}
+.inner-content-slide
+  .slide-content-info
+  .slide-content-info-bottom
+  div:last-child
+  span:first-child {
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+}
+.inner-content-slide
+  .slide-content-info
+  .slide-content-info-bottom
+  div:last-child
+  span:last-child {
+  color: #808080;
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
 /* section-05special */
 /* section-06pension */
 /* section-07blackdeal */
