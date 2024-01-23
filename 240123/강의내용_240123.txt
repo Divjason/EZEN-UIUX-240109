@@ -1,0 +1,53 @@
+웹앱 포트폴리오 제작해서 취업!!!
+1.필수!!! / Responsive Web => 반응형 웹 페이지
+- media queries 개념!!!
+- media = 매체 (*desktop / tablet / mobile)
+- query = 질의.질문.요청
+
+* width : 1920px~1281px : Big Desktop
+* width : 1280px : 우리가 기획한 가로 너비사이즈
+* width : 911px : 태블릿으로 
+* width : 736px : 모바일
+
+*statcounter
+
+*미디어 쿼리 적용할 때 유의사항!!!
+=> 앞에서 정의한 선택자를 그대로 사용 => 적용하고자 하는 CSS 스타일 적용!!!
+
+#slide h1 {
+font-size : 20px
+}
+
+#slide h1 {
+font-size : 18px
+}
+
+if, 모든 미디어 쿼리의 시작점을 max-width로 시작했거나, min-width => 중복되는 선택자는 최초의 미디어쿼리에만 있어도 상관없음!!! = 선택자!!!
+
+기본 mx / n
+
+2.파비콘 (Favicon) : 
+- ico 확장자만 가능 => psd
+- 확장자 png이미지
+15px / 30px / 45px
+
+DOM : Document Object Model
+BOM : Browser Object Model
+
+3.웹 포트폴리오 : 클론(복제하다) 코딩
+=> 여기어때!!!
+=> 배포하다 = deploy
+
+1) 반응형 실망
+2) vscode alt l o 
+
+배포 => 서버!!!!
+내가 그동안 작업한 html, css, js
+서버 => 임대비 (*월)
+무료로 배포 사이트들
+
+cafe24 / 파일질라, netlify
+아마존 : aws / 구글 : firebase
+
+
+https://ezencomgn.cafe24.com/
