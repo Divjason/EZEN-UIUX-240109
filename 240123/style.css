@@ -907,13 +907,13 @@
     overflow-x: hidden;
   }
   main {
-    width: 100%;
+    width: 390px;
     height: 100%;
   }
 
   /* header */
   header {
-    width: 100%;
+    width: 390px;
     height: 74px;
     background: #fff;
   }
@@ -1007,7 +1007,7 @@
 
   /* figure */
   figure {
-    width: 100%;
+    width: 390px;
     height: 300px;
   }
   figure #slide {
@@ -1148,6 +1148,9 @@
     display: none;
   }
   .inner-content-slide {
+    overflow: hidden;
+    /* border: 1px solid #f00; */
+    width: 390px;
     display: flex;
     gap: 2%;
     justify-content: space-between;
@@ -1202,6 +1205,8 @@
     margin-bottom: 14px;
   }
   .inner-content #inner-content-titlegroup {
+    overflow: hidden;
+    width: 390px;
     display: flex;
     flex-direction: column;
     gap: 20px;

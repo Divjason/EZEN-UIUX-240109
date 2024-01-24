@@ -3,12 +3,24 @@
 
 /* common */
 body {
-  background: #ebfaff;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+body.member1 {
+  background: #ebfaff;
+}
+body.member2 {
+  background: #edffeb;
+}
+body.member3 {
+  background: #fff3fd;
+}
+body.member4 {
+  background: #f5f0ff;
 }
 
 /* nav */
@@ -40,8 +52,21 @@ section .profile img {
   height: 200px;
   border-radius: 50%;
   margin: 20px 0;
+}
+
+.member1 section .profile img {
   box-shadow: 5px 15px 30px rgba(173, 216, 230, 0.8);
 }
+.member2 section .profile img {
+  box-shadow: 5px 15px 30px rgba(189, 204, 183, 0.8);
+}
+.member3 section .profile img {
+  box-shadow: 5px 15px 30px rgba(252, 99, 214, 0.4);
+}
+.member4 section .profile img {
+  box-shadow: 5px 15px 30px rgba(183, 82, 250, 0.4);
+}
+
 section .profile h1 {
   font-weight: bold;
   font-size: 22px;
@@ -58,12 +83,89 @@ section .btn {
   display: block;
   width: 180px;
   height: 32px;
-  background: linear-gradient(45deg, #4affff, #35e0f7);
-  box-shadow: 5px 10px 20px rgba(0, 255, 255, 0.5);
   color: #fff;
-  margin: 0 auto 20px;
+  margin: 0 auto;
   border-radius: 16px;
   font-size: 14px;
   text-align: center;
   line-height: 32px;
+}
+
+.member1 section .btn {
+  background: linear-gradient(45deg, #4affff, #35e0f7);
+  box-shadow: 5px 10px 20px rgba(0, 255, 255, 0.5);
+}
+.member2 section .btn {
+  background: linear-gradient(45deg, #a0ff9d, #55f5b2);
+  box-shadow: 5px 10px 20px rgba(33, 250, 105, 0.3);
+}
+.member3 section .btn {
+  background: linear-gradient(45deg, #ef74ff, #ff11c4);
+  box-shadow: 5px 10px 20px rgba(255, 17, 196, 0.3);
+}
+.member4 section .btn {
+  background: linear-gradient(45deg, #8e74ff, #a011ff);
+  box-shadow: 5px 10px 20px rgba(160, 17, 255, 0.4);
+}
+
+/* contact */
+section .contact {
+  margin: 20px 0 25px;
+}
+section .contact li {
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+section .contact li:last-child {
+  border-bottom: none;
+}
+section .contact li i {
+  width: 18%;
+  text-align: center;
+  text-shadow: 2px 2px 2px #ddd;
+  color: #555;
+  font-size: 16px;
+}
+section .contact li span {
+  font-family: "Orbitron", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  color: #555;
+  letter-spacing: 1px;
+}
+
+/* link */
+section .others {
+  width: 100%;
+  text-align: center;
+}
+section .others a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 10px;
+  opacity: 0.4;
+  filter: saturate(0.7);
+}
+section .others a.on {
+  opacity: 1;
+  filter: saturate(1);
+}
+section .others a:nth-child(1) {
+  background: #35e0f7;
+  box-shadow: 5px 5px 10px rgba(74, 255, 255, 0.7);
+}
+section .others a:nth-child(2) {
+  background: #55f5cd;
+  box-shadow: 5px 5px 10px rgba(85, 245, 178, 0.7);
+}
+section .others a:nth-child(3) {
+  background: #ff80df;
+  box-shadow: 5px 5px 10px rgba(255, 128, 223, 0.7);
+}
+section .others a:nth-child(4) {
+  background: #a794fd;
+  box-shadow: 5px 5px 10px rgba(167, 148, 253, 0.7);
 }

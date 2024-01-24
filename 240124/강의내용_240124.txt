@@ -1,0 +1,53 @@
+1.CSS3 심화내용!!!
+- 정적인 형식의 CSS 문법
+(*레이아웃 정렬 / 선택자 / 스타일적용)
+- 애니메이션
+> 변형 : transition (*시간의 제약을 가지고 무언가가 변화를 일으키는 것)
+1) transition-duration : 특정시간동안 변형효과를 적용하고자 할 때
+2) transition-delay : 특정시간의 지연효과를 적용하고자 할 때
+3) transition-timing-function : 가.감속 효과를 적용하고자 할 때
+4) transition-property : 특정요소의 변형값을 상이하게 적용하고자 할 때
+=> 한 번에 모두 사용하고 싶다면
+=> transition: property duration timing-function delay
+=> transition: background 0.3s ease-in
+
+> animation
+  animation-name: rint;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
+=> 한 번에 모두 사용하고 싶다면
+=> animation: name / duration / function / delay / count / direct
+
+ttf / otf
+
+CSS / JS
+퍼블리셔 / 프론트엔드 개발자 
+JS => 3D Animation
+
+> 변환 : transform (*시간의 제약과는 무관하게 무언가가 변화를 일으키는 것)
+- 어떤 요소의 회전값을 적용 : rotate
+- 어떤 요소의 위치값을 적용 : translate
+- 어떤 요소의 사이즈값을 적용 : scale
+- 어떤 요소의 기울기값을 적용 : skew
+
+위로부터 50px 떨어진 지점에서 60도 회전한 결과값을 도출!!!
+
+=> 위 3가지요소 한번에 같이 사용되는 경우!!!
+=> 3D 입체 도형을 만들고자 할 때
+
+css @ :
+- @import
+- @font-face
+- @keyframes
+
+CSS 문법 거의 끝!!!
+
+JS / Google Chrome V8 검색엔진 / WEB
+=> Node => Runtime (*실행환경)
+=> npm
+
+
+
+
