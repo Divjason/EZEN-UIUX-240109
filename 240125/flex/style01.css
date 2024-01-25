@@ -1,0 +1,41 @@
+/* .parent {
+  border: 5px solid green;
+  height: 800px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.parent div {
+  width: 300px;
+  height: 200px;
+  color: #fff;
+  text-align: center;
+  margin: 5px;
+}
+.child1 {
+  background: crimson;
+}
+.child2 {
+  background: dodgerblue;
+}
+.child3 {
+  background: yellowgreen;
+} */
+
+.parent {
+  border: 5px solid green;
+  display: flex;
+  /* flex-direction: row;
+  flex-wrap: wrap; */
+  flex-flow: row wrap;
+}
+
+.parent div {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  color: #fff;
+  text-align: center;
+  background: crimson;
+}

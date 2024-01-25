@@ -1,0 +1,17 @@
+.parent {
+  border: 5px solid green;
+  height: 400px;
+  display: flex;
+  flex-flow: row wrap;
+  /* align-items: center; */
+  align-content: space-around;
+}
+
+.parent div {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  color: #fff;
+  text-align: center;
+  background: crimson;
+}

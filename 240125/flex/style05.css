@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+}
+header {
+  background: yellowgreen;
+  height: 150px;
+  text-align: center;
+  line-height: 150px;
+  color: #fff;
+}
+section {
+  display: flex;
+}
+article,
+aside,
+nav {
+  height: calc(100vh - 300px);
+}
+article {
+  background: #eee;
+  flex: 3;
+}
+aside {
+  background: #ddd;
+  flex: 1;
+}
+nav {
+  background: #ccc;
+  flex: 1;
+}
+footer {
+  background: gray;
+  height: 150px;
+  text-align: center;
+  line-height: 150px;
+  color: #fff;
+}

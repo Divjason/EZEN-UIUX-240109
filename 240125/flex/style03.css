@@ -1,0 +1,30 @@
+.parent {
+  border: 5px solid green;
+  height: 500px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.parent div {
+  width: 200px;
+  height: 200px;
+  color: #fff;
+  text-align: center;
+  margin: 5px;
+}
+.child1 {
+  background: crimson;
+  flex: 1;
+  order: 1;
+  align-self: flex-end;
+}
+.child2 {
+  background: dodgerblue;
+  flex: 1;
+  order: 2;
+}
+.child3 {
+  background: yellowgreen;
+  flex: 1;
+  order: 3;
+}
