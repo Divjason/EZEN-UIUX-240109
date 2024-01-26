@@ -1,0 +1,127 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* mobile */
+/* common */
+#wrap {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+  /* common */
+  #wrap {
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* desktop */
+@media screen and (min-width: 960px) {
+  /* common */
+  #wrap {
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  /* header */
+  .header {
+    display: flex;
+    order: 1;
+    justify-content: flex-end;
+    width: 100%;
+    position: relative;
+  }
+  .header h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12.5%;
+    height: 142px;
+    background: #ff6b57;
+  }
+  .header nav {
+    width: 87.5%;
+    height: 80px;
+    background: #ff6b57;
+  }
+
+  /* slider ~ rankup */
+  .slider_section {
+    order: 2;
+    width: 50%;
+    background: #3c90be;
+  }
+  .gallery_section {
+    order: 3;
+    width: 27%;
+    height: 440px;
+    background: #f8de73;
+  }
+  .rankup_section {
+    order: 4;
+    width: 23%;
+    background: #00d2a5;
+  }
+
+  /* latest ~ social */
+  .latest_post_section {
+    order: 5;
+    width: 30%;
+    background: #9cabe4;
+  }
+  .popular_post_section {
+    order: 6;
+    width: 30%;
+    background: #d76817;
+  }
+  .banner_section {
+    order: 7;
+    width: 23%;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .banner_section div {
+    flex: 1;
+  }
+  .banner_section .banner_box_01 {
+    background: #0175bb;
+  }
+  .banner_section .banner_box_02 {
+    background: #1261c9;
+  }
+  .social_section {
+    order: 8;
+    width: 17%;
+    height: 270px;
+    background: #fe6eda;
+  }
+
+  /* footer */
+  .footer {
+    order: 9;
+    width: 100%;
+    height: 94px;
+    background: #474747;
+  }
+}
