@@ -1,0 +1,32 @@
+1.코딩테스트!!!
+- F/E => 무조건 코딩테스트
+- P => 코딩테스트 (*요새 뜨문뜨문)
+
+1차 이력서/포폴 => 2차 코딩테스트 => 3차 인.적성
+=> 1시간 / 회의실 : 문제 => 코드 해결!!!
+(*노트북 / A4 / 5개 / 2개 => 선임자)
+
+*Flex => 기본예제 / 실전예제
+*Grid
+*SCSS
+
+min-height : 80px => 해당요소의 height를 출력할 수 있는 높이가 줄어들더라도 최소한의 80px만큼의 높이는 고정시키겠다는 의미!!!!
+
+max-width : 1200px => 해당요소의 width를 출력할 수 있는 너비가 아무리 넓어지더라도 최대 1200px까지만 대응을 하겠다는 의미!!!!
+
+em : element 약어 / 폰트 사이즈를 결정하고자 할 때, 
+=> 부모요소의 font-size에 의해서 결정!!!
+=> 1em = 16px = p / h1 = 32px 
+
+rem : root element 약어 / root 최상위 부모요소
+body
+
+fallback 기법!!!
+: 브라우저간 크로스오버 기능 가능!!!!
+: MS / S / O / F / C
+
+
+position : static / relative / absolute / fixed
+=> static : 기본 default 값 => html에서 작성한 순서에 맞춰서 위치를 잡아주겠다!!!!
+
+pc : .slider_section > background 제거!

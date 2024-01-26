@@ -181,6 +181,32 @@ span.next_btn {
   margin-top: 0;
 }
 
+/* gallery */
+.gallery_section {
+  order: 6;
+  padding: 50px 12.5%;
+  padding: 3.125rem 12.5%;
+  text-align: center;
+  text-shadow: 0 1px 1px #c43434;
+  background: #e65d5d;
+}
+.gallery_section img {
+  width: 100%;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px #c43434;
+}
+.gallery_list li:nth-child(2) {
+  margin-top: 30px;
+  margin-top: 1.85rem;
+}
+.gallery_list li figcaption {
+  margin-top: 20px;
+  margin-top: 1.25rem;
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
 /* rankup */
 .rankup_section {
   order: 7;
@@ -290,7 +316,7 @@ span.next_btn {
   .logo a {
     display: block;
     padding: 50px 0;
-    padding: 3.125rem;
+    padding: 3.125rem 0;
   }
   .nav {
     position: relative;
@@ -298,15 +324,18 @@ span.next_btn {
     min-height: 5rem;
     background: #2ecc71;
   }
-  .gnb {
+  /* .gnb {
     position: absolute;
     top: 100%;
     right: 0;
     z-index: 20;
     width: 40.1%;
+  } */
+  .gnb {
+    display: none;
   }
   .menu_toggle_btn {
-    top: 50%;
+    top: 20%;
     right: 30px;
     right: 1.875rem;
     z-index: 20;
@@ -338,14 +367,14 @@ span.next_btn {
   .latest_post_section,
   .popular_post_section {
     width: 41.6%;
-    padding: 0 5.208%;
+    padding: 5.208%;
   }
 
   /* gallery */
   .gallery_section {
     order: 8;
     width: 71.3%;
-    padding: 0 5.208%;
+    padding: 5.208%;
   }
   .gallery_list {
     display: flex;
@@ -359,8 +388,9 @@ span.next_btn {
   }
   .rankup_section {
     order: 4;
-    width: 39.5%;
+    width: 40.2%;
     padding-left: 5.2083%;
+    padding-right: 5.2083%;
   }
 
   /* banner */
@@ -408,6 +438,12 @@ span.next_btn {
   .social_list li:nth-child(2) {
     margin: 24px 0;
     margin: 1.5rem 0;
+  }
+
+  /* footer */
+  .footer p {
+    padding: 40px 0;
+    padding: 2.5rem 0;
   }
 }
 
@@ -563,8 +599,5 @@ span.next_btn {
   /* footer */
   .footer {
     order: 9;
-    width: 100%;
-    height: 94px;
-    background: #474747;
   }
 }
