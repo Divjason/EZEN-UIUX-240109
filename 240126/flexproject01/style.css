@@ -68,7 +68,43 @@ a {
 .nav {
   order: 2;
   width: 100%;
-  border: 1px solid #f00;
+}
+.gnb li {
+  display: flex;
+  background: #2c3e50;
+}
+.gnb li a {
+  width: 80%;
+  padding: 20px 0;
+  padding: 1.25rem 0;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  text-indent: 20px;
+  text-indent: 1.25rem;
+  font-weight: bold;
+  color: #fff;
+}
+.gnb li span {
+  width: 20%;
+  text-indent: -9999px;
+  background: url("./flex_img/s_images/sub_menu_toggle_btn.png") center center
+    no-repeat;
+  cursor: pointer;
+}
+.menu_toggle_btn {
+  display: block;
+  width: 30px;
+  width: 1.875rem;
+  height: 30px;
+  height: 1.875rem;
+  position: absolute;
+  top: 10px;
+  top: 0.625rem;
+  right: 10px;
+  right: 0.625rem;
+  text-indent: -9999px;
+  background: url("./flex_img/s_images/menu_toggle_btn.png") no-repeat;
+  cursor: pointer;
 }
 
 /* ==== tablet ==== */
