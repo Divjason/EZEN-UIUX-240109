@@ -1,0 +1,57 @@
+@import url("./reset.css");
+
+/* header */
+header {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+header .inner {
+  width: 1180px;
+  height: 120px;
+  margin: 0 auto;
+  position: relative;
+}
+header .inner h1 {
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+}
+header .inner h1 a {
+  font: bold 24px/1 "arial";
+  color: #444;
+}
+header .inner .util {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  overflow: hidden;
+}
+header .inner .util li {
+  float: left;
+}
+header .inner .util li a {
+  display: block;
+  color: #999;
+  padding: 2px 9px;
+  font: 12px/1 "arial";
+}
+header .inner #gnb {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+}
+header .inner #gnb li {
+  float: left;
+}
+header .inner #gnb li a {
+  display: block;
+  font: bold 15px/1 "arial";
+  color: #555;
+  padding: 20px 40px;
+  transition: all 0.5s;
+}
+header .inner #gnb li a:hover {
+  background: #555;
+  color: #fff;
+}

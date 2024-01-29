@@ -12,6 +12,15 @@ textarea,
 button {
   font-family: "Montserrat", sans-serif;
 }
+input,
+textarea {
+  width: 95%;
+  border: 0;
+  color: #3f51b5;
+  font-size: 12px;
+  margin: 10px;
+  cursor: pointer;
+}
 hr {
   height: 2;
 }
@@ -71,6 +80,9 @@ hr {
   left: 0;
   width: 100%;
   background: #3f51b5;
+}
+.header .gnb.active {
+  display: block;
 }
 .header .gnb li {
   border-bottom: 1px solid #303f9f;
@@ -250,12 +262,47 @@ hr {
   margin-bottom: 38px;
   padding-bottom: 13px;
 }
+.contact-section .form-box .form input:focus {
+  outline: none;
+  border-bottom: 1px solid #757575;
+}
 .contact-section .form-box .textarea textarea {
   height: 165px;
+}
+.contact-section .form-box .textarea textarea:focus {
+  outline: none;
+  border-bottom: 1px solid #757575;
 }
 .contact-section .form-box .send-btn {
   text-align: right;
   margin-top: 36px;
+}
+.contact-section .form-box .send-btn button {
+  padding: 15px;
+  border: 0;
+  background: #3f51b5;
+  color: #fff;
+  cursor: pointer;
+}
+.contact-section .form-box .send-btn button:hover {
+  background: #fff;
+  border: 1px solid #3f51b5;
+  color: #3f51b5;
+}
+
+/* footer */
+.footer {
+  margin-top: 68px;
+  padding: 2%;
+}
+.footer iframe {
+  width: 100%;
+  height: 320px;
+}
+.footer p {
+  margin: 20px 0;
+  text-align: center;
+  color: #3f51b5;
 }
 
 /* ==== tablet ==== */
@@ -348,6 +395,33 @@ hr {
     margin-top: 0;
     margin-left: 2%;
   }
+
+  /* contact */
+  .contact-section {
+    margin-top: 176px;
+  }
+  .contact-section .sec-tit {
+    margin-bottom: 76px;
+  }
+  .contact-section .form-box .form,
+  .contact-section .form-box .textarea {
+    float: left;
+    width: 48%;
+  }
+  .contact-section .form-box .form {
+    margin-right: 2%;
+  }
+  .contact-section .form-box .form input:last-child {
+    margin-bottom: 0;
+  }
+
+  /* footer */
+  .footer iframe {
+    height: 430px;
+  }
+  .footer p {
+    margin: 34px 0;
+  }
 }
 
 /* ==== desktop ==== */
@@ -403,5 +477,18 @@ hr {
   .blog-section .blog-list li {
     width: 31%;
     margin-left: 2%;
+  }
+
+  /* contact */
+  .contact-section {
+    overflow: hidden;
+  }
+  .contact-section .sec-tit {
+    float: left;
+    margin-bottom: 0;
+  }
+  .contact-section .form-box {
+    float: right;
+    width: 73%;
   }
 }
