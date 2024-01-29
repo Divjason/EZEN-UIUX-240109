@@ -1,0 +1,268 @@
+@import url("./reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+
+/* ==== mobile ==== */
+
+/* common */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+input,
+textarea,
+button {
+  font-family: "Montserrat", sans-serif;
+}
+hr {
+  height: 2;
+}
+.container {
+  width: 90%;
+  max-width: 1132px;
+  margin: 0 auto;
+}
+.cfixed::after,
+.container::after {
+  content: "";
+  display: block;
+  overflow: hidden;
+}
+.blind {
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+.sec-tit {
+  font-size: 42px;
+  font-weight: normal;
+  color: #3f51b5;
+}
+.divider {
+  width: 90%;
+  max-width: 1132px;
+  margin: 77px auto 0;
+  background: #eee;
+}
+.m-divider {
+  width: 20px;
+  margin: 77px auto 0;
+  background: #3f51b5;
+}
+
+/* header */
+.header {
+  position: relative;
+  padding: 18px 5%;
+}
+.header .logo {
+  float: left;
+}
+.header .logo a {
+  font-size: 26px;
+  font-weight: normal;
+  color: #3f51b5;
+}
+.header .gnb {
+  display: none;
+  position: absolute;
+  top: 150%;
+  left: 0;
+  width: 100%;
+  background: #3f51b5;
+}
+.header .gnb li {
+  border-bottom: 1px solid #303f9f;
+}
+.header .gnb li a {
+  display: block;
+  font-size: 14px;
+  color: #fff;
+  padding: 14px 0 14px 5%;
+}
+.header .menu-toggle-btn {
+  float: right;
+  width: 20px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.header .menu-toggle-btn span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #3f51b5;
+}
+.header .menu-toggle-btn span:nth-child(2) {
+  margin: 5px 0;
+}
+
+/* slider */
+.slider img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* display */
+.display-section {
+  margin-top: 59px;
+  text-align: center;
+}
+.display-section .sec-tit {
+  margin-bottom: 30px;
+}
+.display-section .desc {
+  color: #616161;
+  line-height: 1.9;
+}
+
+/* promotion */
+.promotion-section {
+  margin-top: 68px;
+}
+.promotion-section .promo-list li {
+  margin-top: 52px;
+  text-align: center;
+}
+.promotion-section .promo-list li:first-child {
+  margin-top: 0;
+}
+.promotion-section .promo-list li img {
+  height: 52px;
+}
+.promotion-section .promo-list li h3 {
+  margin: 29px 0 20px;
+  color: #3f51b5;
+  font-weight: normal;
+}
+.promotion-section .promo-list li p {
+  color: #616161;
+  font-size: 14px;
+}
+
+/* work */
+.work-section {
+  margin-top: 73px;
+}
+.work-section .sec-tit {
+  width: 90%;
+  max-width: 1132px;
+  margin: 0 auto;
+  margin-bottom: 47px;
+  text-align: center;
+}
+.work-section .work-list li {
+  width: 100%;
+}
+.work-section .work-list a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.work-section .work-list a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background: #3f51b5;
+  width: 100%;
+  height: 100%;
+}
+.work-section .work-list a:hover::before {
+  opacity: 0.8;
+}
+
+/* ==== tablet ==== */
+@media screen and (min-width: 768px) {
+  /* common */
+  .divider {
+    margin: 260px auto 0;
+  }
+  .m-divider {
+    margin: 124px auto 0;
+  }
+
+  /* header */
+  .header {
+    position: static;
+    padding: 28px 52px;
+  }
+  .header .gnb {
+    display: block;
+    position: static;
+    background: none;
+    float: right;
+    width: auto;
+    margin-top: 16px;
+  }
+  .header .gnb li {
+    float: left;
+    border-bottom: 0;
+    margin-left: 21px;
+  }
+  .header .gnb li a {
+    color: #3f51b5;
+    padding: 0;
+    font-size: 16px;
+  }
+  .header .menu-toggle-btn {
+    display: none;
+  }
+
+  /* display */
+  .display-section {
+    margin-top: 95px;
+  }
+
+  /* promotion */
+  .promotion-section {
+    margin-top: 110px;
+  }
+  .promotion-section .promo-list li {
+    float: left;
+    width: 23.177%;
+    margin-left: 1.822%;
+    margin-top: 0;
+  }
+  .promotion-section .promo-list li:first-child {
+    margin-left: 0;
+  }
+}
+
+/* ==== desktop ==== */
+@media screen and (min-width: 1132px) {
+  /* display */
+  .display-section {
+    text-align: left;
+    overflow: hidden;
+  }
+  .display-section .sec-tit {
+    float: left;
+    margin-bottom: 0;
+  }
+  .display-section .desc {
+    position: relative;
+    float: right;
+    padding-left: 20px;
+    color: #616161;
+  }
+  .display-section .desc::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 44px;
+    background: #e0e0e0;
+    top: 9px;
+    left: 0;
+  }
+
+  /* promotion */
+  .promotion-section .promo-list li {
+    width: 23.674%;
+    margin-left: 1.766%;
+  }
+}
