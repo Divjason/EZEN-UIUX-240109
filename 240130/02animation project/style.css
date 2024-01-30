@@ -1,0 +1,132 @@
+@import url("./reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+
+/* common */
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #b1e1e2;
+  animation: sky linear 20s infinite;
+}
+@keyframes sky {
+  0% {
+    background: #b88fcc;
+  }
+  25% {
+    background: #b1e1e2;
+  }
+  50% {
+    background: #fcd2e2;
+  }
+  75% {
+    background: #636888;
+  }
+  100% {
+    background: #b08fcc;
+  }
+}
+
+h1 {
+  width: 1000px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 150%);
+  text-align: center;
+  color: #fff;
+  font: bold 92px/1 "Poiret One";
+}
+
+section {
+  border: 1px solid #f00;
+  width: 1000px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+}
+
+section .sky {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+section .sky .sun {
+  position: absolute;
+  top: -150px;
+  left: 50%;
+}
+section .sky .cloud1 {
+  position: absolute;
+  top: -30px;
+  left: 10%;
+}
+section .sky .cloud2 {
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+
+section .town .circle {
+  position: absolute;
+  bottom: 104px;
+  left: 50%;
+  margin-left: -165px;
+  animation: rotation linear 20s infinite;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+section .town .night {
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+}
+section .town .day {
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+}
+
+section .people {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+section .people .man {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  animation: flow linear 10s infinite;
+}
+section .people .family {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  animation: flow linear 20s infinite;
+}
+@keyframes flow {
+  0% {
+    left: 0;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    left: 90%;
+    opacity: 0;
+  }
+}
