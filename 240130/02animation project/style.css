@@ -36,10 +36,27 @@ h1 {
   text-align: center;
   color: #fff;
   font: bold 92px/1 "Poiret One";
+  animation: day linear 20s infinite;
+}
+@keyframes day {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 section {
-  border: 1px solid #f00;
   width: 1000px;
   height: 400px;
   position: absolute;
@@ -57,16 +74,43 @@ section .sky .sun {
   position: absolute;
   top: -150px;
   left: 50%;
+  margin-left: -100px;
+  transform-origin: center 500px;
+  animation: sun linear 20s infinite;
+}
+@keyframes sun {
+  0% {
+    opacity: 0;
+    transform: rotate(-90deg);
+  }
+  25% {
+    opacity: 1;
+    transform: rotate(-30deg);
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(30deg);
+  }
+  75% {
+    opacity: 0;
+    transform: rotate(90deg);
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(-90deg);
+  }
 }
 section .sky .cloud1 {
   position: absolute;
   top: -30px;
   left: 10%;
+  animation: flow linear 10s infinite;
 }
 section .sky .cloud2 {
   position: absolute;
   top: 20px;
   left: 0;
+  animation: flow linear 20s infinite;
 }
 
 section .town .circle {
@@ -93,14 +137,15 @@ section .town .day {
   position: absolute;
   bottom: 0;
   left: 40px;
+  animation: day linear 20s infinite;
 }
-
 section .people {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  animation: day linear 20s infinite;
 }
 section .people .man {
   position: absolute;

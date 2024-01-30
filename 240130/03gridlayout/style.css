@@ -1,0 +1,18 @@
+.parent {
+  border: 5px solid #000;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  /* grid: 100px 300px / auto auto auto; */
+  /* grid-template-columns: auto auto auto;
+  grid-template-rows: 100px 300px; */
+}
+
+.parent div {
+  border: 1px solid #fff;
+  background: yellowgreen;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+}

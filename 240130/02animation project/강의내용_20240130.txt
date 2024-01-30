@@ -1,0 +1,64 @@
+header
+nav
+section > article
+footer
+figure : 
+- 슬라이드 & 옵셔널한 영역
+- 소주제 혹은 단락 박싱
+
+버튼 => 꼭 반드시 한가지 방법만으로 생성x
+=> input || button
+=> input:submit => button
+=> div > a => 목적 & 의도
+(*클릭 => 행동 = 특정 페이지로 이동!!!)
+
+*grid / scss
+(*고급 수준의 css를 다룰 수록 함수 & 변수 & 연산자 & 제어자) => calc( )
+
+*CSS : 초급 수준 css
+=> object-fit / calc( )
+
+*영상과 같은 멀티미디어 소스 사용목적 : 특정 배경을 커버하고 싶은 목적!!!
+
+*불일치 : 내가 가지고 있는 영상소스의 w / h = 커버하고자 하는 배경 영역의 w / h
+
+translate : 시간제약
+animation
+transform : 시간x
+
+@keyframes 애니메이션 이름
+
+컴포넌트 : 템플릿!!
+인스턴스 : 컴포넌트로 만들어놓은 템플릿의 복제품!!!
+> 붕어빵틀 / 붕어빵
+> w / h 등 스타일 커스터마이징!!!
+
+iconsax
+
+html, css 핵심 : 레이아웃정렬
+inline / block
+w / h
+position / 
+
+float < flex < grid
+>flex 레이아웃 시스템을 적용하려면, 부모
+>grid 레이아웃 시스템을 적용하려면, 부모
+
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
+fr = fraction = 파편 / 분자
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 100px 300px;
+
+축약 : 
+- font / background / animation / transition / flex / flex-flow
+- grid : 열 grid-template-columns / 행 grid-template-rows
+
+flex 아이템 간격 : gap
+
+grid 아이템 간격
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+
+
