@@ -1,0 +1,90 @@
+1.행 = row = 가로
+
+2.열 = column = 세로
+
+> grid / 
+
+*사용하는 단어 비슷한게 많음!!!
+justify / align - content / items
+> 
+
+*flex => 단일차원 행.열 레이아웃
+
+*grid => 다차원의 행.열 레이아웃
+
+------
+
+p / a => top / left
+
+align || justify-self
+
+float VS flex & grid
+- 반응형 대응!!!!
+
+grid-column / grid-row
+
+1) grid로 레이아웃을 정렬하고자 할 때, 현재 보이는 화면을 기준으로 행 & 열을 재정립해나가면서 최종적인 UI화면을 완성!!!!
+
+2) 미리 완성된 결과물을 figma를 통해서 행 & 열을 정의한 후 grid 문법을 사용하는 것!!!!
+
+*지금까지한 grid의 문법은 서막*
+=> Web Publisher 괜찮은 곳에 취업!!!
+=> 1) Portfolio 홈페이지
+=> 2) Portfolio 작업물
+- 수업시간 진행하고 있는 실전예제 30개 정도
+(*커스터마이징 / 메뉴 / 네비 / 푸터 / 기능 특징 구현)
+- flex만으로 완성된 웹페이지 (*메인) 1~2개
+- grid만으로 완성된 웹페이지 (*메인) 1~2개
+> 
+
+display : grid
+grid-template-columns
+grid-template-rows
+grid-template-areas
+
+*HTML5 & CSS3
+- CSS => 비약적인 발전!!!
+> transition / transform / animation
+
+W3C : 정말 많은 것들이 바뀌었음
+=> 기존사용되고 있던 문법
+=> 영리추구!!
+
+기존에 사용하고 있던 요소들은 그대로 둔 상태에서
+업그레이드가 된 새로운 무언가를 탄생!!!
+
+SASS => SCSS 네이밍 변경!! (*안정화)
+
+Why SCSS
+> CSS 가 갖지 못하는 기능!!!
+>프로그래밍 코드를 벤치마킹!!!
+
+SCSS => 확장자가 .scss
+
+CS영역!!!!
+=> 웹 브라우저 : html / css / js
+=> FE : TS
+
+컴파일링을 한다!!!!
+= Compiling => 어떤 요소를 번역해주는 역할
+= Complier => 컴파일링을 해주는 요소
+> SCSS => CSS
+
+*p > 내부에 블록태그 x
+
+*SCSS > Nesting 기능
+> 중첩기능!!!!
+
+*SCSS 만으로 구성된 프로젝트!!!
+> 개인프로젝트!!!
+> SCSS 작업 / 
+
+
+
+
+
+
+
+
+
+
