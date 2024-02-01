@@ -1,0 +1,26 @@
+/* variable */
+/* common */
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  border: 5px solid gold;
+  height: 100vh;
+  padding: 50px;
+}
+
+.content {
+  background: #eee;
+  padding: 50px;
+  height: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .container,
+  .content {
+    height: auto;
+    padding: 25px;
+  }
+}/*# sourceMappingURL=style17.css.map */

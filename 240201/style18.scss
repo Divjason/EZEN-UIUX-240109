@@ -1,0 +1,24 @@
+$string1: "html5";
+$string2: "scss";
+
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.welcome {
+  text-transform: uppercase;
+  &::after {
+    @if ($string1 == "html5" and $string2 == "scss") {
+      content: "welcome~ " + $string1 + $string2;
+    } @else {
+      content: "You ard not welcome!";
+      color: crimson;
+    }
+  }
+}

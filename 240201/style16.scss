@@ -1,0 +1,28 @@
+/* variables */
+
+$color: (
+  font-primary: #2d3436,
+  font-secondary: #636e72,
+  font-focus: #d63031,
+  bgc-primary: #dfe6e9,
+  bgc-secondary: #b2bec3,
+);
+
+$headline-font: (
+  large: 45px,
+  medium: 32px,
+  small: 22px,
+);
+
+body {
+  background: map-get($color, bgc-primary);
+}
+.frame {
+  h1 {
+    color: map-get($color, font-focus);
+    font-size: map-get($headline-font, large);
+  }
+  p {
+    font-size: map-get($headline-font, medium);
+  }
+}

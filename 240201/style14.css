@@ -3,4 +3,27 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+.btn, .checkout, .add, .order {
+  width: 200px;
+  padding: 7px;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.order {
+  background: purple;
+}
+
+.add {
+  background: yellowgreen;
+}
+
+.checkout {
+  border: 1px solid #000;
+  color: #000;
 }/*# sourceMappingURL=style14.css.map */

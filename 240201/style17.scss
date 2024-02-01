@@ -1,0 +1,31 @@
+/* variable */
+$padding: 50px;
+
+/* common */
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  border: 5px solid gold;
+  height: 100vh;
+  padding: $padding;
+}
+.content {
+  background: #eee;
+  padding: $padding;
+  height: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .container,
+  .content {
+    height: auto;
+    @if ($padding <= 20px) {
+      padding: $padding;
+    } @else {
+      padding: $padding / 2;
+    }
+  }
+}

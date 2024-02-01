@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.welcome {
+  text-transform: uppercase;
+}
+.welcome::after {
+  content: "welcome~ html5scss";
+}/*# sourceMappingURL=style18.css.map */
