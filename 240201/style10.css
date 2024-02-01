@@ -1,0 +1,15 @@
+/* variables */
+.frame {
+  border: 1px solid #000;
+  padding: 14px;
+  margin: 25px;
+}
+.frame h1 {
+  font-size: 45px;
+}
+.frame p {
+  border: 1px solid #000;
+  font-size: 30px;
+  margin: 16.6666666667px;
+  padding: 25px;
+}/*# sourceMappingURL=style10.css.map */

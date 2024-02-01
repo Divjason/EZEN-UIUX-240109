@@ -1,0 +1,46 @@
+.btn {
+  background: #fff;
+  color: #000;
+  border: 1px solid #333;
+  border-radius: 3px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+.frame {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.frame div {
+  flex: 1;
+  height: 150px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+.frame div:hover {
+  color: #fff;
+  transform: translateY(-10px);
+}
+.frame div:nth-child(1) {
+  background: crimson;
+}
+.frame div:nth-child(2) {
+  background: yellowgreen;
+}
+.frame div:nth-child(3) {
+  background: royalblue;
+}/*# sourceMappingURL=style02.css.map */

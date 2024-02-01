@@ -1,0 +1,30 @@
+@mixin headline {
+  font-size: 36px;
+  text: {
+    align: center;
+    transform: uppercase;
+  }
+  position: relative;
+  padding-bottom: 20px;
+  span {
+    color: royalblue;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 100px;
+    height: 4px;
+    background: crimson;
+  }
+}
+
+.heading {
+  @include headline;
+}
+
+.news-headline {
+  @include headline;
+}

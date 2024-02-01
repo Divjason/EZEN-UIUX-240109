@@ -1,0 +1,54 @@
+/* variables */
+$color-primary: #222;
+$color-secondary: #333;
+$bgc-item: #eee;
+$portfolio-item-w: 300px;
+$portfolio-item-h: 300px;
+$portfolio-item-bdrs: 10px;
+$portfolio-item-url: "./img/blog-post-";
+
+.portfolio {
+  padding: 20px;
+  h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+  .portfolio-items {
+    width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    .portfolio-item {
+      border: 1px solid #000;
+      width: $portfolio-item-w;
+      height: $portfolio-item-h;
+      border-radius: $portfolio-item-bdrs;
+      background: center/cover no-repeat;
+      &:nth-child(1) {
+        background-image: url($portfolio-item-url + "01.jpg");
+      }
+      &:nth-child(2) {
+        background-image: url($portfolio-item-url + "02.jpg");
+      }
+      &:nth-child(3) {
+        background-image: url($portfolio-item-url + "03.jpg");
+      }
+      &:nth-child(4) {
+        background-image: url($portfolio-item-url + "04.jpg");
+      }
+      &:nth-child(5) {
+        background-image: url($portfolio-item-url + "05.jpg");
+      }
+      &:nth-child(6) {
+        background-image: url($portfolio-item-url + "06.jpg");
+      }
+      &:nth-child(7) {
+        background-image: url($portfolio-item-url + "07.jpg");
+      }
+      &:nth-child(8) {
+        background-image: url($portfolio-item-url + "08.jpg");
+      }
+    }
+  }
+}

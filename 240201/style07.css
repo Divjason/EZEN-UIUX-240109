@@ -1,0 +1,46 @@
+/* variables */
+.portfolio {
+  padding: 20px;
+}
+.portfolio h1 {
+  text-align: center;
+  font-size: 30px;
+}
+.portfolio .portfolio-items {
+  width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+}
+.portfolio .portfolio-items .portfolio-item {
+  border: 1px solid #000;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  background: center/cover no-repeat;
+}
+.portfolio .portfolio-items .portfolio-item:nth-child(1) {
+  background-image: url("./img/blog-post-01.jpg");
+}
+.portfolio .portfolio-items .portfolio-item:nth-child(2) {
+  background-image: url("./img/blog-post-02.jpg");
+}
+.portfolio .portfolio-items .portfolio-item:nth-child(3) {
+  background-image: url("./img/blog-post-03.jpg");
+}
+.portfolio .portfolio-items .portfolio-item:nth-child(4) {
+  background-image: url("./img/blog-post-04.jpg");
+}
+.portfolio .portfolio-items .portfolio-item:nth-child(5) {
+  background-image: url("./img/blog-post-05.jpg");
+}
+.portfolio .portfolio-items .portfolio-item:nth-child(6) {
+  background-image: url("./img/blog-post-06.jpg");
+}
+.portfolio .portfolio-items .portfolio-item:nth-child(7) {
+  background-image: url("./img/blog-post-07.jpg");
+}
+.portfolio .portfolio-items .portfolio-item:nth-child(8) {
+  background-image: url("./img/blog-post-08.jpg");
+}/*# sourceMappingURL=style07.css.map */

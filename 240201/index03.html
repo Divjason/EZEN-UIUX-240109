@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style03.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="signin">
+      <h1>Sign in</h1>
+      <div class="sign-inner">
+        <form action="http://localhost:3000/signin" method="post">
+          <input type="button" value="Sign in with Google" />
+          <input type="email" placeholder="email" />
+          <input type="password" placeholder="password" />
+          <input id="message" type="checkbox" />
+          <label for="message">Remember me for 30 days</label>
+          <input type="submit" value="Sign in" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

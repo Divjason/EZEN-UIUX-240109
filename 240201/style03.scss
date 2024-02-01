@@ -1,0 +1,53 @@
+body {
+  background: rgb(243, 243, 243);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.signin {
+  h1 {
+    text-align: center;
+    font-weight: normal;
+  }
+  .sign-inner {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 350px;
+    background: #fff;
+    input[type="button"],
+    input[type="email"],
+    input[type="password"],
+    input[type="submit"] {
+      display: block;
+      width: 95%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    input[type="button"] {
+      margin: 0 auto;
+      margin-bottom: 20px;
+      cursor: pointer;
+      background: #fff;
+      transition: all 0.3s;
+      &:hover {
+        background: #badc58;
+        color: #fff;
+      }
+    }
+    input[type="email"]:focus,
+    input[type="password"]:focus {
+      background: #f8edb5;
+      outline: none;
+    }
+    input[type="submit"] {
+      margin: 20px auto 0;
+      background: #27ae60;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+}

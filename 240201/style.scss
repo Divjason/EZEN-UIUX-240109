@@ -1,0 +1,46 @@
+a {
+  text-decoration: none;
+  color: #fff;
+}
+body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #222;
+}
+.btn-outer {
+  .btn {
+    position: relative;
+    text-align: center;
+    line-height: 50px;
+    display: block;
+    width: 300px;
+    height: 50px;
+    background: #555;
+    transition: all 0.5s;
+    &:hover {
+      background: transparent;
+    }
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: inherit;
+      height: inherit;
+      border: 1px solid #fff;
+      opacity: 0;
+      transition: all 0.5s;
+    }
+    &:hover::before {
+      transform: rotate(45deg);
+      opacity: 1;
+    }
+    &:hover::after {
+      transform: rotate(-45deg);
+      opacity: 1;
+    }
+  }
+}

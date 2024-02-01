@@ -1,0 +1,56 @@
+/* variables */
+$complete-btn: royalblue;
+$loading-btn: green;
+$error-btn: crimson;
+$notice-btn-hover: #000;
+$notice-btn-fs: 18px;
+
+/* common */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* template */
+@mixin notice-button {
+  font-size: $notice-btn-fs;
+  width: 150px;
+  padding: 7px;
+  background: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s;
+  &.complete:hover {
+    background: $complete-btn;
+    color: #fff;
+  }
+  &.loading:hover {
+    background: $loading-btn;
+    color: #fff;
+  }
+  &.error:hover {
+    background: $error-btn;
+    color: #fff;
+  }
+}
+
+/* indivisual */
+.complete {
+  @include notice-button;
+  border: 2px solid $complete-btn;
+  color: $complete-btn;
+}
+.loading {
+  @include notice-button;
+  border: 2px solid $loading-btn;
+  color: $loading-btn;
+}
+.error {
+  @include notice-button;
+  border: 2px solid $error-btn;
+  color: $error-btn;
+}
