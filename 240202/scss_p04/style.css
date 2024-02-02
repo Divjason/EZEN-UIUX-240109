@@ -1,3 +1,6 @@
+/* import */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +15,15 @@ a {
   text-decoration: none;
 }
 
+/* common */
+body {
+  font-family: "Noto Sans KR";
+  color: #222;
+  font-size: 15px;
+  background: #fff;
+}
+
+/* desktop */
 .portfolio {
   display: grid;
   justify-content: center;
@@ -28,6 +40,7 @@ a {
   text-decoration-line: underline;
   text-decoration-thickness: 3px;
   text-underline-offset: 15px;
+  font-family: "Montserrat";
   font-size: 60px;
   text-transform: uppercase;
   text-align: center;
@@ -59,6 +72,7 @@ a {
   display: block;
   text-align: center;
   margin: 7px;
+  font-family: "Montserrat";
 }
 .portfolio .items .item.thum .portfolio-title .btn-view {
   color: #fff;
@@ -74,11 +88,13 @@ a {
   background: royalblue;
 }
 .portfolio .items aside.item b {
+  font-family: "Montserrat";
   color: crimson;
   font-weight: normal;
   padding-left: 20px;
 }
 .portfolio .items aside.item h2 {
+  font-family: "Montserrat";
   font-size: 1.6em;
   margin-top: 15px;
   padding-left: 20px;
@@ -93,4 +109,67 @@ a {
 .portfolio .items aside.item .portfolio-info span {
   font-size: 12px;
   display: list-item;
+}
+
+/* featherlight */
+.featherlight .featherlight-content {
+  margin-left: 0;
+  width: 100%;
+  max-height: 100%;
+  height: 100%;
+}
+
+.featherlight .featherlight-inner {
+  padding-left: 25%;
+  width: 100%;
+  height: 100%;
+}
+
+.featherlight .featherlight-close-icon {
+  left: 40px;
+  top: 90%;
+  width: 50px;
+  height: 50px;
+  font-size: 2em;
+  color: #fff;
+  border-radius: 50%;
+  background-color: crimson;
+}
+
+/* tablet */
+@media screen and (max-width: 1024px) {
+  .portfolio {
+    align-content: start;
+    height: auto;
+    padding: 20px;
+  }
+  .portfolio .headline-share h1 {
+    font-size: 45px;
+  }
+  .portfolio .items {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .portfolio .items aside.item,
+  .portfolio .items .item.thum:nth-child(4) {
+    grid-column: span 2;
+  }
+}
+/* mobile */
+@media screen and (max-width: 768px) {
+  .portfolio {
+    height: auto;
+    padding: 20px;
+  }
+  .portfolio .headline-share h1 {
+    font-size: 20px;
+  }
+  .portfolio .items {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .portfolio .items .item.thum:nth-child(2),
+  .portfolio .items .item.thum:nth-child(3) {
+    grid-column: span 2;
+  }
 }/*# sourceMappingURL=style.css.map */

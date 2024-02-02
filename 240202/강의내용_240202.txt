@@ -1,0 +1,39 @@
+html5 (*인라인 VS 블록 / 포지션 / 플렉스 & 그리드 + 선택자)
+css3 (*선택자)
+scss (*변수 / 템플릿 = 믹스인 & 인클루드 / 네스팅 / if)
++ JS
+
+: 쉽고, 편리하게 사용할 수 있는것 없을까?
+=> 직접 JS html 요소를 찾아와서 코드를 짜야하는데, 이미 이 기능을 구현할 수 있도록 만들어놓은 요소를 가져다가 빌려 쓰고 싶다!!!
+=> 도서관 = 라이브러리
+=> JS 라이브러리 => 2015년 jQuery / 2014년 마크주커버크 f/b React
+=> jQuery : 실무 => plug-in (*전자레인지 / 신상)
+
+
+cdn = content delivery network
+
+jQuery : 취업 : 포트폴리오 > jQuery 플러그인
+> JS : 코드를 입력해서 UI => 하드코딩
+> jQuery : 외부 플러그인을 활용해서 UI => 소프트코딩 / 가코딩
+
+*bootstrap
+*실전예제 : 웹 퍼블리셔 무조건!!!! 30개
+(*제이쿼리)
+*Figma + html & css + jquery : 
+
+JS15 > TS10 > React20
+> 팀 / 파이널
+> 앞쪽에서 > 포폴여유
+
+*각 thum 이미지 하단 좌측 pc버튼 클릭 시,
+오전에 배웠던 featherlight 기능 구현!!!
+
+*기능 구현 시, 출력되어야하는 이미지는
+공유해드렸던 thum img 사용하기!!!
+
+*프로젝트의 규모 클수록 grid
+> 사전 pre-production : wire-frame + mockup 등등 인력 / 준비 x / 공간 > 
+
+*position : relative / absolute
+*position : sticky / fixed
+

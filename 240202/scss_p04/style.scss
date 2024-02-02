@@ -1,7 +1,21 @@
+/* import */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap");
+
 @import "reset";
 @import "mixin";
 @import "variables";
 
+/* common */
+body {
+  font-family: map-get($font-family, kor);
+  color: map-get($font-color, primary);
+  font-size: map-get($font-size, base);
+  background: map-get($bg-color, primary);
+}
+
+/* desktop */
 .portfolio {
   display: grid;
   justify-content: center;
@@ -12,9 +26,14 @@
     margin-bottom: 50px;
     h1 {
       @include wavy-underline;
-      font-size: map-get($font-size, large-heading);
-      text-transform: uppercase;
-      text-align: center;
+      font: {
+        family: map-get($font-family, eng);
+        size: map-get($font-size, large-heading);
+      }
+      text: {
+        transform: uppercase;
+        align: center;
+      }
     }
   }
   .items {
@@ -45,6 +64,7 @@
           display: block;
           text-align: center;
           margin: 7px;
+          font-family: map-get($font-family, eng);
           .btn-view {
             @include btn-base;
             &.pc {
@@ -59,11 +79,13 @@
     }
     aside.item {
       b {
+        font-family: map-get($font-family, eng);
         color: map-get($btn-color, pc);
         font-weight: normal;
         padding-left: 20px;
       }
       h2 {
+        font-family: map-get($font-family, eng);
         font-size: 1.6em;
         margin-top: 15px;
         padding-left: 20px;
@@ -78,6 +100,77 @@
           font-size: 12px;
           display: list-item;
         }
+      }
+    }
+  }
+}
+
+/* featherlight */
+.featherlight .featherlight-content {
+  margin-left: 0;
+  width: 100%;
+  max-height: 100%;
+  height: 100%;
+}
+
+.featherlight .featherlight-inner {
+  // margin-left: 25%;
+  // overflow: hidden;
+  padding-left: 25%;
+  // padding-right: 25%;
+  width: 100%;
+  height: 100%;
+}
+
+.featherlight .featherlight-close-icon {
+  left: 40px;
+  top: 90%;
+  width: 50px;
+  height: 50px;
+  font-size: 2em;
+  color: #fff;
+  border-radius: 50%;
+  background-color: crimson;
+}
+
+/* tablet */
+@media screen and (max-width: 1024px) {
+  .portfolio {
+    align-content: start;
+    height: auto;
+    padding: 20px;
+    .headline-share {
+      h1 {
+        font-size: map-get($font-size, medium-heading);
+      }
+    }
+    .items {
+      width: 100%;
+      grid-template-columns: repeat(2, 1fr);
+      aside.item,
+      .item.thum:nth-child(4) {
+        grid-column: span 2;
+      }
+    }
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 768px) {
+  .portfolio {
+    height: auto;
+    padding: 20px;
+    .headline-share {
+      h1 {
+        font-size: map-get($font-size, small-heading);
+      }
+    }
+    .items {
+      width: 100%;
+      grid-template-columns: repeat(1, 1fr);
+      .item.thum:nth-child(2),
+      .item.thum:nth-child(3) {
+        grid-column: span 2;
       }
     }
   }
