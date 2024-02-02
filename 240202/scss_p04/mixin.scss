@@ -1,0 +1,17 @@
+@mixin wavy-underline {
+  text: {
+    decoration-style: wavy;
+    decoration-color: crimson;
+    decoration-line: underline;
+    decoration-thickness: 3px;
+    underline-offset: 15px;
+  }
+}
+
+@mixin btn-base {
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 10px;
+  text-transform: uppercase;
+}

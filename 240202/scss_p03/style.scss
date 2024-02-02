@@ -1,0 +1,144 @@
+/* import */
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
+
+/* variables */
+$font-base: 10px;
+$color-base: #fff;
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* mixin */
+@mixin default {
+  color: #222;
+  line-height: 1.6em;
+  background: #f8f8f8;
+}
+@mixin heading {
+  text-align: center;
+  font-weight: normal;
+  padding-bottom: 40px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: crimson;
+  }
+  span {
+    color: crimson;
+  }
+}
+
+body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  @include default();
+}
+
+.portfolio {
+  h1 {
+    @include heading;
+    font-size: $font-base * 5;
+    margin-bottom: $font-base * 3;
+  }
+  .items {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 15px;
+    div {
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      position: relative;
+      a {
+        img {
+          width: 100%;
+          display: block;
+        }
+      }
+      .material-symbols-outlined {
+        pointer-events: none;
+        position: absolute;
+        top: 50%;
+        opacity: 0;
+        transition: all 0.3s;
+      }
+      span {
+        pointer-events: none;
+        position: absolute;
+        bottom: -40px;
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: $color-base;
+        transition: all 0.3s;
+      }
+      &::before {
+        pointer-events: none;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        opacity: 0;
+        transition: all 0.3s;
+      }
+      &:hover::before {
+        opacity: 1;
+      }
+      &:hover span {
+        bottom: 0;
+      }
+      &:hover .material-symbols-outlined {
+        opacity: 1;
+      }
+    }
+    .focus {
+      grid-area: span 2 / span 2;
+    }
+  }
+}
+
+/* featherlight css */
+.featherlight .featherlight-content {
+  width: 100%;
+  height: 100%;
+  margin: 0 !important;
+  max-height: 100%;
+}
+.featherlight .featherlight-inner {
+  width: 100%;
+  height: 100%;
+}
+.featherlight .featherlight-close-icon {
+  position: absolute;
+  top: 90%;
+  left: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: crimson;
+  font-size: 28px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+}

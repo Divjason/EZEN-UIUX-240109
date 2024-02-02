@@ -1,0 +1,54 @@
+/* variables */
+$logo-weight: 500;
+$logo-width: 150px;
+$logo-color: #222;
+$logo-spacing: 3px;
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.figma {
+  // border: 1px solid #000;
+  width: $logo-width;
+  span {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: $logo-weight;
+    color: $logo-color;
+    letter-spacing: $logo-spacing;
+    font-size: calc($logo-width / 3);
+  }
+  .shape {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    span {
+      background: #00f;
+      width: calc($logo-width / 2);
+      height: calc($logo-width / 2);
+      &:nth-child(1) {
+        background: #f24e1e;
+        border-radius: 50% 0 0 50%;
+      }
+      &:nth-child(2) {
+        background: #ff7262;
+        border-radius: 0 50% 50% 0;
+      }
+      &:nth-child(3) {
+        background: #a259ff;
+        border-radius: 50% 0 0 50%;
+      }
+      &:nth-child(4) {
+        background: #1abcfe;
+        border-radius: 50%;
+      }
+      &:nth-child(5) {
+        background: #0acf83;
+        border-radius: 50% 0 50% 50%;
+      }
+    }
+  }
+}

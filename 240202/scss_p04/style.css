@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.portfolio {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  background: url("./img_20240202/9/background.png") top center no-repeat;
+}
+.portfolio .headline-share {
+  margin-bottom: 50px;
+}
+.portfolio .headline-share h1 {
+  text-decoration-style: wavy;
+  text-decoration-color: crimson;
+  text-decoration-line: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 15px;
+  font-size: 60px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.portfolio .items {
+  width: 1280px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+.portfolio .items .item.thum .photo {
+  width: 100%;
+  height: 400px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+.portfolio .items .item.thum .photo img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 15px;
+  transition: all 2s;
+}
+.portfolio .items .item.thum:hover img {
+  object-position: bottom;
+}
+.portfolio .items .item.thum .portfolio-title {
+  display: block;
+  text-align: center;
+  margin: 7px;
+}
+.portfolio .items .item.thum .portfolio-title .btn-view {
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.portfolio .items .item.thum .portfolio-title .btn-view.pc {
+  background: crimson;
+}
+.portfolio .items .item.thum .portfolio-title .btn-view.mobile {
+  background: royalblue;
+}
+.portfolio .items aside.item b {
+  color: crimson;
+  font-weight: normal;
+  padding-left: 20px;
+}
+.portfolio .items aside.item h2 {
+  font-size: 1.6em;
+  margin-top: 15px;
+  padding-left: 20px;
+}
+.portfolio .items aside.item p {
+  margin: 20px;
+}
+.portfolio .items aside.item .portfolio-info {
+  padding-left: 20px;
+  line-height: 1.8em;
+}
+.portfolio .items aside.item .portfolio-info span {
+  font-size: 12px;
+  display: list-item;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
+
+/* variables */
+$icon-box-size: 100px;
+$icon-color: #74b9ff;
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* common */
+body {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+  li {
+    input[name="check-item"] {
+      display: none;
+      &:checked + div {
+        border: none;
+        box-shadow: 0 0 ($icon-box-size / 10) $icon-color;
+      }
+      &:checked + div span {
+        text-shadow: 0 0 ($icon-box-size / 10) $icon-color;
+      }
+    }
+    label {
+      cursor: pointer;
+      div {
+        color: #fff;
+        width: $icon-box-size;
+        height: $icon-box-size;
+        background: #111;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        border: calc($icon-box-size / 33.33) solid #222;
+        border-radius: calc($icon-box-size / 10);
+        span {
+          font-size: calc($icon-box-size / 2);
+        }
+      }
+    }
+  }
+}
