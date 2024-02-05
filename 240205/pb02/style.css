@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap");
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  line-height: 1.6rem;
+}
+section {
+  width: 800px;
+}
+
+/* heading */
+.heading {
+  margin-bottom: 30px;
+}
+.heading h1 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.heading h1 span {
+  color: crimson;
+}
+.heading input[type="text"] {
+  border: none;
+  width: 100%;
+  padding: 10px;
+  background: #fff url("./images/search-icon.png") center left / 20px no-repeat;
+  padding-left: 30px;
+  border-bottom: 2px solid #ddd;
+}
+.heading input[type="text"]:focus {
+  outline: none;
+}
+.heading input[type="text"]::placeholder {
+  transition: all 0.3s;
+}
+.heading input[type="text"]:focus::placeholder {
+  opacity: 0;
+}
+
+/* tab-btn */
+.btn {
+  overflow: hidden;
+}
+.btn li {
+  float: left;
+  width: 160px;
+  text-align: center;
+  background: #eee;
+  padding: 5px;
+  border-top: 2px solid transparent;
+  border-right: 1px solid #ddd;
+}
+.btn li:last-child {
+  border-right: none;
+}
+.btn li:hover,
+.btn li.active {
+  background: #fff;
+  border-top: 2px solid crimson;
+}
+
+/* tab */
+.tabs div {
+  background: #fff;
+  display: none;
+  padding: 20px;
+  overflow: hidden;
+}
+.tabs div.active {
+  display: block;
+}
+.tabs div h2 {
+  text-align: center;
+}
+.tabs div img {
+  float: left;
+  margin-right: 10px;
+}

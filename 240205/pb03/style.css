@@ -1,0 +1,37 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  line-height: 1.5rem;
+}
+.heading {
+  text-align: center;
+  font: normal 40px/1.5rem "arial";
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 30px;
+}
+.heading span {
+  color: crimson;
+}
+.login {
+  width: 500px;
+  border: 1px solid #000;
+  padding: 30px;
+  text-align: center;
+}
+.login input[type="text"],
+.login input[type="submit"] {
+  border: none;
+  padding: 10px;
+}
+
+.login input[type="text"] {
+  border-bottom: 1px solid #ddd;
+}
+.login input[type="text"]:focus {
+  outline: none;
+}
+.login input[type="submit"] {
+  cursor: pointer;
+}
