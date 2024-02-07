@@ -1,0 +1,12 @@
+object-fit : cover
+: 상단 header
+: figure라는 영상이 들어와야 하는 사이즈 정확하게 고정되어있던 상황 (*1280 x 400)
+=> 영상 사이즈 
+: 영상이 끝나는 지점 이후에 text형식의 info 들어와야하는 상황
+
+jQuery 플러그인!!!
+1. scrollTo 
+2. wow
+3. parallax
+4. fullpage
+
