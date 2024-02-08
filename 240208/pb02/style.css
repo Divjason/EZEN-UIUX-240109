@@ -1,0 +1,108 @@
+/* Font Style */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;500&display=swap");
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Manrope', sans-serif; */
+/* font-family: 'Source Code Pro', monospace; */
+/* font-family: 'Overpass', sans-serif; */
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* common */
+body {
+  font: 15px/1 "Montserrat";
+  color: #222;
+  background: #fff;
+  height: 100vh;
+}
+.cd-section {
+  height: 100vh;
+}
+.cd-section > div {
+  height: 100vh;
+  position: relative;
+}
+.content {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  width: calc(100% - 40px);
+  height: calc(100% - 80px);
+  overflow: hidden;
+}
+
+/* ##### Section : Awards ##### */
+.awards-inner {
+  height: 100%;
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+.awards-inner > div {
+  width: 50%;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+.about-awards {
+  background: #1a1f24;
+  color: #fff;
+}
+.about-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 70%;
+}
+.about-heading h2 {
+  line-height: 5rem;
+}
+hr.bar {
+  width: 50px;
+  height: 4px;
+  background: crimson;
+  border: none;
+  margin: 30px auto;
+}
+.about-heading p {
+  color: #999;
+  font: 17px/1.5rem "Montserrat";
+  margin-bottom: 30px;
+}
+.view-awards {
+  color: #bbb;
+  border: 1px solid #bbb;
+  border-radius: 20px;
+  padding: 5px 15px;
+  transition: all 0.5s;
+}
+.view-awards:hover {
+  color: #fff;
+  background: #31c0ce;
+  border: transparent;
+}
+
+.victory-jump {
+  background: #fff;
+}
+.victory-jump img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
