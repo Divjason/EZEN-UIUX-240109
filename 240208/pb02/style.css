@@ -44,6 +44,219 @@ body {
   overflow: hidden;
 }
 
+/* ##### Section : Project ##### */
+.project-inner {
+  height: 100%;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+input[name="tabmenu"] {
+  display: none;
+}
+.tabs {
+  width: 300%;
+  height: 100%;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.tab {
+  float: left;
+  width: 33.33%;
+  height: 100%;
+  overflow: hidden;
+}
+.tab > div {
+  float: left;
+  height: 100%;
+}
+.project-photo {
+  width: 75%;
+}
+.btn {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  width: 25%;
+  text-align: center;
+}
+.btn label {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background: #000;
+  border-radius: 100%;
+  margin: 8px;
+  cursor: pointer;
+  position: relative;
+}
+.btn label::before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  border: 1px solid transparent;
+  border-radius: 100%;
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  transition: all 0.3s;
+}
+.btn label:hover::before {
+  border: 1px solid #aaa;
+}
+input[id="tab1"]:checked ~ .btn label[for="tab1"]::before,
+input[id="tab2"]:checked ~ .btn label[for="tab2"]::before,
+input[id="tab3"]:checked ~ .btn label[for="tab3"]::before {
+  border: 1px solid #aaa;
+}
+input[id="tab1"]:checked ~ .tabs {
+  margin-left: 0;
+}
+input[id="tab2"]:checked ~ .tabs {
+  margin-left: -100%;
+}
+input[id="tab3"]:checked ~ .tabs {
+  margin-left: -200%;
+}
+
+/* project-info */
+.project-info {
+  width: 25%;
+  padding: 50px;
+  position: relative;
+}
+.project-info h3 {
+  font-size: 20px;
+  position: relative;
+}
+.project-info p {
+  font: 16px/1.5rem "Montserrat";
+  margin: 20px 0;
+  position: relative;
+}
+.project-info ul {
+  margin-bottom: 30px;
+  line-height: 2rem;
+}
+.project-info ul li::before {
+  content: "\f105";
+  font-family: fontawesome;
+  margin-right: 10px;
+}
+.detail {
+  margin-bottom: 50px;
+}
+.detail div {
+  display: inline-block;
+  width: 32%;
+  color: #999;
+  text-align: center;
+}
+.detail div span {
+  display: block;
+  color: #000;
+  margin-bottom: 10px;
+  font: bold 36px/1 "Montserrat";
+}
+.view-project {
+  background: #3f3f3f;
+  color: #fff;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 13px;
+  display: inline-block;
+  width: 220px;
+  text-align: center;
+  transition: all 0.5s;
+}
+.view-project:hover {
+  background: #000;
+}
+.view-project .fa {
+  transition: all 0.5s;
+}
+.view-project:hover .fa {
+  margin-left: 30px;
+}
+.project-info::before {
+  content: attr(data-text);
+  font-size: 130px;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  color: #eee;
+}
+
+/* ##### Section : Plan ##### */
+
+/* plan-info */
+.plan-inner {
+  background: #1d1b24;
+  height: 100%;
+}
+.plan-feature {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.plan-feature > div {
+  height: 300px;
+  color: #bbb;
+}
+.plan-info {
+  overflow: hidden;
+}
+.plan-info > div {
+  float: left;
+}
+.plan-heading {
+  width: 70%;
+  padding-right: 50px;
+}
+.plan-heading h2,
+.history-info h2 {
+  color: #fff;
+}
+.plan-heading hr.bar,
+.history-info hr.bar {
+  background: dodgerblue;
+  display: inline-block;
+}
+.plan-heading p {
+  font: 16px/1.6rem "Montserrat";
+}
+.plan-photo {
+  width: 30%;
+}
+.plan-photo img {
+  height: 265px;
+}
+
+/* history-info */
+.history-slider div h4 {
+  color: #fff;
+  font: normal 20px/1.5rem "Montserrat";
+  margin-bottom: 10px;
+}
+.history-slider div h4 span {
+  color: dodgerblue;
+}
+.history-slider div p {
+  font: 16px/1.5rem "Montserrat";
+}
+
+/* slick.js */
+.history-slider .slick-arrow {
+  display: none !important;
+}
+.history-slider .slick-dots li button::before {
+  color: #fff;
+  font-size: 40px;
+}
+
 /* ##### Section : Awards ##### */
 .awards-inner {
   height: 100%;
@@ -105,4 +318,160 @@ hr.bar {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 80%;
+}
+
+/* ##### Section : Location ##### */
+.location-inner {
+  background: url("./images/background-location.jpg") center/cover no-repeat;
+  height: 100%;
+  position: relative;
+}
+.location-inner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+}
+.feature {
+  width: 70%;
+  color: #bbb;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.feature > div {
+  float: left;
+}
+
+/* office */
+.office {
+  width: 60%;
+  padding-right: 100px;
+}
+.office b {
+  display: block;
+  margin: 10px 0;
+  font-weight: normal;
+}
+.office h2 {
+  color: #1db1f0;
+}
+.office p {
+  margin: 10px 0;
+  font: 16px/1.6rem "Montserrat";
+}
+.office span {
+  color: #fff;
+  display: block;
+  margin-bottom: 24px;
+}
+
+/* service */
+.service {
+  width: 40%;
+}
+.service-item {
+  margin-bottom: 40px;
+}
+.service-item .fas {
+  color: #1db1f0;
+  font-size: 40px;
+}
+.service-item h3 {
+  color: #fff;
+  font-size: 22px;
+  margin: 14px 0;
+}
+
+/* ##### Section : Contact ##### */
+.contact-inner {
+  background: #fff;
+  height: 100%;
+  border: 1px solid #ddd;
+}
+.contact-feature {
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.contact-feature > div {
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+
+/* cotact-form */
+.contact-form h3 {
+  font: normal 30px/1.5rem "Montserrat";
+}
+.contact-form p {
+  margin: 20px 0;
+}
+.send-box label {
+  display: block;
+  font: bold 16px/1 "Montserrat";
+  margin: 20px 0 10px;
+}
+.send-box label span {
+  color: crimson;
+  font-weight: normal;
+}
+.send-box input[type="email"],
+.send-box input[type="text"],
+.send-box textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+.send-box input[type="email"]:hover,
+.send-box input[type="text"]:hover,
+.send-box textarea:hover {
+  border: 1px solid #0088cc;
+  box-shadow: 0 0 5px #0088cc;
+}
+.send-box input[type="email"]:focus,
+.send-box input[type="text"]:focus,
+.send-box textarea:focus {
+  outline: none;
+  background: #eee;
+}
+.send-box input[type="submit"] {
+  background: #0088cc;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 10px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.send-box input[type="submit"]:hover {
+  background: #000;
+}
+
+/* contact-info */
+.contact-info h4 {
+  font: normal 20px/1 "Montserrat";
+  margin: 20px 0 5px;
+}
+.contact-info ul li {
+  line-height: 2rem;
+}
+.contact-info ul li:last-child {
+  color: #0088cc;
+  font-weight: bold;
+}
+.contact-info p {
+  line-height: 2rem;
 }
