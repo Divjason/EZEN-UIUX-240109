@@ -1,0 +1,140 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+body {
+  color: #aaa;
+}
+
+/* header */
+.header {
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  z-index: 100;
+}
+.header-inner {
+  width: 95%;
+  height: 90px;
+  line-height: 90px;
+  margin: auto;
+  border-bottom: 1px solid #ddd;
+}
+.modal-display {
+  font-size: 18px;
+}
+
+/* hiring-main */
+.hiring-main {
+  height: 600px;
+  position: relative;
+}
+.hiring-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+.hiring-heading span {
+  text-transform: uppercase;
+  font: bold 20px/1 "arial";
+  position: relative;
+}
+.hiring-heading span::before,
+.hiring-heading span::after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+}
+.hiring-heading span::before {
+  right: 120%;
+}
+.hiring-heading span::after {
+  left: 120%;
+}
+.hiring-heading h1 {
+  font: 200 60px/1 "arial";
+  margin-top: 40px;
+}
+.hiring-main.project-main1 {
+  background: url("./images/project-main-01-01.jpg") center/cover no-repeat;
+  height: 100vh;
+}
+
+/* hiring-info */
+.hiring-info {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.hiring-info > div {
+  float: left;
+  width: 50%;
+  height: 600px;
+}
+.center-parent {
+  position: relative;
+}
+.center-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+}
+.center-child h2 {
+  font: normal 36px/1 "arial";
+}
+.center-child p {
+  font: 22px/1.5rem "arial";
+}
+.photo.project-info {
+  font: 20px/1 "arial";
+  /* width: 25%; */
+  padding: 50px;
+  position: relative;
+}
+.project-info ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 2rem;
+  margin: 30px;
+}
+.project-info ul li::before {
+  content: "\f054";
+  font-family: fontawesome;
+  margin-right: 10px;
+}
+.photo img {
+  width: 100%;
+}
+
+/* hiring-slogan */
+.hiring-slogan {
+  padding: 100px 0;
+}
+.hiring-slogan p {
+  font: 32px/1 "arial";
+  text-align: center;
+  position: relative;
+}
+.hiring-slogan p::before {
+  content: ",,";
+  font-size: 200px;
+  position: absolute;
+  color: #ddd;
+  transform: rotate(180deg);
+  top: -82px;
+  left: -8px;
+}
