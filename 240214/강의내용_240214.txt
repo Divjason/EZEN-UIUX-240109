@@ -1,0 +1,19 @@
+*html & script 연결하는 방식
+- 인라인 스크립트
+- 내부 스크립트
+(*닫는 body태그 바로 위에)
+- 외부 스크립트
+
+> 웹 브라우저가 개발자가 작성한  html 문서를 읽는다 = parsing = parse = 분석하다
+
+> 웹 브라우저가 script 문서를 마주한 순간 html 문서의 parsing 일시정지 후 script 빠져들어간다 = fetching = 웹브라우저가 script 파일을 가져가서 읽는다
+
+> 웹 브라우저가 script 문서를 다 fetching => executing(*실행)
+
+> 동기처리!!!
+
+> JS 기본적으로 동기처리 방식 실행 => 스크립트 언어!!! => 1차선 언어
+
+defer / async
+
+query : 질의하다. 질문하다
