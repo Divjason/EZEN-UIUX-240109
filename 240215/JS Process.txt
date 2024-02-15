@@ -1,0 +1,39 @@
+<JS Process>
+
+1.변수
+
+2.자료형(태/식)
+
+3.자료형 변환 = 형변환
+- 문자 => 숫자 Number( )
+- 숫자 => 문자 String( )
+- 문자 & 숫자 => 논리 Boolean( )
+
+4.연산자
+- 산술연산자 
+- 연결연산자
+- 할당연산자
+- 비교연산자
+- 논리연산자
+(*삼항 조건연산자)
+
+5.제어문
+- 조건문
+> if문
+> if...else문 (*else if)
+> switch문
+
+- 반복문
+> for문
+> forEach문
+> for...in문
+> for...of문
+> while문
+> do...while문
+(*break문 & continue문)
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+1.컴퓨터 => node 설치
+- 구글 > node.js > LTS
+
+2.구글 firebase
+- 회원가입 / 로그인
+
+3.프로젝트 추가 "+"
+- architecture-agency-v01
+- 프로젝트 만들기
+
+4.빌드 > 호스팅 > 시작하기
+
+5.firebase CLI 설치 (*cmd / 관리자권한 실행)
+
+6.프로젝트 초기화
+
