@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5%;
+  padding: 10px;
+}
+
+#desc {
+  margin: 10px;
+}
+
+p {
+  font-size: 0.8rem;
+}
+
+.clicked {
+  background: yellowgreen;
+  color: crimson;
+}
