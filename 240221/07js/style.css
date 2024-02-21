@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 2rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
+}
+form input[type="number"] {
+  text-align: center;
+}
+form input[type="number"]:focus {
+  outline: none;
+}
+form input[type="submit"] {
+  width: 100%;
+  padding: 6px 0;
+}
+.result {
+  color: crimson;
+  font-weight: bold;
+}

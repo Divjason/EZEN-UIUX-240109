@@ -1,0 +1,63 @@
+<JS Process>
+
+1.변수
+
+2.자료형(태/식)
+
+3.자료형 변환 = 형변환
+- 문자 => 숫자 Number( )
+- 숫자 => 문자 String( )
+- 문자 & 숫자 => 논리 Boolean( )
+
+4.연산자
+- 산술연산자 
+- 연결연산자
+- 할당연산자
+- 비교연산자
+- 논리연산자
+(*삼항 조건연산자)
+
+5.제어문
+- 조건문
+> if문
+> if...else문 (*else if)
+> switch...case문
+
+- 반복문
+> for문
+> forEach문
+> for...in문
+> for...of문
+> while문
+> do...while문
+(*break문 & continue문)
+
+6.함수
+- 클래스 / 익명 / 화살표
+- 매개변수 & 인수(*인자값)
+- return (*함수 결과값 반환)
+- 스코프 (*블록 / 지역 / 전역)
+- var x / 지역스코프 변수 / const (*권장)
+- 즉시실행함수
+- 변수선언 키워드 입력 => 전역변수
+- hoisting (*클래스함수 VS 익명함수 & 화살표)
+- 1급 시민
+- 전개연산자 구문
+- 나머지 매개변수
+- 시간관련 내장함수
+(*setInterval / clearInterval / setTimeout)
+- 재귀함수
+
+7.DOM
+- querySelector / getElement
+- innerText / innerHTML / textContent
+- "on" 이벤트 핸들러
+- classList
+- add( ) <-> remove( ) / toggle( )
+- contains( )
+- form
+
+
+
+
+

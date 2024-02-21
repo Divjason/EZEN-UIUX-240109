@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>수강신청</h1>
+      <form
+        name="testForm"
+        action="https://localhost:3000/major.html"
+        method="post"
+      >
+        <fieldset>
+          <legend>신청인</legend>
+          <ul>
+            <li>
+              <label class="reg" for="userName">이름</label>
+              <input id="userName" type="text" name="userName" maxlength="50" />
+            </li>
+            <li>
+              <label class="reg" for="class">학과</label>
+              <select name="major" id="major">
+                <option>---- 학과 선택 ----</option>
+                <option value="archi">건축공학과</option>
+                <option value="mechanic">기계공학과</option>
+                <option value="indust">산업공학과</option>
+                <option value="elec">전기전자공학과</option>
+                <option value="computer">컴퓨터공학과</option>
+                <option value="chemical">화학공학과</option>
+              </select>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>신청 과목</legend>
+          <p>이 달에 신청할 과목을 선택하세요!</p>
+          <label for="speaking">
+            <input id="speaking" name="subject" type="radio" /> 회화</label
+          >
+          <label for="grammar"
+            ><input id="grammar" name="subject" type="radio" /> 문법</label
+          >
+          <label for="writing"
+            ><input id="writing" name="subject" type="radio" /> 작문</label
+          >
+        </fieldset>
+        <fieldset>
+          <legend>메일링</legend>
+          <p>메일로 받고 싶은 뉴스 주제를 선택해 주세요!</p>
+          <label for="new"
+            ><input type="checkbox" name="mailing" id="new" value="news" /> 해외
+            단신</label
+          >
+          <label for="dialog"
+            ><input type="checkbox" name="mailing" id="dialog" value="dialog" />
+            5분 회화</label
+          >
+          <label for="pops"
+            ><input type="checkbox" name="mailing" id="pops" value="pops" />
+            모닝팝스</label
+          >
+        </fieldset>
+        <input id="send" type="submit" value="전송하기" />
+        <!-- <button id="send">전송하기</button> -->
+      </form>
+    </div>
+  </body>
+</html>

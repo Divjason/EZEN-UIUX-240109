@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#container {
+  width: 500px;
+  margin: 10px auto;
+}
+form fieldset {
+  margin-bottom: 25px;
+  padding: 20px;
+}
+form legend {
+  font-size: 15px;
+  font-weight: 600;
+}
+form ul li {
+  /* margin: 15px 0; */
+  font-size: 14px;
+  list-style: none;
+}
+label.reg {
+  display: inline-block;
+  width: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #339900;
+  margin-right: 10px;
+}
+fieldset label {
+  display: inline-block;
+  margin: 10px 10px 10px 0;
+}
+form #send {
+  width: 100%;
+  padding: 10px 20px;
+  transition: all;
+}
+form #send:hover {
+  background: #222;
+  color: #fff;
+  cursor: pointer;
+}
