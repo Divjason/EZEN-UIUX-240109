@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#container {
+  text-align: center;
+}
+#container .result {
+  margin-top: 20px;
+}
+h1 {
+  margin-bottom: 20px;
+}
+#box {
+  width: 500px;
+  height: 500px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
