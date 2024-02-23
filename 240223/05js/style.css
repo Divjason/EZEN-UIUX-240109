@@ -4,11 +4,33 @@
   box-sizing: border-box;
 }
 
-li {
+/* li {
   list-style: none;
-}
+} */
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+#cart {
+  width: 600px;
+  margin: 50px auto;
+  padding: 10px 20px;
+}
+#cart h1 {
+  margin-bottom: 20px;
+}
+#products p {
+  line-height: 3;
+  font-size: 1.2rem;
+}
+p span {
+  color: #ccc;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+p span:hover {
+  color: crimson;
+  cursor: pointer;
 }

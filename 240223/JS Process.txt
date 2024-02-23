@@ -81,5 +81,7 @@
 - appendChild( )
 - createAttribute( )
 - setAttributeNode( )
+- remove( )
+- parentNode
+- removeChild( )
 
-10.객체!!!
