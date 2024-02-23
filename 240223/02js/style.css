@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: none;
+  background: #639;
+  color: #fff;
+  padding: 15px;
+  transition: all 0.3s;
+}
+button.active {
+  transform: translateX(-110px);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: #639;
+  height: 100vh;
+  padding: 2em;
+  transform: translateX(100%);
+  transition: transform 0.3s;
+}
+nav.active {
+  transform: translateX(0);
+}
+nav li {
+  padding: 1rem 0;
+}
+nav li a {
+  color: #fff;
+}
