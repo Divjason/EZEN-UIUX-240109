@@ -1,0 +1,294 @@
+@font-face {
+  font-family: "youtube";
+  src: url("../font/AnyConv.com__KFOmCnqEu92Fr1Mu4mxPKTU1Kg.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family: "youtube";
+}
+body #container {
+  width: 390px;
+  height: 100%;
+  background: #fff;
+  position: relative;
+}
+body #container #header {
+  display: flex;
+  justify-content: space-between;
+  width: inherit;
+  height: 55px;
+  background: #000;
+  padding: 0 20px;
+  position: fixed;
+  z-index: 10;
+}
+body #container #header #header_contents {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+body #container #header #header_contents img {
+  height: 22px;
+}
+body #container #header #header_contents #header_right {
+  width: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+body #container #header #header_contents #header_right .fa-solid {
+  color: #fff;
+}
+body #container figure {
+  position: fixed;
+  top: 55px;
+  width: inherit;
+  height: 220px;
+  z-index: 10;
+}
+body #container figure .video {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body #container main {
+  position: absolute;
+  top: 264px;
+}
+body #container main .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+  width: 100%;
+  height: 310px;
+  margin-top: 10px;
+  padding: 20px 12px 0;
+  border-radius: 14px 14px 0 0;
+  background: #fff;
+}
+body #container main .title .heading h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+body #container main .title .heading .add {
+  display: flex;
+  gap: 8px;
+}
+body #container main .title .heading .add span {
+  font: bold 14px/1rem "youtube";
+  color: #9f9f9f;
+}
+body #container main .title .heading .add span:nth-child(1), body #container main .title .heading .add span:nth-child(2) {
+  font-weight: lighter;
+  font-size: 15px;
+}
+body #container main .title .heading .add span:nth-child(3) {
+  color: #868686;
+}
+body #container main .title .heading .add span:last-child {
+  color: #000;
+}
+body #container main .title .middle {
+  display: flex;
+  justify-content: space-between;
+}
+body #container main .title .middle #profile {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+body #container main .title .middle #profile img {
+  width: 35px;
+  border-radius: 100%;
+}
+body #container main .title .middle #profile span {
+  font: normal 13px/1rem "youtube";
+  color: #9f9f9f;
+}
+body #container main .title .middle .middle_btn span {
+  font-size: 14px;
+  display: inline-block;
+  background: #f0f0f0;
+  padding: 10px 22px;
+  border-radius: 20px;
+}
+body #container main .title .middle .middle_btn span:first-child {
+  margin-right: 6px;
+  background: #000;
+  color: #fff;
+}
+body #container main .title .subinfo {
+  display: flex;
+  justify-content: space-between;
+}
+body #container main .title .subinfo span {
+  font-size: 14px;
+  display: inline-block;
+  background: #f0f0f0;
+  padding: 10px 22px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px 18px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+body #container main .title .review {
+  background: #f0f0f0;
+  font-size: 14px;
+  margin-bottom: 14px;
+  padding: 10px;
+  border-radius: 10px;
+}
+body #container main .title .review .review_title {
+  margin-bottom: 10px;
+}
+body #container main .title .review .review_title span:first-child {
+  font-weight: bold;
+}
+body #container main .title .review .review_title span:last-child {
+  font: normal 12px/1rem "youTube";
+  color: #9f9f9f;
+}
+body #container main .title .review .review_content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+body #container main .title .review .review_content img {
+  width: 30px;
+  border-radius: 100%;
+}
+body #container main .title .review .review_content p {
+  font: bold 11px/1rem "youTube";
+}
+body #container main .hashlist {
+  width: 390px;
+  overflow: hidden;
+  padding: 10px 0;
+  background: #fff;
+  position: sticky;
+  top: 275px;
+  opacity: 0;
+  transition: all 1.2s;
+}
+body #container main .hashlist.active {
+  opacity: 1;
+  display: block;
+}
+body #container main .hashlist .hashcontent {
+  width: 100%;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transform: translate(0, 0);
+}
+body #container main .hashlist .hashcontent li a {
+  text-align: center;
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  font: bold 13px/1rem "youtube";
+  background: #f0f0f0;
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+body #container main .hashlist .hashcontent li:first-child a {
+  background: #000;
+  color: #fff;
+}
+body #container main .ad01 {
+  margin-top: -50px;
+  width: 100%;
+  height: auto;
+  background: #fff;
+}
+body #container main .ad01 .adimg {
+  width: 100%;
+  height: 379px;
+  background: url("../img/ad01.jpg");
+}
+body #container main .ad01 .adtitle {
+  width: 100%;
+  padding: 14px 10px;
+  background: #f1f8ff;
+  display: flex;
+  justify-content: space-between;
+  color: #1a76f5;
+  font-weight: bold;
+}
+body #container main .ad01 .adinfo {
+  padding: 14px 10px;
+  display: flex;
+  gap: 16px;
+}
+body #container main .ad01 .adinfo .fa-facebook {
+  display: inline-block;
+  font-size: 40px;
+  color: #1a76f5;
+}
+body #container main .ad01 .adinfo .addesc {
+  width: 100%;
+}
+body #container main .ad01 .adinfo .addesc span {
+  display: block;
+}
+body #container main .ad01 .adinfo .addesc span:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+}
+body #container main .ad01 .adinfo .addesc span:nth-child(2) {
+  margin: 6px 0;
+  color: #9f9f9f;
+  font-size: 16px;
+}
+body #container main .ad01 .adinfo .addesc span:last-child {
+  font-size: 14px;
+  color: #9f9f9f;
+}
+body #container main .ad01 .adinfo .addesc span:last-child b {
+  color: #000;
+}
+body #container main .contents {
+  background: #fff;
+}
+body #container main .contents .content {
+  width: 100%;
+  background: #fff;
+}
+body #container main .contents .content img {
+  margin: 0 auto;
+  width: 98%;
+  display: block;
+}
+body #container main .contents .content img:first-child {
+  margin-bottom: 20px;
+}/*# sourceMappingURL=style.css.map */
