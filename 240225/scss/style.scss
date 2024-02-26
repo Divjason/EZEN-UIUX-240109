@@ -1,0 +1,288 @@
+@import "reset";
+@import "variable";
+@import "mixin";
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family: "youtube";
+  #container {
+    width: 390px;
+    height: 100%;
+    background: #fff;
+    position: relative;
+    #header {
+      display: flex;
+      justify-content: space-between;
+      width: inherit;
+      height: 55px;
+      background: #000;
+      padding: 0 20px;
+      position: fixed;
+      // top: 0;
+      // left: 0;
+      z-index: 10;
+      #header_contents {
+        width: inherit;
+        height: inherit;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        img {
+          height: 22px;
+        }
+        #header_right {
+          width: 50px;
+          display: flex;
+          justify-content: space-between;
+          .fa-solid {
+            color: #fff;
+          }
+        }
+      }
+    }
+    figure {
+      position: fixed;
+      top: 55px;
+      width: inherit;
+      height: 220px;
+      z-index: 10;
+      .video {
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+      }
+    }
+    main {
+      position: absolute;
+      top: 264px;
+      .title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 18px;
+        width: 100%;
+        height: 310px;
+        margin-top: 10px;
+        padding: 20px 12px 0;
+        border-radius: 14px 14px 0 0;
+        background: #fff;
+        .heading {
+          h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+          }
+          .add {
+            display: flex;
+            gap: 8px;
+            span {
+              font: bold 14px/1rem "youtube";
+              color: $subColor;
+              &:nth-child(1),
+              &:nth-child(2) {
+                font-weight: lighter;
+                font-size: 15px;
+              }
+              &:nth-child(3) {
+                color: #868686;
+              }
+              &:last-child {
+                color: #000;
+              }
+            }
+          }
+        }
+        .middle {
+          display: flex;
+          justify-content: space-between;
+          #profile {
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            img {
+              width: 35px;
+              border-radius: 100%;
+            }
+            span {
+              font: normal 13px/1rem "youtube";
+              color: $subColor;
+            }
+          }
+          .middle_btn {
+            span {
+              @include btnType;
+              &:first-child {
+                margin-right: 6px;
+                background: #000;
+                color: #fff;
+              }
+            }
+          }
+        }
+        .subinfo {
+          display: flex;
+          justify-content: space-between;
+          span {
+            @include btnType;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 10px 18px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+          }
+        }
+        .review {
+          background: $btnColor;
+          font-size: 14px;
+          margin-bottom: 14px;
+          padding: 10px;
+          border-radius: 10px;
+          .review_title {
+            margin-bottom: 10px;
+            span:first-child {
+              font-weight: bold;
+            }
+            span:last-child {
+              font: normal 12px/1rem "youTube";
+              color: $subColor;
+            }
+          }
+          .review_content {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            img {
+              width: 30px;
+              border-radius: 100%;
+            }
+            p {
+              font: bold 11px/1rem "youTube";
+            }
+          }
+        }
+      }
+      .hashlist {
+        width: 390px;
+        overflow: hidden;
+        padding: 10px 0;
+        background: #fff;
+        position: sticky;
+        top: 275px;
+        opacity: 0;
+        // display: none;
+        transition: all 1.2s;
+        &.active {
+          opacity: 1;
+          display: block;
+        }
+        .hashcontent {
+          // width: 360px;
+          // margin: 0 auto;
+          // white-space: nowrap;
+          // width: 390px;
+          width: 100%;
+          padding: 0 14px;
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          transform: translate(0, 0);
+          li {
+            // margin-right: 5px;
+            // width: auto;
+            // display: block;
+            a {
+              text-align: center;
+              // width: 90px;
+              width: auto;
+              overflow: hidden;
+              white-space: nowrap;
+              display: inline-block;
+              font: bold 13px/1rem "youtube";
+              background: $btnColor;
+              padding: 8px 10px;
+              border-radius: 8px;
+            }
+            &:first-child a {
+              background: #000;
+              color: #fff;
+            }
+          }
+        }
+      }
+      .ad01 {
+        margin-top: -50px;
+        width: 100%;
+        height: auto;
+        background: #fff;
+        .adimg {
+          width: 100%;
+          height: 379px;
+          background: url("../img/ad01.jpg");
+        }
+        .adtitle {
+          width: 100%;
+          padding: 14px 10px;
+          background: $adtitleColor;
+          display: flex;
+          justify-content: space-between;
+          color: $adtextColor;
+          font-weight: bold;
+        }
+        .adinfo {
+          padding: 14px 10px;
+          display: flex;
+          gap: 16px;
+          .fa-facebook {
+            display: inline-block;
+            font-size: 40px;
+            color: $adtextColor;
+          }
+          .addesc {
+            width: 100%;
+            span {
+              display: block;
+              &:first-child {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-weight: bold;
+              }
+              &:nth-child(2) {
+                margin: 6px 0;
+                color: $subColor;
+                font-size: 16px;
+              }
+              &:last-child {
+                font-size: 14px;
+                color: $subColor;
+                b {
+                  color: #000;
+                }
+              }
+            }
+          }
+        }
+      }
+      .contents {
+        background: #fff;
+        .content {
+          width: 100%;
+          background: #fff;
+          img {
+            margin: 0 auto;
+            width: 98%;
+            display: block;
+            &:first-child {
+              margin-bottom: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

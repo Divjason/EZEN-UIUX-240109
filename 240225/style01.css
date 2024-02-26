@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'youtube';
+  src: url('./font/AnyConv.com__KFOlCnqEu92Fr1MmEU9fBBc9AMP6lQ.otf');
+}
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* common */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#container {
+  width: 390px;
+  height: 844px;
+  border: 1px solid #ddd;
+}
+
+/* header */
+#header {
+  width: 100%;
+  height: 55px;
+  background: #000;
+}
+#header span {
+  color: #fff;
+  font-family: 'youtube';
+}
