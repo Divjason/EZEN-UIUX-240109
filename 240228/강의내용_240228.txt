@@ -1,0 +1,15 @@
+1. 1:1 방식으로 git-hub 사용방법
+- 로컬컴퓨터 & 레포지토리
+- 대표/사수/선임 <-> 신입사원/사수/직원
+- 개인적으로 뜻이 맞는 사람들끼리 스터디 & 프로젝트
+- git pull : 작업 중간 버전 모든 데이터를 다운받겠다 VS git clone
+
+2. 다수의 그룹방식으로 git-hub 사용방법
+- group-project02
+- Divjason
+- wernernowitki
+- master(*최종단계) / develop(*취합하는 공간) / feature(*개별작업 결과물)
+- pm / 관리자
+- 백로그
+feature-A : 성진
+feature-B : 수현

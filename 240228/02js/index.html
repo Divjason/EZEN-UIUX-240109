@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>원기둥 부피 구하기</h1>
+    <div id="container">
+      <div id="userInput">
+        <form name="testForm" action="http://localhost:3000" method="post">
+          <ul>
+            <li>
+              <label for="cyl-diameter">지름</label>
+              <input id="cyl-diameter" type="text" />
+            </li>
+            <li>
+              <label for="cyl-height">높이</label>
+              <input id="cyl-height" type="text" />
+            </li>
+            <li>
+              <input type="submit" value="계산하기" />
+            </li>
+          </ul>
+        </form>
+      </div>
+      <div id="result"></div>
+    </div>
+  </body>
+</html>

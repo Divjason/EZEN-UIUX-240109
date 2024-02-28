@@ -92,7 +92,19 @@
 - 밀리초
 - Math (수학객체)
 
-
+11.객체 심화
+- 객체 key & value : Property 
+- 객체 Property 삭제 : delete object.key
+- 객체 중첩
+- 객체 메서드 함수
+- 객체생성 방법
+> new Object( )
+> 생성자함수
+> class
+- 객체속성 반복
+> Object.keys( )
+> Object.values( )
+> Object.entries( )
 
 
 
