@@ -32,8 +32,8 @@ const addItem = (todo) => {
   }
 };
 
-const handler = () => {
-  // e.preventDefault();
+const handler = (e) => {
+  e.preventDefault();
   const todo = {
     id: Date.now(),
     text: input.value,
@@ -51,11 +51,8 @@ const init = () => {
     userTodos.forEach((todo) => {
       addItem(todo);
     });
-  } else {
-    handler();
+    todos = userTodos;
   }
-
-  todos = userTodos;
 };
 
 init();

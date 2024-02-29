@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 20px;
+}
+form input[type="email"] {
+  width: 300px;
+  padding: 15px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+form input[type="email"]:focus {
+  outline: none;
+}
+form input[type="email"]:focus::placeholder {
+  opacity: 0;
+}
+form input[type="submit"] {
+  margin-left: 8px;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}

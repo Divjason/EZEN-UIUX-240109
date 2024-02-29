@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f4f4f4;
+}
+.gnb {
+  display: flex;
+  background: #fff;
+  padding: 50px 30px;
+  width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.gnb li {
+  flex: 1;
+  text-align: center;
+}
+.gnb li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px;
+  position: relative;
+}
+.gnb li a::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  width: 0;
+  height: 2px;
+  background: dodgerblue;
+  transition: all 0.5s;
+}
+.gnb li a:hover::before {
+  width: 100%;
+}

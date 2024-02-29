@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.gallery {
+  display: flex;
+  height: 100vh;
+}
+.gallery li {
+  border-right: 5px solid #000;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.gallery li:last-child {
+  border-right: none;
+}
+.gallery li:nth-child(1) {
+  background: url("./images/artistic-image-01.jpg") center center no-repeat;
+}
+.gallery li:nth-child(2) {
+  background: url("./images/artistic-image-02.jpg") center center no-repeat;
+}
+.gallery li:nth-child(3) {
+  background: url("./images/artistic-image-03.jpg") center center no-repeat;
+}
+.gallery li:nth-child(4) {
+  background: url("./images/artistic-image-04.jpg") center center no-repeat;
+}
+.gallery li:nth-child(5) {
+  background: url("./images/artistic-image-05.jpg") center center no-repeat;
+}
+.gallery:hover li {
+  flex: 1;
+}
+.gallery li:hover {
+  flex: 3;
+  filter: saturate(0.2);
+}
+.content {
+  position: absolute;
+  bottom: -320px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 20px;
+  padding-top: 50px;
+  width: 100%;
+  height: 250px;
+  text-align: center;
+  transition: all 0.5s;
+}
+.content::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -10px;
+  background: #000;
+  width: 100%;
+  height: 40px;
+  transform: rotate(-3deg) scale(1.3);
+}
+.sns i {
+  color: #333;
+}
+.gallery li:hover .content {
+  bottom: 0;
+}
