@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" defer src="./script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>상품목록</h1>
+      <button>상품목록 불러오기</button>
+      <div class="sort-buttons">
+        <button class="newlisting">최신 출시순 정렬</button>
+        <button class="ascending">가격 오름차순 정렬</button>
+        <button class="descending">가격 내림차순 정렬</button>
+      </div>
+      <form name="testForm" action="https://localhost:3000" method="post">
+        <select name="category" id="category">
+          <option selected disabled>카테고리를 선택하세요</option>
+          <option value="life">생활용품</option>
+          <option value="it">전자기기</option>
+          <option value="book">도서/문구</option>
+        </select>
+      </form>
+      <ul></ul>
+      <div class="total">Total : <span class="total-price">￦ 0</span></div>
+    </div>
+  </body>
+</html>

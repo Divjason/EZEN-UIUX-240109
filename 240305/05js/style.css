@@ -1,0 +1,50 @@
+:root {
+  --white: #fff;
+  --black: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white);
+  font: bold 2rem/1 "arial";
+}
+button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: none;
+  border-radius: 100%;
+  background: var(--black);
+  color: var(--white);
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+button:hover {
+  opacity: 1;
+}
