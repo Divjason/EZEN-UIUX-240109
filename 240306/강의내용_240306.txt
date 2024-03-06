@@ -1,0 +1,23 @@
+1.JS
+- Map / Set (*완료)
+- Iterable 객체 / Iterator / generator (*완료)
+
+2.Video Slide (*완료)
+
+3.Youtube 구현
+- 가로 슬라이드 기능
+- sticky 기능
+
+4.Figma
+
+5.HTML CSS JS 예제
+
+*JS 종말론
+- python => 백엔드 & AI
+- pyscript => 웹브라우저 html, css, js
+
+React.js => Vitual DOM
+> JS / React.js / Vue.js
+
+
+

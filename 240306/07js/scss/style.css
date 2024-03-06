@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "youtube";
+  src: url("../font/AnyConv.com__KFOmCnqEu92Fr1Mu4mxPKTU1Kg.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family: "youtube";
+}
+body #container {
+  width: 367px;
+  height: 100%;
+  background: #fff;
+  position: relative;
+}
+body #container #header {
+  width: inherit;
+  height: 55px;
+  background: #000;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 10;
+}
+body #container #header #header_contents {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+body #container #header #header_contents img {
+  height: 22px;
+}
+body #container #header #header_contents #header_right {
+  width: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+body #container #header #header_contents #header_right .fa-solid {
+  color: #fff;
+}
+body #container figure {
+  position: fixed;
+  top: 55px;
+  width: inherit;
+  height: 220px;
+  z-index: 10;
+}
+body #container figure .video {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+body #container main {
+  position: absolute;
+  top: 290px;
+  left: 0;
+  padding: 0 20px;
+  width: inherit;
+}
+body #container main .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+  width: 100%;
+  height: 310px;
+  margin-top: 10px;
+  background: #fff;
+}
+body #container main .title .heading h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+body #container main .title .heading .add {
+  display: flex;
+  gap: 8px;
+}
+body #container main .title .heading .add span {
+  color: #9f9f9f;
+}
+body #container main .title .middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body #container main .title .middle #profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+body #container main .title .middle #profile img {
+  width: 35px;
+  border-radius: 100%;
+}
+body #container main .title .middle #profile span {
+  color: #9f9f9f;
+}
+body #container main .title .middle .middle_btn span {
+  font-size: 14px;
+  display: inline-block;
+  background: #f0f0f0;
+  padding: 10px 22px;
+  border-radius: 20px;
+}
+body #container main .title .middle .middle_btn span:first-child {
+  background: #000;
+  color: #fff;
+  margin-right: 6px;
+}/*# sourceMappingURL=style.css.map */
