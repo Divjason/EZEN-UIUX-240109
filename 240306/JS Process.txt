@@ -220,7 +220,18 @@
 > Set객체에 특정 값을 삭제 => delete( )
 > Set객체의 모든 데이터를 삭제 => clear( )
 
-
+17.서버와 통신
+- Server
+- http & https : 통신규약
+- Server & Client 통신 언어 : JSON
+- JSON : Javascript Object Notation
+- AJAX : Asynchronous Javascript And XML
+(*비동기 처리 방식으로 클라이언트와 서버가 통신 기법)
+- AJAX 통신 기법을 활용한 통신방법
+> XMLHttpRequest
+- open( ) / send( )
+- 예외조항 처리
+> try / catch / finally / throw
 
 
 

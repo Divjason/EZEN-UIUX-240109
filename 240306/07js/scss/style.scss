@@ -9,7 +9,8 @@ body {
   height: 100%;
   font-family: "youtube";
   #container {
-    width: 367px;
+    // width: 367px;
+    width: 100%;
     height: 100%;
     background: #fff;
     position: relative;
@@ -21,7 +22,7 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 0 20px;
+      // padding: 0 20px;
       z-index: 10;
       #header_contents {
         width: inherit;
@@ -107,6 +108,151 @@ body {
                 color: $white;
                 margin-right: 6px;
               }
+            }
+          }
+        }
+        .subinfo {
+          display: flex;
+          justify-content: space-between;
+          span {
+            @include btnType;
+            display: flex;
+            gap: 2px;
+            align-items: center;
+            font-size: 8px;
+          }
+        }
+        .review {
+          background: $btnColor;
+          border-radius: 10px;
+          padding: 10px;
+          font-size: 14px;
+          .review_title {
+            margin-bottom: 10px;
+            span:first-child {
+              font-weight: bold;
+              font-size: 15px;
+            }
+            span:last-child {
+              color: $subColor;
+            }
+          }
+          .review_content {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            img {
+              width: 30px;
+              border-radius: 100%;
+            }
+          }
+        }
+      }
+      .hashlist {
+        background: $white;
+        width: 390px;
+        // overflow: hidden;
+        padding: 10px 0;
+        position: sticky;
+        top: 275px;
+        // after : display => none
+        // after : opacity => 0
+        // display: none;
+        opacity: 0;
+        transition: all 1.2s;
+        &.active {
+          display: block;
+          opacity: 1;
+        }
+        .hashcontent {
+          display: flex;
+          align-items: center;
+          background: $white;
+          // background: crimson;
+          // width : about 586px
+          width: 652px;
+          height: 40px;
+          line-height: 10px;
+          // padding: 0 10px;
+          gap: 12px;
+          li {
+            a {
+              width: auto;
+              white-space: nowrap;
+              text-align: center;
+              background: $btnColor;
+              padding: 8px 10px;
+              border-radius: 8px;
+            }
+            &:first-child a {
+              background: $black;
+              color: $white;
+            }
+          }
+        }
+      }
+      .ad01 {
+        margin-top: -50px;
+        width: 100%;
+        height: auto;
+        background: $white;
+        .adimg {
+          margin-left: 1px;
+          width: 100%;
+          height: 379px;
+          background: url("../img/ad01.jpg");
+        }
+        .adtitle {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          padding: 14px 10px;
+          background: $adtitleColor;
+          color: $adtextColor;
+        }
+        .adinfo {
+          display: flex;
+          gap: 16px;
+          padding: 14px 10px;
+          .fa-facebook {
+            font-size: 40px;
+            color: $adtextColor;
+          }
+          .addesc {
+            width: 100%;
+            span {
+              display: block;
+              &:first-child {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-weight: bold;
+              }
+              &:nth-child(2) {
+                margin: 6px 0;
+                color: $subColor;
+                font-size: 16px;
+              }
+              &:last-child {
+                font-size: 14px;
+                color: $subColor;
+                b {
+                  color: $black;
+                }
+              }
+            }
+          }
+        }
+      }
+      .contents {
+        background: $white;
+        .content {
+          width: 100%;
+          background: $white;
+          img {
+            margin: 0 auto;
+            &:first-child {
+              margin-bottom: 20px;
             }
           }
         }
