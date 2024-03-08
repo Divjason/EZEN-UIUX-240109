@@ -24,6 +24,13 @@ body {
   display: flex;
   align-items: center;
   position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .arrow {
   position: absolute;
