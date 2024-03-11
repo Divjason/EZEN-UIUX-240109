@@ -174,3 +174,51 @@ main section article .inner figure video {
   object-fit: cover;
   transform: scale(1.1);
 }
+
+/* aside */
+main aside {
+  position: absolute;
+  top: 0;
+  /* after => left: -100% */
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  /* after => opactity: 0 */
+  opacity: 0;
+  z-index: 2;
+  padding: 20vh 7vw 14vh 20vw;
+  display: flex;
+  justify-content: space-between;
+  background: #222;
+  transition: all 1s;
+}
+main aside.on {
+  left: 0;
+  opacity: 1;
+}
+main aside .txt {
+  width: 25%;
+}
+main aside .txt h1 {
+  font: normal 5vw/1 "arial";
+  color: #ddd;
+  margin-bottom: 20px;
+}
+main aside .txt p {
+  font: normal 1.1vw/1.3 "arial";
+  color: #666;
+  margin-bottom: 60px;
+}
+main aside .txt span {
+  cursor: pointer;
+  color: orange;
+}
+main aside figure {
+  width: 72%;
+  height: 100%;
+}
+main aside figure video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
