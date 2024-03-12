@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+table {
+  width: 300px;
+  margin: 10px;
+}
+table,
+th,
+td {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+th {
+  width: 80px;
+}
+td {
+  width: 210px;
+  padding: 10px 20px;
+}

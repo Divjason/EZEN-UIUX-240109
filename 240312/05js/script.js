@@ -69,3 +69,21 @@ nextBtn.addEventListener("click", () => {
 prevBtn.addEventListener("click", () => {
   moveSlide(currentIdx - 1);
 });
+
+// auto slide
+
+const autoSlide = () => {
+  timer = setInterval(() => {
+    moveSlide(currentIdx + 1);
+  }, 3000);
+};
+
+autoSlide();
+
+const stopSlide = () => {
+  clearInterval(timer);
+};
+
+slides.addEventListener("mouseenter", stopSlide);
+
+slides.addEventListener("mouseleave", autoSlide);

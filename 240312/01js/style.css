@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#container {
+  width: 400px;
+  margin: 40px auto;
+}
+h1 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+#result {
+  width: 100%;
+  margin: 20px 10px;
+  padding: 10px;
+}
