@@ -255,8 +255,8 @@
 - async & await : 각각 비동기처리를 진행하는 요소들 가운데 순서를 정의하기 위한 목적 사용!!
 - async 예약어를 사용하면, 자동으로 Promise 객체 생성 => then( ) || catch( ) 사용 가능
 
-
-
+21.Geoloaction API
+- 사용자의 위치정보를 찾아오는 API 서비스 기능
 
 
 
