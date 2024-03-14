@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer type="module" src="./script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>
+          <a href="#">The Movie</a>
+        </h1>
+        <form
+          name="searchPage"
+          action="https://localhost:5500/search.js"
+          method="post"
+        >
+          <input
+            class="search"
+            type="search"
+            placeholder="검색어를 입력하세요"
+          />
+        </form>
+      </div>
+      <div class="contents"></div>
+    </div>
+  </body>
+</html>

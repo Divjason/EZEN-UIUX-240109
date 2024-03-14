@@ -1,0 +1,55 @@
+/* reset */
+@import url("./reset.css");
+
+/* common */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.wrapper_header {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contents_title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.title {
+  color: #55b2d4;
+  font: 600 16px/1 "arial";
+}
+.subtitle {
+  font-size: 14px;
+  padding-bottom: 2px;
+}
+.divideLine {
+  width: 100%;
+  border-top: 1px solid gray;
+  margin: 4px 0;
+}
+.contents_body {
+  color: #999;
+}
+.wrapper_body {
+  width: 100%;
+  height: 270px;
+}
+.video {
+  width: 100%;
+  height: 240px;
+  background: url("./contents/iu_1.jpg") center/cover no-repeat;
+  margin-top: 10px;
+}
