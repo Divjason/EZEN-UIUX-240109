@@ -1,0 +1,128 @@
+/* reset */
+@import url("./reset.css");
+
+/* common */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.wrapper_header {
+  width: 100%;
+  height: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contents_title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.title {
+  color: #55b2d4;
+  font: 600 16px/1 "arial";
+}
+.subtitle {
+  font-size: 14px;
+  padding-bottom: 2px;
+}
+.divideLine {
+  width: 100%;
+  border-top: 1px solid gray;
+  margin: 4px 0;
+}
+.albumWrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.albumWrapper_item .album_thumnail {
+  width: 110px;
+  height: 110px;
+}
+.albumWrapper_item .album_songtitle {
+  font-size: 12px;
+  color: gray;
+}
+.albumWrapper_item .album_artist {
+  color: #0f465e;
+  font-size: 14px;
+  font-weight: bold;
+}
+.wrapper_body {
+  width: 100%;
+}
+.albumTable {
+  width: 100%;
+  padding: 2px;
+  border-spacing: 0;
+}
+.albumTable th {
+  background: #eee;
+  color: gray;
+  font-weight: bold;
+  border-top: 1px solid gray;
+  border-bottom: 1px dashed gray;
+}
+.albumTable td {
+  color: #0f465e;
+  border-bottom: 1px dashed gray;
+}
+.albumTable_checkbox {
+  width: 5%;
+  text-align: center;
+}
+.albumTable_number {
+  width: 20%;
+  text-align: center;
+}
+.albumTable_song {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6px;
+  text-align: center;
+  padding-left: 40px;
+}
+.fas {
+  display: inline-block;
+  color: crimson;
+  width: 10px;
+  height: 10px;
+  font-size: 10px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding: 5px;
+  padding-right: 10px;
+  /* text-align: center; */
+  line-height: 0px;
+}
+.albumTable_artist {
+  width: 26%;
+  text-align: center;
+}
+.albumTable_footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.albumTable_footer button {
+  background: gray;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 2px;
+  padding: 3px;
+}
+.albumTable_footer_center {
+  color: crimson;
+}
