@@ -20,12 +20,13 @@ const saveList = (listId) => {
 
 const dragstart = (e) => {
   from = e.target.parentElement.id;
-  to = from;
 };
 
 const dragover = (e) => {
   const { id: targetId } = e.target;
   const listIds = Object.keys(lists);
+
+  console.log(listIds, targetId);
 
   if (listIds.includes(targetId)) {
     to = targetId;
@@ -34,10 +35,6 @@ const dragover = (e) => {
 
 const dragend = (e) => {
   const { id } = e.target;
-
-  if (from === to) {
-    return;
-  }
 
   e.target.remove();
   lists[from] = lists[from].filter((todo) => {
@@ -52,21 +49,8 @@ const dragend = (e) => {
   saveList(to);
 };
 
-const removeTodo = (e) => {
-  e.preventDefault();
-  const { id } = e.target;
-  const { id: listId } = e.target.parentElement;
-
-  e.target.remove();
-  lists[listId] = lists[listId].filter((todo) => {
-    return todo.id !== id;
-  });
-
-  saveList(listId);
-};
-
 const createElement = (listId, todo) => {
-  const list = document.querySelector(`#${listId}`);
+  const list = document.querySelector(#${listId});
   const item = document.createElement("div");
 
   item.id = todo.id;
@@ -76,7 +60,7 @@ const createElement = (listId, todo) => {
 
   item.addEventListener("dragstart", dragstart);
   item.addEventListener("dragend", dragend);
-  item.addEventListener("contextmenu", removeTodo);
+  // item.addEventListener("contextmenu", removeTodo);
 
   list.appendChild(item);
   lists[listId].push(todo);
@@ -86,8 +70,9 @@ const createTodo = (e) => {
   e.preventDefault();
 
   const input = document.querySelector("input[type='text']");
-  // const id = String(Date.now());
-  const id = uuidv4();
+
+  const id = Date.now();
+  // const id = uuidv4();
 
   const newTodo = {
     id,

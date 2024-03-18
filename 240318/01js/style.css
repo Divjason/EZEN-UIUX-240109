@@ -1,0 +1,37 @@
+@import url("./reset.css");
+
+body {
+  display: flex;
+  justify-content: center;
+  background: var(--bgColor);
+}
+a {
+  color: var(--aColor);
+  font-size: 1.3rem;
+}
+a:hover {
+  color: var(--aHoverColor);
+}
+.container {
+  width: 550px;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.post,
+.profile {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}

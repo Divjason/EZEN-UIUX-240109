@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+:root {
+  --bgColor: #ecf0f1;
+  --aColor: #1da1f2;
+  --aHoverColor: #4169e1;
+}
