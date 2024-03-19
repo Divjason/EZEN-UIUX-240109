@@ -1,0 +1,23 @@
+@import url("./reset.css");
+
+body {
+  background: #13adcc;
+  height: 300vh;
+}
+h1 {
+  font-size: 30px;
+  padding: 20px;
+}
+.box {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

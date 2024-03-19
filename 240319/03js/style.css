@@ -1,0 +1,59 @@
+@import url("./reset.css");
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: url("./images/bg-pc.webp") center/cover no-repeat;
+  overflow: hidden;
+}
+img {
+  width: 100%;
+}
+.title {
+  text-align: center;
+}
+.title img {
+  width: 150px;
+}
+.contentWrap {
+  position: relative;
+  margin: 0 auto;
+  width: 80vw;
+  height: 100vh;
+}
+.contentWrap div {
+  position: absolute;
+}
+.contentWrap div img {
+  transform-origin: 50% 50%;
+}
+.shadow {
+  width: 700px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.date {
+  width: 400px;
+  left: 50%;
+  top: 70%;
+  transform: translateX(-50%);
+}
+.human {
+  width: 1200px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.textImg {
+  width: 400px;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-10%);
+}
+.subTitle {
+  position: fixed;
+  top: 10%;
+  left: 20px;
+}
+.subTitle img {
+  width: 70px;
+}

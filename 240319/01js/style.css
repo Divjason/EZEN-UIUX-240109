@@ -1,0 +1,57 @@
+@import url("./reset.css");
+
+body {
+  background: #3c7364;
+  overflow: hidden;
+}
+
+.gateBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  font-size: 20px;
+  color: #fff;
+}
+.top {
+  padding: 20px 30px;
+  text-align: center;
+  border: 2px solid #fff;
+}
+.bottom {
+  border: 2px solid #fff;
+  border-top: none;
+  display: flex;
+  justify-content: space-around;
+}
+.bottom a {
+  padding: 20px 0;
+  width: 50%;
+  text-align: center;
+  transition: all 0.3s;
+}
+.bottom a:hover {
+  background: #fff;
+  color: #000;
+}
+.line {
+  border: 1px solid #fff;
+}
+
+.cursorItem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+.circle {
+  position: fixed;
+  width: 120px;
+  height: 120px;
+  background: yellowgreen;
+  border-radius: 100%;
+  margin: -60px -60px;
+  opacity: 0.5;
+  transition: all 0.2s;
+}
