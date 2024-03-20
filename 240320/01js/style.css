@@ -1,0 +1,92 @@
+@import url("./reset.css");
+
+/* Header */
+.mainHeader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+.mainHeader.fixed {
+  position: fixed;
+  background: rgba(255, 255, 255, 0.8);
+}
+.mainHeader.fixed .progressWrap {
+  display: block;
+}
+.mainHeader.fixed .headerWrap h1 {
+  color: #000;
+}
+.headerWrap {
+  position: relative;
+  padding: 10px 20px;
+}
+.headerWrap h1 {
+  font-size: 15px;
+  color: #fff;
+}
+.progressWrap {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #d0d0d0;
+  display: none;
+}
+.bar {
+  position: absolute;
+  z-index: 100;
+  width: 0;
+  height: 100%;
+  background: crimson;
+  transition: all 0.4s;
+}
+
+/* cover */
+.coverWrap {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("./bg.jpg") center/cover no-repeat;
+}
+.dimd {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.coverTitle {
+  position: relative;
+  text-align: center;
+  z-index: 10;
+}
+.coverTitle h1 {
+  color: #fff;
+}
+.coverTitle p {
+  color: #cecece;
+}
+
+/* content */
+.contentWrap {
+  position: relative;
+  background: #fff;
+  z-index: 10;
+}
+.contentInnerWrap {
+  margin: 0 auto;
+  padding: 30px;
+  width: 700px;
+}
+.contentInnerWrap h4 {
+  font-size: 20px;
+  margin: 20px 0 10px 0;
+}

@@ -1,0 +1,70 @@
+@import url("./reset.css");
+
+body {
+  background: linear-gradient(#4b0220, #691c46);
+}
+section {
+  width: 100%;
+  position: relative;
+}
+
+/* mainPage */
+section.mainPage {
+  padding-bottom: 50px;
+}
+section.mainPage .imageWrap {
+  height: 100vh;
+}
+section.mainPage .imageWrap .parallaxImage {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section.mainPage .imageWrap .parallaxImage:nth-child(1) {
+  background-image: url("./image/main_0.png");
+}
+section.mainPage .imageWrap .parallaxImage:nth-child(2) {
+  background-image: url("./image/main_1.png");
+}
+section.mainPage .imageWrap .parallaxImage:nth-child(3) {
+  background-image: url("./image/main_2.png");
+}
+section.mainPage .imageWrap .parallaxImage:nth-child(4) {
+  background-image: url("./image/main_3.png");
+}
+section.mainPage .imageWrap .parallaxImage:nth-child(5) {
+  background-image: url("./image/main_4.png");
+}
+section.mainPage .imageWrap .parallaxImage:nth-child(6) {
+  background-image: url("./image/main_5.png");
+}
+
+/* subPage */
+section.subPage {
+  background: linear-gradient(#000, #340e23, #000);
+  position: relative;
+}
+section.subPage .parallaxImage {
+  width: 100%;
+  height: 400px;
+  background: url("./image/main_6.png") bottom/cover no-repeat;
+  position: absolute;
+  top: -400px;
+}
+section.subPage .innerWrap {
+  padding: 200px 0;
+}
+section.subPage .innerWrap .contentWrap {
+  width: 700px;
+  margin: 0 auto;
+  padding: 20px 40px;
+}
+section.subPage .innerWrap .contentWrap p {
+  font-size: 20px;
+  color: #f3f3f3;
+  line-height: 36px;
+  margin: 20px 0;
+}
