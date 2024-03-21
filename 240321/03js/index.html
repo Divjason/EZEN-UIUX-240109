@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>당첨자 발표</h1>
+      <form
+        name="selectForm"
+        action="https://localhost:3000/select.js"
+        method="post"
+      >
+        <label for="seed">전체 <input id="seed" type="text" /> 명 중에서</label>
+        <label for="total"><input id="total" type="text" /> 명 뽑기</label>
+        <input id="raffle" type="submit" value="추첨" />
+        <input id="clear" type="reset" value="지우기" />
+      </form>
+      <div id="result"></div>
+    </div>
+  </body>
+</html>

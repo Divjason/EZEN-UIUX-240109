@@ -1,0 +1,36 @@
+@import url("./reset.css");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#container {
+  width: 600px;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+h1 {
+  font-size: 1.4rem;
+  margin-bottom: 14px;
+}
+input[type="text"] {
+  width: 60px;
+  height: 30px;
+  text-align: center;
+  margin-right: 10px;
+}
+input[type="submit"] {
+  margin-left: 20px;
+}
+input[type="submit"],
+input[type="reset"] {
+  width: 80px;
+  padding: 10px 20px;
+}
+#result {
+  margin-top: 14px;
+}
