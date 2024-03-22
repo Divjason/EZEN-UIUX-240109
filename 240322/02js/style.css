@@ -1,0 +1,12 @@
+@import url("./reset.css");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* canvas {
+  border: 1px solid #000;
+} */
