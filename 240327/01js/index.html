@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/3f2ea24883.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom css & js -->
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div id="cursor"></div>
+    <div class="container">
+      <div class="headtitles">
+        <h1 class="title">매장안내</h1>
+        <h3 class="subtitle">매장찾기</h3>
+      </div>
+      <div class="spinnerbox">
+        <div class="spinner hiddenspinner"></div>
+      </div>
+      <div class="shopsearch">
+        <div class="shopsearch_map">
+          <div id="인천">인천</div>
+          <div id="서울">서울</div>
+          <div id="경기">경기</div>
+          <div id="강원">강원</div>
+          <div id="충북">충북</div>
+          <div id="세종">세종</div>
+          <div id="충남">충남</div>
+          <div id="대전">대전</div>
+          <div id="전북">전북</div>
+          <div id="전남">전남</div>
+          <div id="광주">광주</div>
+          <div id="경북">경북</div>
+          <div id="대구">대구</div>
+          <div id="울산">울산</div>
+          <div id="경남">경남</div>
+          <div id="부산">부산</div>
+          <div id="제주">제주</div>
+        </div>
+        <div class="shopsearch_filter">
+          <div class="section">
+            <h2>01 지역/매장별 검색</h2>
+            <form
+              name="shopsearch"
+              action="https://localhost:3000/shopsearch.js"
+              method="get"
+            >
+              <p>
+                <label for="localsearch">지역검색</label>
+                <select name="city" id="city">
+                  <option selected>도/시 선택</option>
+                </select>
+                <select name="state" id="state">
+                  <option>구/군 선택</option>
+                </select>
+              </p>
+              <p>
+                <label for="storename">매장명</label>
+                <input type="text" />
+                <span>
+                  <i class="fas fa-magnifying-glass"></i>
+                </span>
+              </p>
+            </form>
+          </div>
+          <div class="section">
+            <h2>02 매장별 서비스 검색</h2>
+            <form
+              name="mapsearch"
+              action="https://localhost:3000/mapsearch.js"
+              method="get"
+            >
+              <p>
+                <input
+                  type="checkbox"
+                  name="wifi"
+                  id="fa-wifi"
+                  class="filter-checkbox"
+                  value="fas fa-wifi"
+                />
+                <label for="fa-wifi"
+                  ><i class="fas fa-wifi"></i>무선인터넷 가능</label
+                >
+                <input
+                  type="checkbox"
+                  name="smoking"
+                  id="fa-smoking"
+                  class="filter-checkbox"
+                  value="fas fa-smoking"
+                />
+                <label for="fa-smoking"
+                  ><i class="fas fa-smoking"></i>흡연시설 보유</label
+                >
+              </p>
+              <p>
+                <input
+                  type="checkbox"
+                  name="parking"
+                  id="fa-car"
+                  class="filter-checkbox"
+                  value="fas fa-car"
+                />
+                <label for="fa-car"><i class="fas fa-car"></i>주차가능</label>
+                <input
+                  type="checkbox"
+                  name="terrace"
+                  id="fa-umbrella-beach"
+                  class="filter-checkbox"
+                  value="fas fa-umbrella-beach"
+                />
+                <label for="fa-umbrella-beach"
+                  ><i class="fas fa-umbrella-beach"></i>야외테라스 보유</label
+                >
+              </p>
+              <p>
+                <input
+                  type="checkbox"
+                  name="mobile"
+                  id="fa-mobile-button"
+                  class="filter-checkbox"
+                  value="fas fa-mobile-button"
+                />
+                <label for="fa-mobile-button"
+                  ><i class="fas fa-mobile-button"></i>모바일 가맹점</label
+                >
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="shopinfo">
+        <h1>매장안내</h1>
+        <div class="shopinfo_table">
+          <table>
+            <thead>
+              <tr>
+                <th>매장명</th>
+                <th>지역</th>
+                <th>매장주소</th>
+                <th>매장전화번호</th>
+                <th>서비스</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="shopinfo_pager">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

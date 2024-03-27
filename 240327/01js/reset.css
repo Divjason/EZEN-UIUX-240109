@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+:root {
+  --main-color: #ff4a13;
+  --background-color: #f7f6f3;
+  --map-background-color: #f2f1ed;
+  --map-border-color: #dfdfe0;
+  --table-border-color: #f9d3c6;
+}
+
+@font-face {
+  font-family: "NotoSansKR";
+  src: url("./NotoSansKR-Regular.otf");
+}

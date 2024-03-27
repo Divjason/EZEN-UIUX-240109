@@ -1,0 +1,402 @@
+[
+  {
+    "main_area": "강원",
+    "sub_area": "영월군",
+    "store": "영월점",
+    "address": "강원특별자치도 영월군 영월읍 청령포로 111 (방절리) 1층, 셀렉토커피 영월점",
+    "tel": "033-373-5557",
+    "service": ["fas fa-wifi", "fas fa-car", "fas fa-umbrella-beach"]
+  },
+  {
+    "main_area": "강원",
+    "sub_area": "속초시",
+    "store": "속초교동점",
+    "address": "강원 속초시 중앙로17번길 11 (교동, 미소지움 더뷰 아파트)",
+    "tel": "033-633-8500",
+    "service": ["fas fa-wifi", "fas fa-car"]
+  },
+  {
+    "main_area": "강원",
+    "sub_area": "원주시",
+    "store": "원주만대공원점",
+    "address": "강원 원주시 만대공원길 8-10 (무실동)",
+    "tel": "070-7537-2135",
+    "service": [
+      "fas fa-wifi",
+      "fas fa-car",
+      "fas fa-smoking",
+      "fas fa-umbrella-beach",
+      "fas fa-mobile-button"
+    ]
+  },
+  {
+    "main_area": "강원",
+    "sub_area": "속초시",
+    "store": "속초자이점",
+    "address": "강원 속초시 조양로 181 (조양동, 속초 자이아파트)",
+    "tel": "033-638-7757",
+    "service": ["fas fa-wifi", "fas fa-car"]
+  },
+  {
+    "main_area": "강원",
+    "sub_area": "원주시",
+    "store": "원주기업도시점",
+    "address": "강원 원주시 지정면 신지정로 197-5 (가곡리)",
+    "tel": "033-732-6222",
+    "service": ["fas fa-wifi", "fas fa-car"]
+  },
+  {
+    "main_area": "강원",
+    "sub_area": "원주시",
+    "store": "원주흥업점",
+    "address": "강원 원주시 흥업면 흥업리 585-11",
+    "tel": "033-761-2022",
+    "service": ["fas fa-wifi", "fas fa-car"]
+  },
+  {
+    "main_area": "강원",
+    "sub_area": "강릉시",
+    "store": "강릉솔올점",
+    "address": "강원 강릉시 하슬라로 197 (교동)",
+    "tel": "033-655-7179",
+    "service": ["fas fa-wifi", "fas fa-car"]
+  },
+  {
+    "main_area": "경기",
+    "sub_area": "평택시",
+    "store": "평택서재자이점",
+    "address": "경기 평택시 동삭동 715-1 1층",
+    "tel": "031-652-1777",
+    "service": ["fas fa-wifi", "fas fa-umbrella-beach"]
+  },
+  {
+    "main_area": "경기",
+    "sub_area": "화성시",
+    "store": "삼성전자 화성캠퍼스점",
+    "address": "경기 화성시 삼성전자로 1 (반월동) 셀렉토커피 삼성전자 화성캠퍼스점",
+    "tel": "031-655-2815",
+    "service": []
+  },
+  {
+    "main_area": "경기",
+    "sub_area": "부천시",
+    "store": "부천역점",
+    "address": "경기 부천시 부일로449번길 6 (심곡동) 1층 셀렉토커피 부천역점",
+    "tel": "032-652-7485",
+    "service": ["fas fa-wifi"]
+  },
+  {
+    "main_area": "경기",
+    "sub_area": "평택시",
+    "store": "포세카신규캠프점",
+    "address": "경기 평택시 첨단대로 280 (고덕동) 포세카신규캠프점",
+    "tel": "033-655-7179",
+    "service": []
+  },
+  {
+    "main_area": "경기",
+    "sub_area": "화성시",
+    "store": "화성향남점",
+    "address": "경기 화성시 향남읍 행정서로3길 4-56 (행정리) 셀렉토커피 화성향남점",
+    "tel": "031-353-6408",
+    "service": ["fas fa-wifi", "fas fa-car"]
+  },
+  {
+    "main_area": "경기",
+    "sub_area": "평택시",
+    "store": "고덕원희캐슬점",
+    "address": "경기 평택시 고덕중앙로 320 (고덕동, 원희캐슬고덕 지식산업센터) 1층 122호",
+    "tel": "031-666-5056",
+    "service": ["fas fa-wifi", "fas fa-car"]
+  },
+  {
+    "main_area": "경기",
+    "sub_area": "화성시",
+    "store": "화성시청점",
+    "address": "경기 화성시 남양읍 시청로160번길 12 (남양리) 센트럴프라자 101호-102호",
+    "tel": "031-355-2613",
+    "service": ["fas fa-wifi", "fas fa-car"]
+  },
+  {
+    "main_area": "경기",
+    "sub_area": "남양주시",
+    "store": "다산현대프리미엄캠퍼스몰점",
+    "address": "경기 남양주시 다산순환로 20 (다산동) 현대프리미어캠퍼스몰 C동 159호",
+    "tel": "031-870-8482",
+    "service": ["fas fa-wifi", "fas fa-car"]
+  },
+  {
+    "main_area": "경기",
+    "sub_area": "평택시",
+    "store": "평택지제역센트럴시티점",
+    "address": "경기 평택시 지제동삭1로 41 (지제동, 지제역 더샵 센트럴시티) 130동 22호",
+    "tel": "050-7133-9788",
+    "service": ["fas fa-wifi", "fas fa-car"]
+  },
+  {
+    "main_area": "경기",
+    "sub_area": "화성시",
+    "store": "동탄호수공원점",
+    "address": "경기 화성시 동탄순환대로 127-9 (산척동, 우성애비뉴타워) 1층 11호",
+    "tel": "031-376-1032",
+    "service": ["fas fa-wifi", "fas fa-car", "fas fa-umbrella-beach"]
+  },
+  {
+    "main_area": "부산",
+    "sub_area": "기장군",
+    "store": "부산정관점",
+    "address": "부산 기장군 정관읍 정관6로 31 (매학리) 108호",
+    "tel": "051-727-3019",
+    "service": ["fas fa-wifi", "fas fa-car"]
+  },
+  {
+    "main_area": "부산",
+    "sub_area": "동래구",
+    "store": "부산사직북로점",
+    "address": "부산 동래구 사직동 45-23",
+    "tel": "051-505-7191",
+    "service": ["fas fa-wifi", "fas fa-car"]
+  },
+  {
+    "main_area": "부산",
+    "sub_area": "남구",
+    "store": "부산대연점",
+    "address": "부산 남구 유엔평화로 29 (대연동) 2, 3층",
+    "tel": "051-611-2421",
+    "service": ["fas fa-wifi", "fas fa-car", "fas fa-umbrella-beach"]
+  },
+  {
+    "main_area": "부산",
+    "sub_area": "기장군",
+    "store": "기장고리원전점",
+    "address": "부산 기장군 장안읍 길천길 15 (길천리), 1층",
+    "tel": "051-728-0988",
+    "service": ["fas fa-wifi", "fas fa-car"]
+  },
+  {
+    "main_area": "부산",
+    "sub_area": "수영구",
+    "store": "부산광안점",
+    "address": "부산 수영구 광안동 188-15",
+    "tel": "051-751-2811",
+    "service": ["fas fa-wifi", "fas fa-car"]
+  },
+  {
+    "main_area": "부산",
+    "sub_area": "부산진구",
+    "store": "부산당감점",
+    "address": "부산 부산진구 당감로 26 (당감동)",
+    "tel": "052-891-1678",
+    "service": ["fas fa-wifi", "fas fa-car"]
+  },
+  {
+    "main_area": "부산",
+    "sub_area": "부산진구",
+    "store": "부산서면점",
+    "address": "부산 부산진구 부전로 57 (부전동)",
+    "tel": "051-804-9000",
+    "service": [
+      "fas fa-wifi",
+      "fas fa-car",
+      "fas fa-smoking",
+      "fas fa-umbrella-beach"
+    ]
+  },
+  {
+    "main_area": "부산",
+    "sub_area": "사하구",
+    "store": "부산다대낫개역점",
+    "address": "부산 사하구 다대동 1432-6",
+    "tel": "051-262-7619",
+    "service": ["fas fa-wifi", "fas fa-car", "fas fa-umbrella-beach"]
+  },
+  {
+    "main_area": "서울",
+    "sub_area": "중구",
+    "store": "서울역사점",
+    "address": "서울 중구 한강대로 405 (봉래동2가, 경부고속철도서울민자역사) 서울역사 지하통로",
+    "tel": "070-8657-3336",
+    "service": []
+  },
+  {
+    "main_area": "서울",
+    "sub_area": "도봉구",
+    "store": "창동역점",
+    "address": "서울 도봉구 마들로11가길 16 (창동, KING 프라자) 1층",
+    "tel": "02-994-0313",
+    "service": ["fas fa-wifi", "fas fa-umbrella-beach"]
+  },
+  {
+    "main_area": "서울",
+    "sub_area": "서초구",
+    "store": "신논현점",
+    "address": "서울 서초구 강남대로79길 31 (반포동) 1층 셀렉토커피",
+    "tel": "070-8657-3336",
+    "service": ["fas fa-wifi", "fas fa-umbrella-beach"]
+  },
+  {
+    "main_area": "서울",
+    "sub_area": "관악구",
+    "store": "사당남현점",
+    "address": "서울 관악구 남현동 1058-6",
+    "tel": "02-525-5111",
+    "service": ["fas fa-wifi"]
+  },
+  {
+    "main_area": "서울",
+    "sub_area": "서대문구",
+    "store": "북한산두산위브점",
+    "address": "서울특별시 서대문구 홍은동 467번지",
+    "tel": "02-6406-1023",
+    "service": ["fas fa-wifi"]
+  },
+  {
+    "main_area": "서울",
+    "sub_area": "서대문구",
+    "store": "남가좌점",
+    "address": "서울 서대문구 남가좌동 344-26",
+    "tel": "02-303-8771",
+    "service": ["fas fa-wifi", "fas fa-car"]
+  },
+  {
+    "main_area": "서울",
+    "sub_area": "금천구",
+    "store": "가산노블루체점",
+    "address": "서울 금천구 가산동 144-5",
+    "tel": "02-868-7698",
+    "service": ["fas fa-wifi", "fas fa-car"]
+  },
+  {
+    "main_area": "인천",
+    "sub_area": "서구",
+    "store": "청라국제도시점",
+    "address": "인천 서구 청라한내로 110 (청라동) 1층",
+    "tel": "070-8657-3336",
+    "service": [
+      "fas fa-wifi",
+      "fas fa-car",
+      "fas fa-smoking",
+      "fas fa-umbrella-beach",
+      "fas fa-mobile-button"
+    ]
+  },
+  {
+    "main_area": "인천",
+    "sub_area": "연수구",
+    "store": "송도센트럴파크점",
+    "address": "인천 연수구 센트럴로 160 (송도동, 송도센트럴파크푸르지오) 판매시설동 178호",
+    "tel": "032-832-0711",
+    "service": ["fas fa-wifi", "fas fa-car", "fas fa-umbrella-beach"]
+  },
+  {
+    "main_area": "인천",
+    "sub_area": "서구",
+    "store": "인천서구경서점",
+    "address": "인천 서구 경서동 363-215",
+    "tel": "032-561-3001",
+    "service": ["fas fa-wifi", "fas fa-car"]
+  },
+  {
+    "main_area": "인천",
+    "sub_area": "서구",
+    "store": "선재도점",
+    "address": "인천 옹진군 영흥면 선재리 521-33",
+    "tel": "032-880-1688",
+    "service": [
+      "fas fa-wifi",
+      "fas fa-car",
+      "fas fa-umbrella-beach",
+      "fas fa-mobile-button"
+    ]
+  },
+  {
+    "main_area": "인천",
+    "sub_area": "미추홀구",
+    "store": "인천주안역점",
+    "address": "인천 미추홀구 주안로 91 (주안동)",
+    "tel": "032-873-0123",
+    "service": [
+      "fas fa-wifi",
+      "fas fa-car",
+      "fas fa-smoking",
+      "fas fa-umbrella-beach"
+    ]
+  },
+  {
+    "main_area": "인천",
+    "sub_area": "미추홀구",
+    "store": "인천관교동점",
+    "address": "인천 미추홀구 주승로 214 (관교동)",
+    "tel": "032-426-9692",
+    "service": ["fas fa-wifi", "fas fa-car", "fas fa-umbrella-beach"]
+  },
+  {
+    "main_area": "인천",
+    "sub_area": "남동구",
+    "store": "인천논현에코점",
+    "address": "인천 남동구 논고개로 77 (논현동, 에코타워)",
+    "tel": "032-423-0106",
+    "service": ["fas fa-wifi", "fas fa-car"]
+  },
+  {
+    "main_area": "인천",
+    "sub_area": "계양구",
+    "store": "인천장기점",
+    "address": "인천 계양구 장기로 23 (장기동)",
+    "tel": "032-553-0846",
+    "service": ["fas fa-wifi", "fas fa-car"]
+  },
+  {
+    "main_area": "인천",
+    "sub_area": "서구",
+    "store": "청라우성메디피아점",
+    "address": "인천 서구 청라에메랄드로102번길 8 (연희동, 우성메디피아)",
+    "tel": "032-562-3577",
+    "service": ["fas fa-wifi", "fas fa-car", "fas fa-umbrella-beach"]
+  },
+  {
+    "main_area": "인천",
+    "sub_area": "남동구",
+    "store": "인천시청점",
+    "address": "인천 남동구 예술로226번길 17 (구월동, 구월프라움시티)",
+    "tel": "032-433-6383",
+    "service": ["fas fa-wifi", "fas fa-car"]
+  },
+  {
+    "main_area": "인천",
+    "sub_area": "중구",
+    "store": "인천공항IBC점",
+    "address": "인천 중구 공항로424번길 60 (운서동, 대우스카이월드)",
+    "tel": "032-743-4398",
+    "service": [
+      "fas fa-wifi",
+      "fas fa-car",
+      "fas fa-umbrella-beach",
+      "fas fa-mobile-button"
+    ]
+  },
+  {
+    "main_area": "인천",
+    "sub_area": "계양구",
+    "store": "인천작전점",
+    "address": "인천 계양구 아나지로299번길 15 (작전동, 미도아파트)",
+    "tel": "032-545-9882",
+    "service": ["fas fa-wifi", "fas fa-umbrella-beach"]
+  },
+  {
+    "main_area": "제주",
+    "sub_area": "제주시",
+    "store": "제주도남점",
+    "address": "제주특별자치도 제주시 도남로 53 (도남동) 1층 셀렉토커피 제주도남점",
+    "tel": "064-725-2477",
+    "service": ["fas fa-wifi", "fas fa-car"]
+  },
+  {
+    "main_area": "제주",
+    "sub_area": "제주시",
+    "store": "제주노형점",
+    "address": "제주특별자치도 제주시 노연로 48 (노형동) 1층",
+    "tel": "070-7699-0239",
+    "service": ["fas fa-wifi", "fas fa-car"]
+  }
+]

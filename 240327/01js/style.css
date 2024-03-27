@@ -1,0 +1,379 @@
+@import url("./reset.css");
+
+/* cursor */
+#cursor {
+  width: 45px;
+  height: 45px;
+  background: url("./img/cursor.png") center/cover no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(10px, 10px);
+  z-index: 10;
+}
+#cursor.active {
+  animation: cursorspin 1s linear infinite;
+}
+@keyframes cursorspin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+/* common */
+body {
+  background: var(--background-color);
+  font-family: "NotoSansKR";
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 80%;
+  height: 100%;
+  padding: 80px 0;
+  position: relative;
+}
+
+/* headtitles */
+.headtitles {
+  width: 100%;
+  min-width: 1200px;
+  margin-bottom: 60px;
+  color: var(--main-color);
+}
+.title {
+  font-size: 4rem;
+}
+.subtitle {
+  width: 80px;
+  text-align: center;
+  margin: 40px auto;
+  padding-top: 5px;
+  border-top: 1px solid var(--main-color);
+  opacity: 0.5;
+}
+/* spinnerbox */
+.spinnerbox {
+  width: 100px;
+  margin: 0 auto;
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(0, 0, 0, 0.2);
+  border-radius: 100%;
+  border-left-color: var(--main-color);
+  margin: 0 auto;
+  animation: loadspin 1s linear infinite;
+}
+@keyframes loadspin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.hiddenspinner {
+  display: none;
+}
+
+/* shopsearch */
+.shopsearch {
+  width: 1200px;
+  height: 450px;
+  margin: 0 auto;
+  border-top: 1px solid var(--map-border-color);
+  border-bottom: 1px solid var(--map-border-color);
+  display: flex;
+}
+
+/* shopsearch_map */
+.shopsearch_map {
+  width: 50%;
+  min-width: 600px;
+  background: url("./img/map.png") center/cover no-repeat;
+  position: relative;
+}
+.shopsearch_map > div {
+  width: 44px;
+  height: 44px;
+  background: #fff;
+  border-radius: 100%;
+  font-size: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-color);
+  cursor: pointer;
+  position: absolute;
+}
+.shopsearch_map > div.active {
+  background: var(--main-color);
+  color: #fff;
+}
+#인천 {
+  top: 60px;
+  left: 190px;
+}
+#서울 {
+  top: 75px;
+  left: 235px;
+}
+#경기 {
+  top: 115px;
+  left: 260px;
+}
+#강원 {
+  top: 70px;
+  left: 330px;
+}
+#충북 {
+  top: 145px;
+  left: 315px;
+}
+#세종 {
+  top: 160px;
+  left: 270px;
+}
+#충남 {
+  top: 170px;
+  left: 225px;
+}
+#대전 {
+  top: 205px;
+  left: 285px;
+}
+#전북 {
+  top: 238px;
+  left: 240px;
+}
+#전남 {
+  top: 305px;
+  left: 210px;
+}
+#광주 {
+  top: 292px;
+  left: 260px;
+}
+#경북 {
+  top: 175px;
+  left: 370px;
+}
+#대구 {
+  top: 225px;
+  left: 345px;
+}
+#울산 {
+  top: 245px;
+  left: 395px;
+}
+#경남 {
+  top: 265px;
+  left: 320px;
+}
+#부산 {
+  top: 290px;
+  left: 370px;
+}
+#제주 {
+  top: 385px;
+  left: 175px;
+}
+
+/* shopsearch_filter */
+.shopsearch_filter {
+  width: 50%;
+  min-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px 70px;
+  color: var(--main-color);
+}
+.shopsearch_filter .section {
+  display: flex;
+  flex-direction: column;
+}
+.shopsearch_filter .section h2 {
+  font-size: 1rem;
+  margin-bottom: 24px;
+  letter-spacing: -1px;
+}
+.shopsearch_filter .section p {
+  width: 400px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.shopsearch_filter .section p label {
+  letter-spacing: -2px;
+}
+.shopsearch_filter .section:first-child label {
+  font: bold 0.9rem/1 "NotoSansKR";
+  width: 75px;
+}
+.shopsearch_filter .section select {
+  width: 136px;
+  height: 36px;
+  margin-right: 8px;
+  padding: 0 6px;
+  border: 1px solid var(--map-border-color);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--main-color);
+}
+.shopsearch_filter .section select:focus {
+  outline: none;
+}
+.shopsearch_filter .section option {
+  color: #000;
+}
+.shopsearch_filter .section input[type="text"] {
+  width: 236px;
+  height: 36px;
+  border: 1px solid var(--map-border-color);
+  border-radius: 6px;
+  background: transparent;
+  margin-right: 8px;
+  padding-left: 10px;
+}
+.shopsearch_filter .section input[type="text"]:focus {
+  outline: none;
+}
+.shopsearch_filter .section span {
+  width: 36px;
+  height: 36px;
+  background: var(--main-color);
+  border-radius: 6px;
+}
+.shopsearch_filter .section span i {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 36px;
+}
+
+.shopsearch_filter .section:last-child p {
+  margin-bottom: 20px;
+}
+.shopsearch_filter .section:last-child label {
+  width: 160px;
+  margin-left: 8px;
+  font: bold 0.9rem/1 "NotoSansKR";
+}
+.shopsearch_filter .section:last-child label i {
+  margin-right: 10px;
+}
+.shopsearch_filter .section input[type="checkbox"] {
+  width: 17px;
+  height: 17px;
+  margin-right: 6px;
+  appearance: none;
+  position: relative;
+}
+.shopsearch_filter .section input[type="checkbox"]::before {
+  content: "";
+  width: 17px;
+  height: 17px;
+  border: 1px solid var(--map-border-color);
+  border-radius: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+}
+.shopsearch_filter .section input[type="checkbox"]:checked::before {
+  content: "\2713";
+  background: var(--main-color);
+  color: #fff;
+  text-align: center;
+  border: none;
+}
+
+/* shopinfo */
+.shopinfo {
+  width: 80%;
+  min-width: 1200px;
+  height: auto;
+  margin: 0 auto;
+}
+.shopinfo h1 {
+  color: var(--main-color);
+  text-align: center;
+  margin: 130px 0 50px 0;
+  font-size: 2rem;
+  letter-spacing: -1px;
+}
+.shopinfo_table {
+  width: 100%;
+  margin-bottom: 70px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table,
+tr,
+th,
+td {
+  border-top: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+  font-size: 0.9rem;
+  text-align: center;
+  color: var(--main-color);
+  padding: 20px 0;
+}
+tr,
+td {
+  border-top: 1px solid var(--table-border-color);
+  border-bottom: 1px solid var(--table-border-color);
+  font-weight: bold;
+  padding: 30px 0;
+}
+tr th:nth-child(3),
+tr td:nth-child(3) {
+  width: 510px;
+}
+tr th:last-child,
+tr td:last-child {
+  width: 210px;
+}
+tr td:last-child i {
+  font-size: 20px;
+  margin-right: 4px;
+}
+
+/* shopinfo_pager */
+.shopinfo_pager {
+  width: 100%;
+}
+.shopinfo_pager ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+.shopinfo_pager ul li {
+  width: 36px;
+  height: 36px;
+  color: var(--main-color);
+  text-align: center;
+  font: 0.9rem/36px "NotoSansKR";
+  cursor: pointer;
+}
+.shopinfo_pager ul li.active {
+  background: var(--main-color);
+  color: #fff;
+  font-weight: bold;
+}
