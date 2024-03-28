@@ -1,0 +1,75 @@
+내일, 조별 프로젝트!!!
+> OT : 파이널 개인 포폴 How to
+> 주말동안 : 진로 방향성 결정
+
+다음주 상담 및 면담
+> 90% 퍼블리셔
+> 5:5
+
+커리큘럼 :
+- 리액트
+- html, css, js
+
+*프로그래밍 혹은 코딩학습
+- 백문이 불여일타!!!
+- 눈과 머리로 하는 공부는 20%
+- 손으로 하는 공부가 80%
+- 수영하는 방법 책으로 공부해도 수영을 어떻게해야하는 잘 압니다. 
+- 물속에 직접 들어가서 본인이 헤엄쳐보면서 어떻게 호흡을해야하는지 
+- 절대로 외워서 공부하는 영역이 아님
+- 실무에서도 10년차 경력 => 구글 구글링
+
+*웹 에디터!!!
+- atom
+- eclips
+- inj
+- pycharm => BE
+- vs code : FE || PU 90%
+
+*fullpage jQuery!!!
+> 설치 
+
+*anime  jQuery!!!
+
+각각의 페이지 스타일링!!!
+
+1) fullpage.js 플러그인
+
+1.cdn.js > fullpage 검색
+- fullpage.js (3.1버전) & css URL > html 설치
+- script defer
+
+2.fullpage.js Docs 내용 초기화!!!
+- html : fullpage ID / class section
+- script : fullpage( ) 초기화
+
+3.fullpage.js 네비게이션 활성화!!!
+- script : navigation : true
+- #fp-nav ul li a span > #fff
+
+4.우측 상단, 토글버튼 & 네비게이션
+- css를 활용해서 작업
+- 링크연결 : script > anchors
+
+5.각 섹션별 타이틀 트랜지션효과!!!
+- 플러그인 특유의 css문법 有
+- 해당 섹션이 웹브라우저 중심으로 들어온 경우, 자동으로 active 클래스가 적용!!!
+- active 클래스를 활용 
+
+6.슬라이드효과!!!
+- slider_wrap 클래스 & slide > slide_inner
+
+7.특정 섹션, afterLoad 효과!!!
+- 이미 지난간 섹션 & 새롭게 들어온 섹션에 따라 조건문을 활용해서 결과값을 다르게 도출!!!
+> wow.js 와 같은 효과를 연출!!!
+
+2) anime.js 플러그인
+
+
+
+
+
+
+
+
+

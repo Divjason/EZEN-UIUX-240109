@@ -1,0 +1,8 @@
+@import url("./reset.css");
+
+ul.menu li {
+  width: 100px;
+  height: 100px;
+  background: blueviolet;
+  margin-bottom: 20px;
+}
