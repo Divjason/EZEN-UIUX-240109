@@ -1,0 +1,107 @@
+@import url("./reset.css");
+
+/* common */
+.inner {
+  width: 1200px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+/* .inner h1 img {
+  width: 800px;
+} */
+
+/* #sec0 */
+#sec0 {
+  background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+}
+#sec0 .inner svg,
+#sec0 .inner img {
+  width: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+#sec0 .inner .svg1 {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2;
+  z-index: 2;
+  transform: translate(-49.5%, -49.5%);
+}
+#sec0 .inner .svg2 {
+  transform: translate(-49%, -49%);
+}
+
+/* nav */
+#nav_icon {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  width: 30px;
+  height: 25px;
+  z-index: 3;
+  cursor: pointer;
+}
+#nav_icon div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#nav_icon.active div span:nth-child(1) {
+  top: 10px;
+  transform: rotate(45deg);
+}
+#nav_icon.active div span:nth-child(2) {
+  opacity: 0;
+}
+#nav_icon.active div span:nth-child(3) {
+  top: 10px;
+  transform: rotate(-45deg);
+}
+#nav_icon div span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  transition: all 0.3s ease-in-out;
+}
+#nav_icon div span:nth-child(1) {
+  top: 0;
+}
+#nav_icon div span:nth-child(2) {
+  top: 10px;
+}
+#nav_icon div span:nth-child(3) {
+  top: 20px;
+}
+.nav {
+  position: fixed;
+  top: 24px;
+  right: 60px;
+  z-index: 2;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.3s ease-in-out;
+}
+.nav.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+.nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 3px 20px 0 0;
+}
+.nav ul li a {
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+}
