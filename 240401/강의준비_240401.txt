@@ -1,0 +1,123 @@
+오전 : React.js
+점심 : 상담
+오후 : HTML + CSS + JS / UI구현
+
+*새로운 무언가를 배울 때!!
+- 왜 배우는가? 취업
+- F/E : React.js 진입 필수!!!
+- 퍼블리셔 : React.js 우대 사항!!!
+
+*React.js
+- UI를 생성해내기 위한 JS 라이브러리
+- 라이브러리 VS 프레임워크
+- 부트스트랩 : 변수명 꼭 사용 => 구현
+- 기능구현 명확한 클래스 꼭 사용
+- 본인들이 만들어 놓은 본인들만의 문법 체계가 존재
+- 그 문법 체계 안에서 무언가를 만들어낼 수 있음
+
+*UI생성을 위한 프론트엔드 & 퍼블리싱 영역의 대표적인
+프레임워크 : vue.js / angluar.js
+
+*라이브러리는 기본적인 웹 표준언어를 활용할 수 있는 여지를 최대한 부여
+일부 기능에 한해서만 자신들만의 문법 체계를 활용
+React.js
+
+Angluar : MS / JS 프레임워크
+Vue : 쉬움!!! / 기능 깊이 얕다!!! 카카오
+순수 JS 최대한의 기능 구현 && 중.난이도!!
+> FB
+
+-> F/B & Insta & 넷플릭스 & 노션
+
+*React.js 의 강력한 장점!!!
+1. 컴포넌트 기반으로 UI 구현 => 레고블럭
+- 에뛰드
+- 모든 전페이지에 : header & footer
+- 만약, header & footer 하나의 독립적인 파일로 생성
+- html에서 JS를 사용할 때, script태그를 사용해서 연동하듯이
+
+2. 가상돔을 활용해서 화면 업데이트 구현
+- DOM
+- html, css 문서들을 JS로 끌어오는것
+- html안에있는 모든 요소들을 DOM
+
+- DOM : 일종의 명세서입니다!!!
+
+1) VS code : html, css, js를 작성(*문서)
+2) 컴퓨터 cpu, ram : DOM
+3) 웹브라우저 : 문서 구현 (*parse & fetch => render)
+
+유명배우의 인스타그램 게시물을 웹브라우저 화면 구현!!!
+하트 선택 여부 차이 => 웹브라우저의 모든 UI영역을 다시 그려줘야함!!!
+React를 실행함과 동시에 가상돔 2개 생성!!!
+첫번째 가상돔!!! 웹브라우저가 렌더링이 된 최초시점의 UI를 기억하고 있는 명세서
+두번째 가상돔!!! 첫번째 가상돔에서 업데이트가 된 최종시점의 UI를 기억하고 있는 명세서
+=> 첫번째 & 두번째 가상돔 비교해서 업데이트가 된 컴포넌트 재빠르게 바꿔서 렌더링
+
+3. CSR방식을 활용해서 서버의 의존도 낮춤
+- 웹 브라우저에서 상태가 변경!! / 업데이트!!
+- 기존 전통적인 방식 : SSR방식 : Server Side Rendering
+- CSR방식 : Client Side Rendering
+
+*웹 브라우저가 읽을 수 있는 3대 언어!!
+- html, css, js
+- chrome 웹브라우저 : V8 검색엔진!!
+- 개발자들이?
+
+*Node.js => 갤럭시 / 아이폰 앱
+*npm : node package manager
+*npm i 설치하고자하는 앱이름
+
+react는 Node.js에서도 VIP
+
+npx create-react-app .
+
+sado > react + redux +.....
+
+git-pull / 터미널 npm i
+
+http://localhost:3000/
+
+웹 페이지 구현!!!
+웹앱 페이지 구현!!!
+> 웹페이지 UI/UX
+> react native : 안드로이드 * iOS
+> 앱 => kotlin / babel
+> flutter > 언어!!!
+
+가상돔!!! => SEO
+> CSR // SSR
+> React.js + TS + Next.js + Node.js
+
+컴포넌트는 거의 99% 반드시 : 대문자로 시작!!!
+
+100페이지 / 10페이지 / 5페이지
+
+SPA : Single Page Application
+
+React를 : 컴포넌트 기반의 SPA으로 운영되는 CSR방식의 JS 라이브러리 입니다!
+
+Module :
+Node.js : JS 파일 컴포넌트 화 => 여기에서, 저기에서 사용!! => 모듈화로 전환!!!
+
+=> CommonJS 모듈 시스템 구축!!
+CJS 모듈시스템
+
+=> Ecmascript JS 모듈 시스템 표준!!
+ESM 모듈시스템
+
+Component 문법!!!
+1) JSX 문법
+JS & XML 문법
+API Data
+svg > xml = extensible mark language
+
+변수 선언 : 숫자, 문자열, 논리, 배열, 객체, 함수 등 값
+1) JSX 문법에서는 직접 사용할 수 없는 값!!
+=> 객체형 타입의 데이터는 직접 사용불가!
+
+2) 반드시 닫힘 규칙!! => markup 규칙!!!
+
+3) 반드시 1개 이상의 부모요소가 존재해야!!
+
+4) 삼항조건 연산자 || 조건부 렌더링
