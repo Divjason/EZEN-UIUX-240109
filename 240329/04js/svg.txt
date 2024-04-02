@@ -1,0 +1,19 @@
+<svg width="1919" height="731" viewBox="0 0 1919 731" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M570 10C308.5 -26.5 135 62 0.5 95V730H1921V95C1753.5 176 1579.5 209 1344 209C1028.11 209 875.763 52.6782 570 10Z" stroke="black"/>
+</svg>
+
+
+
+
+
+<svg width="1919" height="773" viewBox="0 0 1919 773" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M453 100C283.5 11.5 184 0.499989 0.5 0.5V772H1921V63C1753.5 144 1381.5 288 1146 288C825 288 726.67 242.89 453 100Z" stroke="black"/>
+</svg>
+
+
+
+
+
+<svg width="1919" height="730" viewBox="0 0 1919 730" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M585.5 276C367.959 243.273 245 160.5 0.5 20V729H1921V20C1693 -24 1501 6.78688 1312 147.287C1070.85 326.558 758.5 302.027 585.5 276Z" stroke="black"/>
+</svg>

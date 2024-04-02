@@ -13,7 +13,8 @@ a {
 /* :root {
   --main-color: #000;
 }
+*/
 @font-face {
-  font-family: "NotoSansKR";
-  src: url();
-} */
+  font-family: "Back to Black Demo";
+  src: url("./font/Back_to_Black_Demo.otf");
+}
