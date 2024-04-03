@@ -1,0 +1,82 @@
+npx create-react-app "project name || folder name"
+
+1.기본개념
+- components
+- Virtual DOM
+- CSR
+
+2.JSX 문법
+
+3.props 객체
+
+4.state 변수 : component가 가지고 있는 상태값
+- 상태 값을 변경하려면 useState( ) : React Hooks 중 하나!!
+- form 태그 요소 안에 있는 기본적인 input 태그 || textarea || select && option
+- 상태의 변화값을 check하고, state변수값이 업데이트가 될 수 있도록 제어!!!
+
+5.props & state 변수 동시에 활용!!!
+
+*React Hooks
+-> 언제, 어떤 리액트 훅을 가져다가 사용해야하는지 모르겠습니다!!!
+
+*JS
+-> %2 === 0
+
+**왜? 컴포넌트를 자꾸 만들어서 작업!!!
+1) React 장점 : JS를 활용 작업 => 300줄 / 문제 = bug
+300줄 달하는 JS문장 하나씩 검증 => debuging
+
+2) component안에 존재하는 state 변수값이 업데이트가 되는 순간 => rerendering
+
+*React는 Rendering이 매우 중요한 개념!!!
+=> html을 포함한 기타 웹브라우저 parsing할 수 있는 문서를 웹 브라우저가 화면에 출력해는 기능 => rendering이라고 함!!!
+
+0) component가 mount가 되는 순간 무조건 최초 rendering이 발생
+1) component의 state 값이 변경되면 무조건 rendering이 발생
+2) 부모 component로부터 받아오는 props의 값이 변경되면 무조건 rendering이 발생
+3) 부모 component가 rendering이 되면, 무조건 자식 component도 rendering이 됨
+
+*리액트 훅 : useRef( ) :
+- Ref = reference 약어!!! => 참조!!!
+- 기존 JS, DOM을 활용해서 html 문서를 컨트롤했던 그 기능!!!
+- JS : DOM = input.value = ""
+
+useState( ) : Component의 State 변수값을 컨트롤 해주는 훅 함수
+useRef( ) : 특정 요소의 DOM을 컨트롤 해주는 훅 함수
+useEffect( ) : 컴포넌트의 "생애주기" = "life cycle" 를 컨트롤 해주는 훅 함수
+- 사람 : 생애주기
+- 아기 -> 유아기 -> 청소년기 -> 성인 -> 노인 -> 사망
+- 컴포넌트 : 생애주기
+- mount -> update -> unmount
+1) "의존성 배열"이 업데이트 or 변경되면 useEffect( ) 안에 callback 실행
+=> 외부 API => state
+=> 웹 브라우저 처음 켜졌을 때에는 data x
+=> 사용자가 지역 매장정보 버튼 / select
+=> 의존성 배열에 복수의 state값을 적용한 경우, 그중 1개만 업데이트가 되어도 useEffect( ) 실행
+
+2) 만약, "의존성 배열"을 설정하지 않은 경우, 컴포넌트가 랜더링 될 때마다 콜백함수를 실행시킴
+
+3) 만약, "의존성 배열"에 빈배열을 적용하는 경우, 컴포넌트가 최초 mount가 되는 시점에만 딱 한번 실행
+
+=> API 데이터를 가져와서 사용해야하는 그 시점!!
+=> 웹브라우저를 처음 켜자마자 바로 무언가를 딱 한번 실행시켜야하는 상황!!!
+
+cleanup 개념
+
+*ToDoList => React.js
+
+*어떤 기능을 구현 정의 => 화면 UI 설계 => 기능부여
+
+
+
+
+
+
+
+
+
+
+
+
+
+
