@@ -1,0 +1,14 @@
+.buttons {
+  display: flex;
+  gap: 4px;
+}
+.buttons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.buttons button:first-child,
+.buttons button:last-child {
+  width: 20px;
+}

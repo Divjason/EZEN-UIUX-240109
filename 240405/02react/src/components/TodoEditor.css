@@ -1,0 +1,37 @@
+.TodoEditor .editor_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+}
+.TodoEditor input {
+  flex: 1;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  margin-top: 15px;
+  padding: 15px;
+  transition: all 0.3s;
+}
+.TodoEditor input:focus {
+  outline: none;
+  border: 1px solid #1f93ff;
+}
+.TodoEditor input:focus::placeholder {
+  opacity: 0;
+}
+.TodoEditor button {
+  width: 80px;
+  height: 48px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #1f93ff;
+  color: #fff;
+  transition: all 0.3s;
+}
+.TodoEditor button:hover {
+  background: #fff;
+  border: 1px solid #1f93ff;
+  color: #1f93ff;
+}
