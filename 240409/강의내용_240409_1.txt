@@ -1,0 +1,51 @@
+UI/UX 기획자 : 
+- OT자료 : 퍼블리셔 Target
+
+- F/E => UI보다는 API 활용한 Data 포트폴리오
+(*외부 Data / JS / React.js)
+
+- JS x / Figma & PSD & PPT
+
+- 지금부터 공부해도 지원가능할까요?
+(*Tool + 시각적)
+
+- 경쟁률 치열
+
+웹 개발자와 UI 기획자가 함께 보는 UI 앱 기획서!!
+
+*특정한 목적 및 이유로 인해 서비스 필요!!! 도출!!!
+=> FGI 테스트
+=> Focus Group Interview
+
+*기획!!! 하늘에 뚝 x
+=> 데이터 정보값을 활용!!!
+=> 1) 네이버 사이트 > 일일접속자 63%
+=> Naver Data Lab => Target User Needs
+=> Naver ADs => Target User Wants
+=> if, 내가 음료회사 UI/UX 기획자로 취업!!!
+=> Mission : 경쟁업체를 고려한 UI/UX 기획
+=> 산업통계 : 콤부차 / 티젠
+=> Reason : #붓기 / #다이어트 / #독소
+=> 3040대 여성분들은 다이어트 관심 => 차 및 음료 선택, 다이어트에 도움을 주거나 효과가 있을 것으로 판단되는 음료!!
+
+User Research!!!!
+- FGI 
+
+대기업 운영 > Lab 페이지 > SKT
+
+**대한민국 Top 기업 => Data 돈을 주고 사온다!!!
+Data를 판매하는 대표적인 기업 2군데
+1.통신사
+2.카드사
+
+R => 통계분석 프로그램 / SQL / Python
+
+구글링 사이트
+
+UI/UX
+1.프롤로그 페이지 : 내가 지금부터 소개하고자 하는 서비스
+2.User Research : 이 서비스가 왜 런칭하게 되었는지를 소개
+
+1920 / 120px * 2 = 240px
+본문 컨텐츠 : 1680px
+
