@@ -1,0 +1,77 @@
+1.F/E 리액트 => 아니오!!!
+- Vue / Angluar / React
+
+2.P/B
+- JS 능력 / 실력
+- html, css, j
+
+3.데이터를 배열안에 담아 놓았다!!
+- 반복해서 배열안에 있는 값을 처리하겠다는 의도!!
+- for (*in / of / forEach) / while / 
+- map
+
+4.react.js
+- Create
+- Read
+- Update
+- Delete
+
+useRef( ) : DOM 컨트롤 하고자 할 때
+=> 객체 : value값을 활용해서 컨트롤 할때
+
+*공통컴포넌트 : 
+- 버튼 : type, text, onclick
+- 새롭게 일기작성 / 읽기 / 수정
+
+*todolist 앱 :
+[
+{
+해야할일 text
+id
+isDone
+date
+}
+]
+
+자주 반복적으로 컴포넌트에서 사용될 것으로 판단되는 함수를 저장!!!
+
+react를 활용해서 <Link> => a
+
+<div class="common emotionId1">
+
+</div>
+
+1.공통 컴포넌트
+- 버튼
+- 헤더영역
+- 일기 편집 및 새로작성
+
+2.공통 함수
+- 이미지를 불러오는 함수
+- 찾아온 이미지를 선택했을 때, 기능구현
+- 오늘의 날짜 세팅
+
+3.컴포넌트안에서 일기 데이터가 업데이트 => 저장!!!
+
+값이 변경!!!
+저장 => 관리 => 컴포넌트 전달!!!
+=> state / 상태변화.관리
+=> useState( )
+=> 컴포넌트 밖에서 state 변화를 처리하도록 해주고 싶다!!!
+
+const reducer = (value, action) => {
+switch(action) 
+case action 1:
+ return ~~~
+}
+
+const [state, dispatch ] = useReducer(reducer , 초기값)
+
+event ?
+dispatch({
+ key: value
+})
+
+10개의 일기가 존재!!!
+
+[1번, 2번, 3번, 4번, ......]
