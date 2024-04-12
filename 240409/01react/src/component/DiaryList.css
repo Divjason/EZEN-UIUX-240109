@@ -1,0 +1,21 @@
+.DiaryList .menu_wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 30px;
+}
+.DiaryList .left_col select {
+  border: none;
+  border-radius: 5px;
+  background: #ececec;
+  margin-right: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "Nanum Pen Script";
+}
+.DiaryList .right_col {
+  flex-grow: 1;
+}
+.DiaryList .right_col button {
+  width: 100%;
+}
