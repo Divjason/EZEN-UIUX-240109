@@ -1,0 +1,58 @@
+.Viewer section {
+  width: 100%;
+  margin: 20px 0 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+.Viewer h4 {
+  font-size: 22px;
+  font-weight: bold;
+}
+.Viewer .emotion_img_wrapper {
+  background: #ececec;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+}
+.Viewer .emotion_img_wrapper_1 {
+  background: #64c964;
+}
+.Viewer .emotion_img_wrapper_2 {
+  background: #9dd772;
+}
+.Viewer .emotion_img_wrapper_3 {
+  background: #fdce17;
+}
+.Viewer .emotion_img_wrapper_4 {
+  background: #fd8446;
+}
+.Viewer .emotion_img_wrapper_5 {
+  background: #fd565f;
+}
+.Viewer .emotion_descript {
+  font-size: 25px;
+  color: #fff;
+}
+
+.Viewer .content_wrapper {
+  width: 100%;
+  height: 150px;
+  background: #ececec;
+  border-radius: 5px;
+}
+.Viewer .content_wrapper p {
+  padding: 20px;
+  text-align: left;
+  font-size: 20px;
+  font-family: "Yeon Sung";
+  font-weight: 400;
+  line-height: 2.5;
+}

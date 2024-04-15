@@ -10,7 +10,7 @@ const Home = () => {
   const [pivotDate, setPivotDate] = useState(new Date());
   const [filteredData, setFilteredData] = useState([]);
   useEffect(() => {
-    if (data.length > 1) {
+    if (data.length >= 1) {
       const { beginTimeStamp, endTimeStamp } = getMonthRangeByDate(pivotDate);
       setFilteredData(
         data.filter(

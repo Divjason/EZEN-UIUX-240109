@@ -33,4 +33,4 @@ const DiaryItem = ({ id, date, emotionId, content }) => {
   );
 };
 
-export default DiaryItem;
+export default React.memo(DiaryItem);
