@@ -2,13 +2,16 @@ import Button from "../component/Button";
 import Header from "../component/Header";
 import DiaryList from "../component/DiaryList";
 import { DiaryStateContext } from "../App";
-import { getMonthRangeByDate } from "../util";
+import { getMonthRangeByDate, setPageTitle } from "../util";
 import { useState, useContext, useEffect } from "react";
 
 const Home = () => {
   const data = useContext(DiaryStateContext);
   const [pivotDate, setPivotDate] = useState(new Date());
   const [filteredData, setFilteredData] = useState([]);
+  useEffect(() => {
+    setPageTitle("감정일기장 메인페이지");
+  }, []);
   useEffect(() => {
     if (data.length >= 1) {
       const { beginTimeStamp, endTimeStamp } = getMonthRangeByDate(pivotDate);

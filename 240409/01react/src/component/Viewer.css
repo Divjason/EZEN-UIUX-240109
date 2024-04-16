@@ -44,7 +44,7 @@
 
 .Viewer .content_wrapper {
   width: 100%;
-  height: 150px;
+  height: auto;
   background: #ececec;
   border-radius: 5px;
 }

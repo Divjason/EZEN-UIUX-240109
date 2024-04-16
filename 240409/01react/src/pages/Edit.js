@@ -1,4 +1,5 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
+import { setPageTitle } from "../util";
 import { DiaryDispatchContext } from "../App";
 import { useParams, useNavigate } from "react-router-dom";
 import useDiary from "../hooks/useDiary";
@@ -27,6 +28,9 @@ const Edit = () => {
       navigate("/", { replace: true });
     }
   };
+  useEffect(() => {
+    setPageTitle(`${id}번 일기 수정`);
+  }, []);
   if (!data) {
     return <div>일기를 불러오고 있습니다...</div>;
   } else {

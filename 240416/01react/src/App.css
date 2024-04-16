@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+
+body {
+  background: url("https://miro.medium.com/v2/resize:fit:5120/1*GsImz-edoeuqCMfKxDus0w.jpeg")
+    center/cover no-repeat;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 18px;
+}
+
+.weatherBox {
+  border: 3px solid #fff;
+  border-radius: 0 30px 0 30px;
+  padding: 50px;
+  background: rgb(240, 255, 255, 0.7);
+  width: 560px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: "Nanum Pen Script";
+}
+.weatherBox h2 {
+  font-size: 38px;
+}
+
+.weatherButton {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-family: "Nanum Pen Script";
+}
+.weatherButton button {
+  font-size: 30px;
+}

@@ -1,0 +1,32 @@
+문자열을 활용해서 class 값을 정의!!!!
+
+공통 class name : emotion_img_wrapper
+각 이미지별 독립 class name : emotion_img_wrapper_아이디
+
+렌더링!!!
+=> 웹브라우저가 컴포넌트를 마운트 혹은 업데이트
+
+*최적화!!!!
+1.memo이 제이션
+2.useCallback
+
+*localstorage를 사용할 때 유의사항!!!
+- 아이템을 저장할 때, setItem( )
+- 아이템을 가져올 때, getItem( )
+- 아이템을 지울 때, removeItem( )
+- 로컬스토리지에 값이 저장되면 json의 형태!!!
+- 값의 형변환 필수!!!
+
+굉장히 어려운 난이도!!!!
+> 난이도가 어려운 프로젝트 및 미션!!!
+> 그 이하의 난이도 프로젝트 쉽게
+> 로컬스토리지
+> 페이지 라우팅
+> 페이지 최적화
+> State(*useReducer)
+
+> 배포!!!! / firebase 배포
+
+
+
+
