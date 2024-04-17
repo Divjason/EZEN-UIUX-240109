@@ -1,0 +1,27 @@
+1.<Link> VS useNavigate( )
+
+2.RestFul Routes
+- 페이지 라우팅을 생성.실행 : 비슷한 성격을 띄고 있는 페이지가 다수 필요한 경우, 페이지별 경로(*파라미터를 독립적으로 모두 생성?)
+- 규칙을 갖고 있는 파라미터를 생성.기획 => 효율적으로 페이지 라우팅
+http://localhost:3000/product/1
+http://localhost:3000/product/new
+
+3.쿼리 / ?
+q / query
+
+https://search.naver.com/search.naver
+?sm=tab_hty.top
+&where=nexearch
+&ssc=tab.nx.all
+&query=nike
+
+Private Route
+
+리액트 폰트어썸!!!!!
+
+키보드 이벤트!!!!
+onKeyUp : 키보드가 눌렸다가 떼어지는 그 상황에서 이벤트 발생
+
+onKeyDown : 키보드의 키가 눌려지는 그 상황에서 이벤트 발생
+onKeyPress : 키보드의 키가 눌려지는 그 상황에서 이벤트 발생
+> onKeyPress : 기능키를 인식하지 못함

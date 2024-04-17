@@ -1,0 +1,65 @@
+/* common css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+
+/* header */
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.login-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+/* logo */
+.nav-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* menu */
+.nav-menu-area {
+  display: flex;
+  justify-content: center;
+}
+.menu {
+  display: flex;
+}
+.menu li a {
+  text-decoration: none;
+  color: inherit;
+  margin-left: 20px;
+}
+
+/* search */
+.search-box {
+  position: absolute;
+  right: 50px;
+  top: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+.search-box input {
+  width: 100px;
+  border: 1px solid transparent;
+  padding-left: 10px;
+  transition: all 0.3s;
+}
+.search-box input:focus {
+  outline: none;
+  border-bottom: 1px solid #000;
+}
