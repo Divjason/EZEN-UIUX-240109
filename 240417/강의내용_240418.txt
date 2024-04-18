@@ -1,0 +1,92 @@
+*F/E : 우리가 작업하는 결과물 어디로 가며, 문제가 발생했을 때 왜 안되는것이며?!!!
+
+*사용자의 눈에 보여지는 영역을 기획.개발.작업
+
+*html5를 활용해서 사용자에게 아이디, 이메일 등
+- form > input
+
+1) Data : 아이디, 이메일, 연락처 등
+2) Data Base : DB
+3) DBMS : Data Base Management System
+- A : 페이 / 네이버 || B : 
+- 네이버 : 메일 / 지식인 / 쇼핑 / 뮤직
+- 관계형 DB / 비관계형 DB
+> MySQL & Oracle / Django / Express
+> SQL 등등
+4) API : Application Programming Interface
+Application = 소프트웨어
+Interface = 경계면
+UI 
+날씨관련 / 기상청 || openweathermap
+API Data : API의 기능을 가미한 Data
+
+서버 : 네이버가 가지고 있는 물리적인 DB 공간 & 
+클라이언트 : 네이버 포털사이트
+유저 : 클라이언트를 사용하는 사용자
+
+URL을 기반요청
+1.프로토콜 : 통신규약
+2.https : 구글 / 애플 등등
+3.구글 고객센터 : 메일 => 학습목적
+4.도메인
+
+https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=nike
+
+모든 도메인은 원래 IP주소
+원래 모든 웹페이지 및 사이트는 고유한 IP주소를 가지고 있음!!
+네이버 IP => https://728.10.10.1:8080/index.html
+naver 
+IP 주소를 사용자입장에서 보다 편리하고, 직관 & 명시적으로 이해할 수 있도록 변환해서 사용하자!!! => Domain
+
+"유저"가 특정 "클라이언트" 페이지에 접속!!!
+"서버"에 data를 요청!!
+
+=> https://728.10.10.1 => 컨테이너와 같은 공간의 개념
+
+포트 = port : 서버라는 광활한 하드웨어 공간 중에서 유저가 클라이언트를 통해서 요청한 data를 전송 & 수신할 수 있도록 다리를 놓아주는 spot zone
+
+IP & Port 를 Domain 대체해서 보여주는 시스템
+=> DNS = Domanin Name System
+
+http://localhost:3000/product?q0=nike&q1=shoes
+http://localhost:3001/cosmetic
+http://localhost:3002/accessory
+http://localhost:4000/goods
+
+파라미터 (*동적경로) & 쿼리스트링
+http://127.0.0.1:5500/index.html
+
+UI/UX => 웹디자인 => 퍼블리셔 => 프론트엔드
+=> 요즘은 퍼블리셔 리액트 요구!!!
+=> 원래 퍼블리셔 html, css, js / 리액트
+=> 기업 : 프론트영역 구현 1가지의 방법
+=> 리액트 : 프론트엔드 
+=> 퍼블리셔 html, css, js / 프론트엔드 개발 react
+=> 프론트엔드개발 과잉공급 
+
+회사가 천편일률적으로 다 똑같지 않음!!!
+=> 퍼블리셔 / 프론트엔드
+
+URL / URI / URN 개념
+
+윈도우를 기반으로 프로그램을 만들어서 로컬 서버를 구현!!!
+=> IP 기본 default : 8080 
+
+http://localhost:3004/products
+
+npx json-server --watch db.json --port 3004
+
+Data
+DB
+IP
+Domain
+DNS
+Parameter
+Query String
+API
+http / https
+URL
+URI
+Port
+
+
