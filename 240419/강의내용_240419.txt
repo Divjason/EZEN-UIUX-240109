@@ -1,0 +1,84 @@
+1.네비바
+- 로고
+- GNB
+- 상품검색바
+- 로그인
+
+(*로그인 버튼 클릭 => state)
+
+2.상품정보
+- json-server
+- api
+
+3.로그인 여부 > 상품상세페이지 || 로그인
+- Private Route
+
+4.리액트 부트스트랩 & 폰트어썸
+- UI 구현 라이브러리
+
+5.검색기능
+- json-server : RestFul API 형식
+
+1.filezila
+2.cafe24
+3.netlify
+4.firebase
+5.aws
+
+6.호스팅!!!
+=> 서버 공간에 data 업로드
+- my json server
+
+7.포폴!!!
+- 용량 10mb
+
+무신사 창업주 대학생 : 나이키 등 유명 신발 컬렉터
+> 신발 사진
+> 무진장 신발 사진 많은 카페
+
+
+
+
+
+
+npx json-server --watch db.json --port 3004
+
+json-server : 내장 되어있는 기능!!
+
+매일 아침 react / 복붙!!!
+> npm 업데이트
+> npm i
+
+-s
+-d
+npm uninstall -g json-server
+npm uninstall json-server
+
+npm i -g json-server@0.17.0
+npm i json-server@0.17.0
+
+*Redux :
+- JS의 라이브러리 => React.js
+- React.js의 라이브러리
+
+> Redux를 사용하지 않아도 React.js 문제 없음!!!
+
+> if, F/E => Redux
+
+> useReducer( ) => Redux
+
+*Redux => 동기적인 처리!!!
+> 비동기적인 처리 => Redux Saga / Redux Thunk
+
+1. 컴포넌트 안에 
+const [state, dispatch] = useReducer(reducer, value)
+
+dispatch : 상태변화를 감지하는 촉발함수
+이벤트가 발생하게 되면 실행
+
+type & action객체
+
+2.컴포넌트 밖에서 대기하고 있는 reducer함수 > action객체를 받아서 실제 실행!!! 실행된 결과값을 컴포넌트 안에 state에게 값을 업데이트!!!
+
+독립적인 state data 관리를 시켜주고 싶음!!!
+(*data 용량이 큼)

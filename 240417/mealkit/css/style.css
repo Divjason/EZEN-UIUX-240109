@@ -31,6 +31,85 @@ body {
   color: #fff;
 }
 
+/* main header */
+.main-header {
+  height: 80px;
+  background: var(--crimson);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.btn-back {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 22px;
+}
+.main-header .logo {
+  color: #fff;
+  font-size: 26px;
+}
+.user-alarm {
+  font-size: 22px;
+  color: #fff;
+}
+.user-alarm span {
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+  position: relative;
+}
+.user-alarm span em {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 15px;
+  background: var(--royalblue);
+  border-radius: 100%;
+}
+.user-alarm span em::before {
+  content: attr(data-count);
+  font-style: normal;
+  font-size: 10px;
+  font-family: var(--primary-en);
+  position: absolute;
+  top: -20%;
+  left: 28%;
+}
+.header-iframe {
+  width: 100%;
+  height: 80px;
+}
+
+/* gnb */
+.gnb-iframe {
+  width: 100%;
+  height: 55px;
+}
+.gnb {
+  border-top: 1px solid var(--cloudy-gray);
+  padding-top: 8px;
+  width: 100%;
+  height: 55px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+}
+.gnb a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+}
+.gnb a i {
+  font-size: 18px;
+}
+
 /* preloading */
 .preloading-inner {
   height: inherit;
@@ -152,30 +231,86 @@ body {
   margin: 2px;
 }
 
-/* gnb */
-iframe {
-  width: 100%;
-  height: 55px;
+/* signup */
+.signup-content {
+  padding: 10px;
 }
-.gnb {
-  border-top: 1px solid var(--cloudy-gray);
-  padding-top: 8px;
+.signup-field {
+  margin: 20px 0;
+}
+.signup-field:first-child {
+  margin-top: 0;
+}
+.signup-field span {
+  display: block;
+}
+.signup-field span em {
+  color: var(--crimson);
+}
+.signup-field.id-pw input {
   width: 100%;
-  height: 55px;
+  border: none;
+  border-bottom: 1px solid var(--gainsboro);
+  padding: 8px 0;
+}
+.signup-field.id-pw input:focus {
+  outline: none;
+}
+.signup-field.birth div {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: fixed;
-  bottom: 0;
-  background: #fff;
+  gap: 10px;
+  margin-top: 8px;
 }
-.gnb a {
+.signup-field.birth div > * {
+  width: 33.33%;
+  border: 1px solid var(--gainsboro);
+  border-radius: 3px;
+  padding: 7px;
+  text-align: center;
+  color: var(--silver-gray);
+}
+.signup-field.birth div input:focus {
+  outline: none;
+}
+.signup-field.phone > div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  flex: 1;
+  gap: 5px;
+  margin-top: 8px;
 }
-.gnb a i {
-  font-size: 18px;
+.signup-field.phone > div input {
+  width: 250px;
+  margin-bottom: 4px;
+  padding: 7px;
+  border: 1px solid var(--gainsboro);
+  border-radius: 3px;
+}
+.signup-field.phone > div input:last-child {
+  margin-bottom: 0;
+}
+.signup-field.phone > div input:focus {
+  outline: none;
+}
+.btn-getcode {
+  width: 100px;
+  padding: 4px;
+  background: #fff;
+  border: none;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+.btn-getcode:hover {
+  color: var(--crimson);
+}
+.agree-term {
+  margin-bottom: 25px;
+}
+.agree-term label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+.btn-signup {
+  background: var(--crimson);
+  margin-bottom: 14px;
 }
