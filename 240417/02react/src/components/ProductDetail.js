@@ -7,7 +7,7 @@ const ProductDetail = () => {
   const [loading, setLoading] = useState(false);
   const { id } = useParams();
   const getProductDetail = async () => {
-    const url = `http://localhost:3004/products/${id}`;
+    const url = `https://my-json-server.typicode.com/Divjason/musinsashopping/products/${id}`;
     setLoading(true);
     const response = await fetch(url);
     const data = await response.json();

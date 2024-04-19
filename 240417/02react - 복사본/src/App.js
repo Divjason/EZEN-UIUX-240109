@@ -1,14 +1,18 @@
 import "./App.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Navbar";
 import ProductAll from "./components/ProductAll";
 import ProductDetail from "./components/ProductDetail";
 import Login from "./components/Login";
+import PrivateRoute from "./components/PrivateRoute";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
   const [authenticate, setAuthenticate] = useState(false);
+  useEffect(() => {
+    console.log(authenticate);
+  }, [authenticate]);
   return (
     <div>
       <Navbar authenticate={authenticate} setAuthenticate={setAuthenticate} />
@@ -16,13 +20,11 @@ function App() {
         <Route path="/" element={<ProductAll />} />
         <Route
           path="/login"
-          element={<Login />}
-          setAuthenticate={setAuthenticate}
+          element={<Login setAuthenticate={setAuthenticate} />}
         />
         <Route
           path="/product/:id"
-          element={<ProductDetail />}
-          authenticate={authenticate}
+          element={<PrivateRoute authenticate={authenticate} />}
         />
       </Routes>
     </div>

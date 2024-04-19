@@ -21,6 +21,9 @@ li {
   align-items: center;
   gap: 8px;
 }
+.login-menu span {
+  cursor: pointer;
+}
 
 /* logo */
 .nav-logo {
@@ -62,4 +65,31 @@ li {
 .search-box input:focus {
   outline: none;
   border-bottom: 1px solid #000;
+}
+
+/* product card */
+.productcard {
+  padding: 20px 0;
+}
+.productcard img {
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* product detail */
+.product-detail-img {
+  display: flex;
+  justify-content: flex-end;
+}
+.product-info {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.drop-down {
+  margin-top: 20px;
+  width: 100%;
+}
+.add-button {
+  margin-top: 20px;
+  width: 100%;
 }
