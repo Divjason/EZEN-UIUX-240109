@@ -12,7 +12,7 @@ const ProductCard = ({ item }) => {
       <div>Concious Choice</div>
       <div>{item?.title}</div>
       <div>￦{item?.price}</div>
-      <div>{item?.new == true ? "신상품" : ""}</div>
+      <div>{item?.new === true ? "신상품" : ""}</div>
     </div>
   );
 };

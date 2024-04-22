@@ -1,18 +1,17 @@
 import React, { useEffect, useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import ProductCard from "./ProductCard";
 import { Container, Row, Col } from "react-bootstrap";
-import { useSearchParams } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { productAction } from "../redux/actions/productAction";
 
 const ProductAll = () => {
-  const [productList, setProductList] = useState([]);
   const [query, setQuery] = useSearchParams();
-  const searchQuery = query.get("q") || "";
-
+  const productList = useSelector((state) => state.productList);
+  const dispatch = useDispatch();
   const getProducts = async () => {
-    const url = `https://my-json-server.typicode.com/Divjason/shopping01/products?q=${searchQuery}`;
-    const response = await fetch(url);
-    const data = await response.json();
-    setProductList(data);
+    const searchQuery = query.get("q") || "";
+    dispatch(productAction.getProduct(searchQuery));
   };
   useEffect(() => {
     getProducts();
@@ -20,7 +19,7 @@ const ProductAll = () => {
   return (
     <Container>
       <Row>
-        {productList?.map((item, idx) => (
+        {productList.map((item, idx) => (
           <Col key={idx} lg={3}>
             <ProductCard item={item} />
           </Col>

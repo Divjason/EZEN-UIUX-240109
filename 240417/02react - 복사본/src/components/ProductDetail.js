@@ -7,7 +7,7 @@ const ProductDetail = () => {
   const [loading, setLoading] = useState(false);
   const { id } = useParams();
   const getProductDetail = async () => {
-    const url = `https://my-json-server.typicode.com/Divjason/shopping01/products/${id}`;
+    const url = `https://my-json-server.typicode.com/Divjason/musinsashopping/products/${id}`;
     setLoading(true);
     const response = await fetch(url);
     const data = await response.json();
@@ -38,12 +38,9 @@ const ProductDetail = () => {
                 사이즈 선택
               </Dropdown.Toggle>
               <Dropdown.Menu>
-                {product?.size?.length > 0 &&
-                  product?.size.map((item, idx) => (
-                    <Dropdown.Item key={idx} href="#/action-1">
-                      {item}
-                    </Dropdown.Item>
-                  ))}
+                <Dropdown.Item href="#/action-1">S</Dropdown.Item>
+                <Dropdown.Item href="#/action-2">M</Dropdown.Item>
+                <Dropdown.Item href="#/action-3">L</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
             <Button variant="dark" className="add-button">

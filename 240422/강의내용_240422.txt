@@ -1,0 +1,78 @@
+React.js > Redux // Redux Toolkit
+
+1.redux : npm install redux
+2.react-redux : npm install react-redux
+3.react-bootstrap : npm install react-bootstrap bootstrap
+4.redux thunk : npm install redux-thunk
+
+*Redux를 활용해서 연락처 앱
+> 검색기능!!!!
+
+*UI관리하는 영역 => 이벤트 => 객체의 형태 정의
+(*useSelector)
+
+*dispatch(action 객체)
+
+*action 객체 : type / payload
+
+*reducer
+
+*store (*데이터를 보관 / 저장 / 관리)
+
+
+> 장점 : 
+- 컴포넌트간 data 전달 : 일방향 (*부모 => 자식)
+- props Drilling x
+
+*데이터가 담길 자료구조!!!
+> 
+[
+ {이름 : "박세진", 전화번호 : "01012345678"},
+ {이름 : "변용현", 전화번호 : "01012345678"},
+ {이름 : "김수현", 전화번호 : "01012345678"},
+ {이름 : "안성진", 전화번호 : "01012345678"},
+]
+
+URL주소값 => 
+useParams( ) : 동적 경로를 설정할 때
+./goods : {
+ key: value,
+ key: value,
+ key: value,
+ key: value,
+}
+
+http://localhost:3000/goods/stationany/kids
+http://localhost:3000/shoes
+http://localhost:3000/foods
+
+useSearchParams( )
+http://localhost:3000/goods/
+
+Redux Middleware
+> Redux : 순차적으로 작동을 하는 매커니즘을 가지고 있음
+1) 이벤트
+2) 값 (*dispatch)
+3) reducer
+
+범죄도시 API
+
+4) store
+5) UI
+
+&프로젝트에서 동시에 운영되어야하는 다른 기타 요소들과의 실행순서를 정의!!! => 비동기적으로 처리할 수 있어야 함!!!
+
+Redux & API 데이터를 호출해와야하는 상황이 발생!!!
+
+Hardware / Software
+Middleware : 프로그래밍 과정 가운데, 중간에서 어떠한 역할을 해주는 요소!!! 컨셉!!!! 지칭 명사x / 동사x
+
+*대표적인 redux 미들웨어 중 하나
+redux thunk : 작은 규모의 프로젝트
+redux saga : 큰 규모의 프로젝트
+
+
+
+
+
+
