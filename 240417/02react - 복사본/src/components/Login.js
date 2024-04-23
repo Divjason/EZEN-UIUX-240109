@@ -1,18 +1,19 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Container, Form, Button } from "react-bootstrap";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { authenticateAction } from "../redux/actions/authenticateAction";
 
 const Login = ({ setAuthenticate }) => {
   const [id, setId] = useState("");
   const [password, setPassword] = useState("");
+  const trueOk = useSelector((state) => state.auth.authenticate);
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const loginUser = (e) => {
     e.preventDefault();
+    setAuthenticate(trueOk);
     dispatch(authenticateAction.login(id, password));
-    setAuthenticate(true);
     navigate("/");
   };
   return (
@@ -23,7 +24,7 @@ const Login = ({ setAuthenticate }) => {
           <Form.Control
             type="email"
             placeholder="Enter email"
-            onChange={(e) => setImmediate(e.target.value)}
+            onChange={(e) => setId(e.target.value)}
           />
           <Form.Text className="text-muted">
             We'll never share your email with anyone else.

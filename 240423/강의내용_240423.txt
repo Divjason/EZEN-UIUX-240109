@@ -1,0 +1,82 @@
+*Redux (동기적 실행 // API 데이터 || 외부에서 data를 가져와서 실행)
+1.UI 화면 > 이벤트 => "Action"
+> useSelector( )
+
+2.dispatch(Action)
+
+3.reducer
+
+4.store
+
+*Redux Middleware (컨셉이름 / 명칭x)
+=> 탄생이유 : Redux의 reducer를 비동기적으로 처리하기 위한 목적
+=> store에 저장되는 reducer 및 해당 reducer 내부에서 처리하고 있는 action객체를 비동기적으로 처리하기 위해서 reducer & action객체를 분리.독립시킬 필요가 발생했음!!!
+
+1.UI 화면 > 이벤트 => "Action"
+> useSelector( )
+
+2.dispatch(Action)
+
+3.action (여러개 사용가능)
+
+4.reducer (여러개 사용가능)
+
+5.store
+
++ 복수의 reducer가 존재할 때!!! 어떻게 처리해야하는가?!!!!
+
+redux를 사용하는데, reducer를 추가?
+=> 관리해야할 state 또 존재하는가?
+
+state 관리 : redux / react-query
+
+1.todolist
+2.가위.바위.보 게임
+3.emotiondiary
+4.날씨 data API
+5.연락처 앱
+6.쇼핑몰 메인 (with 로그인)
+
++
+
+넷플릭스 버전 1
+mbti 성향체크
+
++
+
+TS
+
++
+
+TS & React.js
+> 가상화폐 사이트
+> 애니메이션 효과
+> 스타일컴포넌트
+> 슬라이드 & 모달효과
+> 칸반보드 (*드래그 & 드롭효과)
+> 넷플릭스 버전 2
+
++
+
+UI/UX => 프로젝트!!
+
+그동안 JS의 fetch( )를 활용해서 데이터를 가져왔음!!!
+동시에서 여러개의 외부 API 데이터를 가져와서 보다 효율적으로 사용할 수 있도록 도와주는 API 호출 라이브러리 존재!!!
+axios => 자동으로 json 형식 변환가능 & 크로스브라우징
+
+fetch => 웹 브라우저 상에서 외부 API data를 가져오고자 할 때!!!
+Node.js => 제약!! (*웹 브라우저 중 호환이 안되는 경우도 존재!)
+외부데이터 (*json형식) => .json( ) 객체 무조건 변환!!!
+
+https://api.themoviedb.org/3/tv/popular
+
+https://api.themoviedb.org/3/movie/popular
+
+https://api.themoviedb.org/3/movie/top_rated
+
+https://api.themoviedb.org/3/movie/upcoming
+
+외부 API 데이터를 여러개 사용하고자 할 때, 만약 URL 경로 내 공통 & 반복적으로 사용되는 동적경로가 존재한다면, 해당 주소를 프로토타입으로 만들어서 뒤에 상이한 주소값만 적용할 수 있도록 인스턴스 기능을 부여해준다!!!
+
+
+

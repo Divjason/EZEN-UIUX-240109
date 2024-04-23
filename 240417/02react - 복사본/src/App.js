@@ -6,12 +6,14 @@ import ProductAll from "./components/ProductAll";
 import Login from "./components/Login";
 import PrivateRoute from "./components/PrivateRoute";
 import { Routes, Route } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 function App() {
   const [authenticate, setAuthenticate] = useState(false);
+  const trueOk = useSelector((state) => state.auth.authenticate);
   useEffect(() => {
-    console.log(authenticate);
-  }, [authenticate]);
+    setAuthenticate(trueOk);
+  }, [trueOk]);
   return (
     <div>
       <Navbar authenticate={authenticate} setAuthenticate={setAuthenticate} />
