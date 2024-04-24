@@ -7,7 +7,7 @@ import Navigation from "./components/Navigation";
 
 function App() {
   return (
-    <div className="wrapper">
+    <div>
       <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />

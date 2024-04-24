@@ -1,22 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-  Form,
-  Navbar,
-  Container,
-  Nav,
-  NavDropdown,
-  Button,
-} from "react-bootstrap";
+import { Form, Navbar, Container, Nav, Button } from "react-bootstrap";
 import netflix from "../img/netflix.png";
 
 const Navigation = () => {
   return (
-    <Navbar className="navBar" bg="dark" variant="dark" expand="lg">
+    <Navbar bg="dark" variant="dark" expand="lg">
       <Container fluid>
-        <img width={100} src={netflix} alt="netflix" />
         {/* <img width={100} src="https://cromidi.cafe24.com/netflix/netflix.png" /> */}
-        {/* <div className="image"></div> */}
+        {/* <img width={100} src={netflix} alt="netflix" /> */}
+        <div className="image"></div>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav

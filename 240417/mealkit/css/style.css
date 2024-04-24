@@ -708,6 +708,11 @@ body {
   background: var(--royalblue);
   border-radius: 0;
 }
+.cart-item-empty {
+  text-align: center;
+  padding: 50px 0;
+  display: none;
+}
 .cart-notice {
   padding: 14px 16px;
   color: var(--light-gray);
