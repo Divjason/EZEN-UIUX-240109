@@ -1,0 +1,9 @@
+.App {
+  text-align: center;
+  font-family: "SimKyungha";
+}
+
+@font-face {
+  font-family: "SimKyungha";
+  src: url("/src/assets/fonts/SimKyungha.ttf");
+}

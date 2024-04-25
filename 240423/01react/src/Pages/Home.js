@@ -15,7 +15,7 @@ const Home = () => {
 
   if (loading) {
     return (
-      <div className="slide">
+      <div className="loader">
         <ClipLoader
           color="#fff"
           loading={loading}
@@ -25,20 +25,21 @@ const Home = () => {
         />
       </div>
     );
-  }
-  return (
-    <div className="slide">
-      {popularMovies.results && <Banner movie={popularMovies.results[1]} />}
-      <div className="movieContents">
-        <h1>Popular Movie</h1>
-        <MovieSlide moives={popularMovies} />
-        <h1>TopRated Movie</h1>
-        <MovieSlide moives={topRatedMovies} />
-        <h1>Upcoming Movie</h1>
-        <MovieSlide moives={upComingMovies} />
+  } else {
+    return (
+      <div className="slide">
+        {popularMovies.results && <Banner movie={popularMovies.results[1]} />}
+        <div className="movieContents">
+          <h1>Popular Movie</h1>
+          <MovieSlide movies={popularMovies} />
+          <h1>TopRated Movie</h1>
+          <MovieSlide movies={topRatedMovies} />
+          <h1>Upcoming Movie</h1>
+          <MovieSlide movies={upComingMovies} />
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 };
 
 export default Home;
