@@ -60,7 +60,7 @@ const Button = styled.button`
 
 const Home = () => {
   const navigate = useNavigate();
-  const handleClick = () => {
+  const handleClickButton = () => {
     navigate("/question");
   };
   return (
@@ -78,7 +78,7 @@ const Home = () => {
           />
         </LogoImage>
         <Desc>MBTI를 기반으로 하는 나랑 잘맞는 고양이 찾기!</Desc>
-        <Button onClick={handleClick}>테스트 시작하기</Button>
+        <Button onClick={handleClickButton}>테스트 시작하기</Button>
       </Contents>
     </Wrapper>
   );

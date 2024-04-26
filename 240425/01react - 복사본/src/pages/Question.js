@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { createSearchParams, useNavigate } from "react-router-dom";
 import styled from "styled-components";
-import { ProgressBar, Button } from "react-bootstrap";
+import { Button, ProgressBar } from "react-bootstrap";
 import { QuestionData } from "../assets/data/questiondata";
 
 const Wrapper = styled.div`
@@ -40,6 +40,7 @@ const Question = () => {
       item.id === type ? { id: item.id, score: item.score + no } : item
     );
     setTotalScore(newScore);
+    console.log(totalScore);
     if (QuestionData.length !== questionNo + 1) {
       setQuestionNo(questionNo + 1);
     } else {
@@ -49,20 +50,21 @@ const Question = () => {
           (curr.score >= 2 ? curr.id.substring(0, 1) : curr.id.substring(1, 2)),
         ""
       );
+      console.log(mbti);
       navigate({
         pathname: "/result",
-        search: `?${createSearchParams({
-          mbti: mbti,
-        })}`,
+        search: `?${createSearchParams({ mbti: mbti })}`,
       });
     }
   };
+
   return (
     <div>
       <ProgressBar
         striped
         variant="danger"
         now={(questionNo / QuestionData.length) * 100}
+        style={{ marginTop: "20px" }}
       />
       <Wrapper>
         <div>
@@ -72,7 +74,7 @@ const Question = () => {
               onClick={() =>
                 handleClickButton(1, QuestionData[questionNo].type)
               }
-              style={{ width: "400px", height: "200px", fontSize: "16px" }}
+              style={{ width: "400px", height: "200px", fontSize: "15px" }}
             >
               {QuestionData[questionNo].answera}
             </Button>
@@ -80,7 +82,7 @@ const Question = () => {
               onClick={() =>
                 handleClickButton(0, QuestionData[questionNo].type)
               }
-              style={{ width: "400px", height: "200px", fontSize: "16px" }}
+              style={{ width: "400px", height: "200px", fontSize: "15px" }}
             >
               {QuestionData[questionNo].answerb}
             </Button>

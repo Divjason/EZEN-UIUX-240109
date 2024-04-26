@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+  font-family: "SimKyungha";
+}
+
+div.progress {
+  margin-top: 0 !important;
+}
+
+@font-face {
+  font-family: "SimKyungha";
+  src: url("/src/assets/fonts/SimKyungha.ttf");
+}
