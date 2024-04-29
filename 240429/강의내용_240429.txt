@@ -1,0 +1,161 @@
+React.js : JS 라이브러리
+MealKit : Figma HTML, CSS, JS(*2~3개)
+
+TS / TS + React.js
+
+F/E : TS 필수!!!!
+
+https://2022.stateofjs.com/en-US
+https://programmers.co.kr/pages/2023-dev-survey
+
+모든 프로그래밍 언어는 거의 대부분 타입 시스템!!!
+전공자 / 백엔드!!!
+
+Java를 포함 C언어 등의 언어들은 변수를 선언할 때, 사전에 변수안에 담겨야할 값의 타입을 정의!!!
+
+한 번 정의된 타입은 계속 고정되어서 갑니다.
+사용자에게 어떤 숫자를 받는다
+숫자가 로컬스토리지에 갔다가 다시 웹브라우저
+해당 값을 찾아오는 순간 자료 형 변환
+Number( ) = Number( ) : x
+
+JS : 단순히 웹브라우저에서 인터랙티브한 기능 구현
+Node.js : JS 서버구현 : 막대한 돈이 투입될 수 있는 프로젝트를 구현 => JS
+
+2012년 : C언어 개발
+2016년 : 국내 2018년
+
+TS : JS의 타입을 사전 지정할 수 있도록 도와주는 슈퍼셋 (*Super Set) 언어
+
+TS는 어디에서 구현할 수 있으며, 어떻게 사용하는가?
+=> 웹 브라우저는 HTML, CSS, JS
+=> SCSS 컴파일러
+=> 컴파일링 : Node에서 실행!!!
+
+npm i ,,,
+Node : npx create-react-app
+
+node를 시작하거임!!!
+npm init -y
+
+TS : JS안에 있는 명령어 / 변수 / 값 : 타입
+Node : TS
+
+npm i @types/node
+
+TS 코드를 입력 => 웹
+
+npm i typescript -g
+TS를 JS로 컴파일링 해주는 npm 앱
+
+tsc -v
+
+tsc src/index.ts
+
+node src/index.js
+
+*타입스크립트의 파일을 컴파일링함과 동시에 node로 실행까지 한 번에 시켜줄 수 있는 앱!!
+
+npm i ts-node
+npm i ts-node -g
+
+ts-node src/index.ts
+
+Compliing Option
+: 상황에 따라서 어떤 경우 A 컴파일링 / B 컴파일링
+
+tsc --init
+
+ts파일 => 컴파일링 /
+완료된 JS 버전 결정하는 옵션 target
+
+화살표!!!
+화살표함수 =>ES6
+
+타입스크립트 & 리액트 => .d
+
+ES
+
+모듈!!!
+Node.js => JS 모듈 정식 표준 설정/생성x
+CommonJS
+
+> import = require / export = exports.객체
+
+CommonJS VS ESM
+
+npm i tsx -g
+
+tsx src/index.ts
+
+2명의 개발자 넷플릭스
+> 1 CJS 2 ESM
+
+TS & React
+
+1.TS를 사용해야하는 이유
+2.TS를 세팅하는 방법
+3.TS Compiler Option 세팅하는 방법
+
+
+1.TS 주석
+- JS 타입 종류 : 
+1) 원시타입 : number, string, boolean, null, undefined
+2) 참조타입 : object, array, function
+
+2.TS 추론
+- 굳이 꼭 주석을 달지 않아도 됨
+(*하지만, 특별한 케이스)
+
+3.TS 치트키 (*any타입)
+
+4.TS
+- JS VS => undefined / null : value
+- undefined / null : 타입
+
+5.TS 타입의 분류
+- Super Type : 받을 수 있는 값이 많아짐
+- Sub Type : 받을 수 있는 값이 적어짐
+
+6.TS 객체 타입정의
+- object => 객체계의 any임!!! (*객체계의 치트키임)
+- interface => 객체 안에 들어가있는 각각의 key & value 타입 정의
+- optional property => 선택속성 (*객체안에 있어도 되고, 없어도 되는 값에 대한 타입을 정의하고자 할 때) 
+- 익명 interface => 이름을 부여하지 않은 interface
+
+7.Class 타입 정의하기
+- 붕어빵틀 / 붕어빵
+- 동일한 혹은 유사한 형태의 객체가 많이 필요한 상황에서 매번 해당 객체를 신규로 생성해야하는 그 불편함을 해소하기 위해서 Class
+- new Class()
+
+8.interface 응용
+- interface : 객체의 세부 타입 정의
+- class 선언 할 때 참고 활용
+- class가 interface를 참고해서 객체를 구현할 때에는 implements
+(*implements : 실행하다)
+(*반드시 implement를 하기로한 인터페이스 객체를 구현!!)
+
+9.추상클래스
+- 추상화
+- 추상 <-> 명쾌하지 않음
+- 어떤 사물이나 개념에서 공통점을 찾아서 추출한 형이상학적인 개념
+
+A 객체
+: 강아지 정보
+: 종류 : 동물
+: 다리 : 4
+: 귀 : 2
+: 사료 : 강아지밥
+
+B 객체
+: 고양이 정보
+: 종류 : 동물
+: 다리 : 4
+: 귀 : 2
+: 사료 : 고양이밥
+
+객체를 생성하는데 있어서 객체의 세부적인 값들이 완전히 똑같아야할 수도 있지만, 특정요소 몇가지만 다르고, 나머지 70~80%는 거의 동일한 구성형태를 띄고 있는 객체를 만들어야하는 상황이 나올 수 있음
+
+10~20%의 차이점 때문에 매번 새롭게 class를 생성해야하는가?
+
+
