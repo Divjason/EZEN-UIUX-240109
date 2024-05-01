@@ -1,0 +1,38 @@
+funcExam01
+init
+callback
+high-order
+use-Add
+default
+destructuring
+indexable-key.ts
+A
+testA
+array-type.ts
+split.ts
+split-test.ts
+array-index-operator.ts
+for-of.ts
+arrayLength.ts
+arrayLength-test.ts
+spread-operator.ts
+range.ts
+range-test.ts
+declative-sum.ts (*선언형)
+
+JS
+- 콜백함수 : JS 함수 => 1급시민
+- 어떤 타입의 매개변수 / 어떤 타입의 결과값을 반환
+- 함수에 매개변수 함수
+- 콜백함수 : 타입
+
+*신입 : 잘해야 거기고, 못해도 거기다
+- 갭 : 잘하는 사람 VS 못하는 사람
+(*3년간 버틸 수? 적성? 개발)
+- 채용자의 입장
+- 노련미 / 노하우 / 스킬
+- 절망 늪 (*방법)
+- 기계적인 방법 : 1번 / 2번 / 3번
+> 이해로
+> 무식하게 
+- 문

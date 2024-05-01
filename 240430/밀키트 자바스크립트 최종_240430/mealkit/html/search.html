@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/3f2ea24883.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom css & js-->
+    <link rel="stylesheet" href="../css/style.css" />
+    <script defer src="../javascript/search.js"></script>
+  </head>
+  <body>
+    <div class="container cart">
+      <div class="cart-inner">
+        <!-- main.html -->
+        <iframe
+          class="header-iframe"
+          src="../include/main.html"
+          frameborder="0"
+        ></iframe>
+        <!-- contents -->
+        <div class="search-content">
+          <div class="search-field">
+            <input type="text" placeholder="검색어를 입력해주세요" />
+          </div>
+          <div class="search-recent">
+            <div class="title">
+              <h3>최근 검색어</h3>
+              <button class="btn-all-clear">전체삭제</button>
+            </div>
+            <div class="items">
+              <div class="item">
+                <span>오징어볶음</span>
+                <button class="btn-clear">
+                  <i class="fas fa-xmark"></i>
+                </button>
+              </div>
+              <div class="item">
+                <span>생고기 김치찌개</span>
+                <button class="btn-clear">
+                  <i class="fas fa-xmark"></i>
+                </button>
+              </div>
+              <div class="item">
+                <span>등심 스테이크</span>
+                <button class="btn-clear">
+                  <i class="fas fa-xmark"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="search-increase">
+            <div class="title">
+              <h3>급상승 검색어</h3>
+              <p>최근 1시간 동안 검색횟수가 급상승했어요!</p>
+            </div>
+            <ul class="search-increase-list">
+              <li>투데이스 밀키트 정기배송</li>
+              <li>챌린지 4주 식단</li>
+              <li>칼로리케어 밀키트</li>
+              <li>직장인 밀키트 배송</li>
+              <li>부모님 밀키트</li>
+              <li>투데이스 밀키트 새벽배송</li>
+            </ul>
+          </div>
+        </div>
+        <!-- gnb.html -->
+        <iframe
+          class="gnb-iframe"
+          src="../include/gnb.html"
+          frameborder="0"
+        ></iframe>
+      </div>
+    </div>
+  </body>
+</html>
