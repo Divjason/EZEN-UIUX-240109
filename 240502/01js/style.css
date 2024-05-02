@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.faq-inner {
+  width: 700px;
+}
+
+.faq-inner h1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.accordion {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.accordion .title,
+.accordion .content {
+  background: #303030;
+  margin-bottom: 7px;
+  padding: 10px 15px;
+}
+
+.accordion .title {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.accordion .title::after {
+  content: "\f00d";
+  font-family: fontawesome;
+  float: right;
+  margin-top: 4px;
+  transition: all 0.3s;
+}
+
+.accordion .title.active {
+  background: #353b48;
+}
+
+.accordion .title.active::after {
+  transform: rotate(45deg);
+}
+
+.accordion .content {
+  display: none;
+}
+
+.newsletter {
+  width: 100%;
+  text-align: center;
+}
+
+.newsletter p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.newsletter form {
+  display: flex;
+}
+
+.newsletter input[type="email"],
+.newsletter button {
+  border: none;
+  height: 60px;
+  font-size: 20px;
+}
+
+.newsletter input[type="email"] {
+  flex: 3;
+  padding-left: 10px;
+}
+.newsletter input[type="email"]:focus {
+  outline: none;
+}
+.newsletter input[type="email"]::placeholder {
+  opacity: 1;
+  transition: all 0.3s;
+}
+.newsletter input[type="email"]:focus::placeholder {
+  opacity: 0;
+}
+.newsletter button {
+  flex: 1;
+  background: #e84118;
+  color: #fff;
+  cursor: pointer;
+}
+.newsletter button::after {
+  content: "\f054";
+  font-family: fontawesome;
+  margin-left: 6px;
+}

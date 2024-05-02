@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffeb60;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.faq-inner {
+  width: 750px;
+}
+.faq-inner h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.accordion-item {
+  background: #fff;
+  margin-bottom: 18px;
+  padding: 15px 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.2);
+}
+.accordion-item .title {
+  font-weight: bold;
+  cursor: pointer;
+  overflow: hidden;
+}
+.accordion-item .title::after {
+  content: "\f107";
+  font-family: fontawesome;
+  float: right;
+}
+.accordion-item .title.active {
+  padding-bottom: 15px;
+}
+.accordion-item .title.active::after {
+  transform: rotateX(180deg);
+}
+.accordion-item .content {
+  border-top: 1px solid #000;
+  padding-top: 12px;
+  display: none;
+}

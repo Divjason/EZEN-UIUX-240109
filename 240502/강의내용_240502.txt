@@ -1,0 +1,97 @@
+*오전 :
+- 타입스크립트 : 40%
+- 자바스크립트 :
+> 문법 최소 1번 공부
+> 자바스크립트 문법 복습
+(*5월 3주차)
+
+TS & React : 문법 바로 예제 직행
+
+*오후
+- HTML, CSS, JS 예제
+- 쉬운 난이도, TS & React
+- F/E : 코딩테스트 준비
+- UI/UX 포트폴리오
+
+JS | TS 프로그래밍 코드를 작성!!!
+
+1) 선언형 방식 (*함수형)
+> 개발자가 직접 알고리즘 & 매커니즘 고민해서 코드를 커스터마이징해서 사용하는 방식
+
+2) 명령형 방식 : 우리가 그동안 활용해왔던 방식
+> 기존 정형화되어있는 문법들을 가져다가 사용 방식
+> 로우 레벨 방식
+
+=> 동일한 결과를 도출해내는데 있어서 선언형 VS 명령형 어떻게 차이가 나는지 비교!!!!
+
+=> 자료구조 & 알고리즘 조금 이해!!!
+=> 데이터를 배열 / 객체
+=> 왜 어떤 경우 배열? 객체?
+
+1~100까지의 숫자를 더한 결과값 도출
+
+1) 명령형
+imperative-sum.ts
+
+2) 선언형
+declarative-sum.ts
+
+: 결과값을 단순 도출 목적
+: 초고수의 반열 / 선언형 코드를 작성
+(*1 / 3 / 5 / 10 / 20)
+
+1~100까지의 숫자가운데 홀수만 찾아서 더한 값 도출
+
+1) 명령형
+imperative-sum.ts
+imperative-odd-sum.ts
+
+2) 선언형
+declarative-sum.ts
+declarative-odd-sum.ts
+
+*누구나 처음 낯선 지식을 받아들이면 어려워함
+> 처음만 낯설어하고 어려워할 뿐이지, 자주 접하면
+> 익숙 > 쉽게 사용하더라
+
+*위너 > 힘들고 낯설고, 어렵더라도 하루라도 먼저 빨리 그 문법, 지식을 접하는 사람 => 위너
+
+1~100까지의 숫자가운데 짝수만 찾아서 더한 값 도출
+
+1) 명령형*
+imperative-sum.ts
+imperative-odd-sum.ts
+imperative-even-sum.ts
+imperative-square-sum.ts
+
+2) 선언형
+declarative-sum.ts
+declarative-odd-sum.ts
+declarative-even-sum.ts
+declarative-square-sum.ts
+
+1~100까지의 숫자들 모두 제곱을 한 이후에 더한 결과값
+
+
+array-method-chain
+filter-odd-even
+map-square.ts
+map-number-to-string.ts
+reduce-sum.ts
+spread-opeartor.ts
+pureSort-test
+pureDelete-test.ts
+mergeArray.ts
+mergeArray-test.ts
+tuple.ts
+doSomething
+iteratable.ts
+createRangeIterable.ts
+
+1~10까지의 배열을 완성!!!
+2개의 새로운 신규배열 생성
+> 1번째 배열 : 1~5숫자
+> 2번째 배열 : 6~10숫자
+
+선언형 방식으로 기존 JS 배열 함수를 사용하는 방법 (*TS)
+
