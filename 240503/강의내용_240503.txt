@@ -1,0 +1,53 @@
+타입스크립트 & 리액트
+
+1) 타입스크립트
+- npm i @types/node
+- npm i typescript
+- npm i ts-node
+- npm i tsx
+
+2) 리액트
+- npx create-react-app 01react
+
+> TS & React 명령어!!!
+- npx create-react-app 02tsreact --template typescript
+
+*js // jsx
+
+*객체지향 언어
+
+*React 시즌1
+> props : 객체
+*단방향 / 컴포넌트간 데이터 전송 / 페이지 라우터
+*state / redux / thunk / axios
+
+c
+npm i @types/styled-components
+
+부모 컴포넌트는 2가지를 자식컴포넌트에게 전달
+
+1.+ / - : 버튼안에 들어가는 텍스트 => 문자열
+2.+ / - : 기능 => 함수
+
+*ToDoList : TS & React
+
+1.TS & React 같이 사용해서 작업할 수 있는 프로젝트
+2.interface / 매개변수 타입 매우중요
+3.React 작업하는 프로세스 과정
+> App => Component 과정
+
+다음주월 : 타입스크립트 문법 일단락
+다다음주 : TS & React
+> 넷플릭스
+> 가상화폐
+> 칸반보드
+> 등등
+
+코딩테스트만을 위한 과외!!!
+찬 / 반
+- 문제해결능력
+- 사고방식
+
+- 기계적으로 통 외워버리는 방법
+
+
