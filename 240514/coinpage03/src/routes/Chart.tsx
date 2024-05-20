@@ -3,8 +3,6 @@ import { useQuery } from "react-query";
 import { fetchCoinHistory } from "../api";
 // import ApexCharts from "react-apexcharts";
 import ApexCharts from "react-apexcharts";
-import { useRecoilValue } from "recoil";
-import { isDarkAtom } from "../atoms";
 
 interface ChartProps {
   coinId?: string;
@@ -22,7 +20,6 @@ interface IHistorical {
 }
 
 const Chart = ({ coinId }: ChartProps) => {
-  const isDark = useRecoilValue(isDarkAtom);
   const { isLoading, data } = useQuery<IHistorical[]>(["ohlcv", coinId], () =>
     fetchCoinHistory(coinId)
   );
@@ -41,18 +38,18 @@ const Chart = ({ coinId }: ChartProps) => {
           ]}
           options={{
             chart: {
-              width: 1200,
-              height: 800,
+              width: 400,
+              height: 300,
               toolbar: {
                 show: false,
               },
-              background: "#000",
+              background: "black",
             },
             grid: {
               show: true,
             },
             theme: {
-              mode: isDark ? "dark" : "light",
+              mode: "dark",
             },
             stroke: {
               width: 4,
@@ -69,7 +66,7 @@ const Chart = ({ coinId }: ChartProps) => {
                 show: true,
               },
               categories: data?.map((price) =>
-                new Date(price.time_close * 1000).toLocaleString()
+                new Date(price.time_close * 1000).toLocaleDateString()
               ),
             },
             yaxis: {

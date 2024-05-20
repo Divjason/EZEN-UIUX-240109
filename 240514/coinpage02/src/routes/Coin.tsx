@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useQuery } from "react-query";
 import styled from "styled-components";
 import {
   useParams,
@@ -10,9 +11,7 @@ import {
 } from "react-router-dom";
 import Chart from "./Chart";
 import Price from "./Price";
-import { useQuery } from "react-query";
 import { fetchCoinInfo, fetchCoinPrice } from "../api";
-import { Helmet } from "react-helmet";
 
 const Container = styled.div`
   padding: 20px;
@@ -75,14 +74,17 @@ const Tabs = styled.div`
 `;
 
 const Tab = styled.span<{ isActive: boolean }>`
-  background-color: ${(props) => props.theme.accentColor};
-  color: ${(props) =>
-    props.isActive ? props.theme.textColor : props.theme.bgColor};
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 7px 0;
   text-align: center;
   text-transform: uppercase;
   font-size: 14px;
   border-radius: 10px;
+  color: ${(props) =>
+    props.isActive ? props.theme.accentColor : props.theme.textColor};
+  a {
+    display: block;
+  }
 `;
 
 interface RouterParams {
@@ -137,10 +139,6 @@ interface priceData {
   };
 }
 
-interface ICoinProps {
-  isDark: boolean;
-}
-
 const Coin = () => {
   const { coinId } = useParams<RouterParams | any>();
   const { state } = useLocation() as LocationState;
@@ -150,17 +148,36 @@ const Coin = () => {
     ["info", coinId],
     () => fetchCoinInfo(coinId)
   );
+
   const { isLoading: priceLoading, data: priceData } = useQuery<priceData>(
     ["price", coinId],
     () => fetchCoinPrice(coinId),
     { refetchInterval: 5000 }
   );
+
   const loading = infoLoading || priceLoading;
+  // const [loading, setLoading] = useState(true);
+  // const [info, setInfo] = useState<InfoData>();
+  // const [priceInfo, setPriceInfo] = useState<priceData>();
+  // useEffect(() => {
+  //   (async () => {
+  //     const infoData = await (
+  //       await fetch(
+  //         `https://my-json-server.typicode.com/Divjason/coinlist/coins/${coinId}`
+  //       )
+  //     ).json();
+  //     const priceData = await (
+  //       await fetch(
+  //         `https://my-json-server.typicode.com/Divjason/coinprice/coinprice/${coinId}`
+  //       )
+  //     ).json();
+  //     setInfo(infoData);
+  //     setPriceInfo(priceData);
+  //     setLoading(false);
+  //   })();
+  // }, []);
   return (
     <Container>
-      <Helmet>
-        <title>{state ? state : loading ? "Loading..." : infoData?.name}</title>
-      </Helmet>
       <Header>
         <Title>
           Coin : {state ? state : loading ? "Loading..." : infoData?.name}
@@ -181,7 +198,7 @@ const Coin = () => {
             </OverviewItem>
             <OverviewItem>
               <span>Price : </span>
-              <span>${priceData?.quotes.USD.price.toFixed(3)}</span>
+              <span>{priceData?.quotes.USD.price.toFixed(3)}</span>
             </OverviewItem>
           </Overview>
           <Description>{infoData?.name}</Description>

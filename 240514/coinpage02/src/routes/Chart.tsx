@@ -1,10 +1,8 @@
 import React from "react";
 import { useQuery } from "react-query";
+import { useParams } from "react-router-dom";
 import { fetchCoinHistory } from "../api";
-// import ApexCharts from "react-apexcharts";
 import ApexCharts from "react-apexcharts";
-import { useRecoilValue } from "recoil";
-import { isDarkAtom } from "../atoms";
 
 interface ChartProps {
   coinId?: string;
@@ -22,7 +20,6 @@ interface IHistorical {
 }
 
 const Chart = ({ coinId }: ChartProps) => {
-  const isDark = useRecoilValue(isDarkAtom);
   const { isLoading, data } = useQuery<IHistorical[]>(["ohlcv", coinId], () =>
     fetchCoinHistory(coinId)
   );
@@ -40,48 +37,43 @@ const Chart = ({ coinId }: ChartProps) => {
             },
           ]}
           options={{
+            theme: {
+              mode: "dark",
+            },
             chart: {
-              width: 1200,
-              height: 800,
+              width: 500,
+              height: 500,
               toolbar: {
                 show: false,
               },
-              background: "#000",
+              background: "transparent",
             },
-            grid: {
-              show: true,
-            },
-            theme: {
-              mode: isDark ? "dark" : "light",
-            },
+            grid: { show: false },
             stroke: {
               width: 4,
               curve: "smooth",
             },
             xaxis: {
-              labels: {
-                show: true,
-              },
-              axisBorder: {
-                show: true,
-              },
-              axisTicks: {
-                show: true,
-              },
+              axisBorder: { show: false },
+              axisTicks: { show: false },
+              labels: { show: false },
               categories: data?.map((price) =>
                 new Date(price.time_close * 1000).toLocaleString()
               ),
             },
             yaxis: {
-              labels: {
-                show: true,
-              },
+              labels: { show: false },
             },
             fill: {
               type: "gradient",
               gradient: { gradientToColors: ["#0be881"], stops: [0, 100] },
             },
             colors: ["#0fbcf9"],
+            tooltip: {
+              y: {
+                formatter: (value) => `${value.toFixed(3)}`,
+              },
+            },
           }}
         />
       )}

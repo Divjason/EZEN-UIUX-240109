@@ -1,0 +1,70 @@
+FTP : File Transfer Protocol
+> 알 FTP
+> 파일질라 FTP : 서버에 Data 전송해주는 역할
+> Server : 닷홈 : ID / PW
+> 닷홈 도메인
+> html, css, js
+
+react.js 관통하는 것은 props 데이터를 얼마나 어떻게 효율적으로 관리
+
+react-query를 사용하는 여러가지 이유!!!
+
+1) 기존 data관리 라이브러리 중에 가장 간단하다
+> 간단한 것치고 기능이 풍부하다
+
+2) cache값을 기억할 수 있다!!
+> 임시기억 조각 (*어떤 특정 웹 페이지를 방문하게 되면, 해당 페이지를 방문했던 기억 => 데이터를 컴퓨터에서 일정기간 보관)
+> cache값을 확인할 수 있도록 도와주는 Tool
+
+npm i apexcharts
+npm i react-apexcharts
+
+mbti : 문제x / 문제 => state 값이 비동기방식으로 업데이트!!!
+console값이 / UI값이 
+
+1.package.json : 설치가 된 npm 버전 / 구버전
+2.api.ts / Coin.tsx => Chart.tsx
+
+리액트를 처음 활용 => 일기장!!!
+=> 상단 title명을 반복문 형식!!!
+
+npm install react-helmet
+npm install @types/react-helmet
+
+*가상화폐 프로젝트!!!!
+
+1.theme provider : 
+- 타입정의 / theme정의
+- theme 데이터를 활용해서 컨텐츠에 색상 적용
+
+2.Browser Router :
+- Nested Router 기능 사용방법
+- useMatch( ) : Nested Router 사용 시, 어떤 페이지에 도착했는가 여부 Boolean
+
+3.React-Query :
+- 외부 API Data를 찾아와서 state로 값을 관리 + 외부 API Data를 정상적으로 찾아왔는지 여부를 Boolean 값으로 확인할 수 있도록 해주는 라이브러리
+- api.ts 파일 생성 : data / useQuery( ) 사용
+
+4.ApexChart 라이브러리 :
+- 차트 데이터를 시각화
+- type & series & options 필수 값!!!
+- type : 차트 형태 결정
+- series : 차트 데이터 결정
+- options : 차트의 x, y축 혹은 그리드, 툴바 등 여부 결정
+
+5.Helmet 라이브러리 :
+- 각 컴포넌트 페이지마다 title을 보다 쉽게 적용할 수 있도록
+
+-----
+TS + React : 칸반보드!!!
+=> Form 요소를 많이 사용!!!
+=> Recoil
+
+-----
+TS + React : 애니메이션!!!
+=> 모달창 & 슬라이드 등
+=> 라이브러리
+
+---- 
+TS + React : 넷플릭스 사이트!!!
+=> 앞에서 배웠던 모든 것들이 총 동원됨
