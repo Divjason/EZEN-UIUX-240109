@@ -1,0 +1,10 @@
+useRecoilValue : atom의 값을 가져와서 사용
+useSetRecoilState : atom의 변형.편집해서 사용
+useRecoilState : atom의 값을 가져와서 변형.편집
+
+TodoList에 입력되어야 하는 값 정의
+id : number
+text : string
+category : 
+
+배열안에 있는 값들을 찾아오는 함수가 여러개 있었음!!! 그중에서 findIndex( ) : 배열안에 있는 값들 가운데서 특정 조건을 만족하는 여러개의 요소들 가운데 가장 첫번째 요소의 인덱스값을 반환!!!
