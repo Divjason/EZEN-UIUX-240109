@@ -230,3 +230,35 @@
 // // 좋지 않은 타입 정의 방법 => any
 // // 다중 타입 단언
 // let num7 = 10 as unknown as string;
+
+// enum Role {
+//   ADMIN = 1019028309128039,
+//   USER = 11,
+//   GUEST = 12,
+// }
+
+// const user1 = {
+//   name: "David",
+//   role: Role.ADMIN,
+// };
+
+// const user2 = {
+//   name: "Jane",
+//   role: Role.USER,
+// };
+
+// const user3 = {
+//   name: "Peter",
+//   role: Role.GUEST,
+// };
+
+// enum Language {
+//   korean = "ko",
+//   english = "en",
+// }
+
+// const user4 = {
+//   name: "짱구",
+//   role: Role.ADMIN,
+//   language: Language.korean,
+// };

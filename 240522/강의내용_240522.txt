@@ -1,0 +1,62 @@
+*Recoil 라이브러리 :
+- atom 원자 => 모든 하위 컴포넌트
+- selector 함수 : state값을 받아와서 해당 요소를 변환 후 반환하는 함수!!!!
+
+*enum type : 열거할 수 있는 열거형 타입
+enumberable : 열거할 수 있는
+=> 어떤 순서를 갖고 있는 요소들의 타입을 정의!!!
+
+*Recoil 
+- useRecoilValue : atom 값을 가져올 때
+- useSetRecoilState : atom 값을 편집
+- useRecoilState : atom 값을 가져와서 편집
+
+> atom 값을 하위 컴포넌트 요소들이 사용!
+(*반드시 매개변수로 객체를 사용 => key & default 필수값)
+
+> selector 함수 역시 사용!
+(*atom에 저장되어있는 value값을 가져다가 변환.가공 => 반환)
+(*객체를 매개변수로 선언! => 해당 매개변수는 get함수를 가지고 있는 객체의 타입 => 객체 안에 담긴 get함수 : atom의 값을 반환할 수 있도록 해주는 역할!! / 반드시 return문을 활용해서 반환값 필수)
+
+*react-hook-form 라이브러리
+- form 태그 > input 태그에 입력된 값을 라벨링을 해서 찾아오거나, 값이 변경되고 있는 사항을 실시간 모니터링, 유효성 검사를 위해서 에러가 발생되었을 때 해당 에러에 대응할 수 있는 메세지도 정의, 폼 요소안에 이벤트 핸들러 정의해서 사용할 수도 있음
+
+머리속 : 이거 왜? / 나는 더 쉽게? / 굳이 이거 해야되?
+(*아직까지도 여러분들의 학생)
+
+회사 : 대표 / 임원 / 사수
+(*빨리!!!)
+
+recoil 가장 핫한 state 문법
+react-hook-form 비교적 최신 트랜디한 라이브러리
+
+get : atom값을 찾아와서 어떤 연산작업 후 값을 반환!!!
+set : state의 값을 특정 값으로 변경시켜주고자 할 때!!! / 두번째 매개변수로 들어오는 값이 신규 state값이다!!!
+
+드래그 & 드롭 기능?!!!!!
+
+가장 바깥영역은 반드시 <DragDropContext />
+실제 드래그가 가능하게 할 수 있도록 해주는 영역 설정 <Droppable />
+상기 <Droppable />이 있어야지만, <Draggable />
+
+1) <Droppable /> & <Draggable />
+: 반드시 본인들만의 고유한 ID값을 가지고 있어야함
+
+2) <Droppable /> & <Draggable />
+: 자식요소 태그들은 함수의 반환값 형태가 되어야함
+
+3) <Draggable />
+: id값 + index값도 필요하다!!!
+
+4) <Draggable />이 드래그 종료가 되는 시점에 함수 도출
+=> onDragEnd 함수
+=> onDragEnd 함수 (*이동한 지점의 정보값을 알려주는 역할)
+
+
+
+
+
+
+
+
+

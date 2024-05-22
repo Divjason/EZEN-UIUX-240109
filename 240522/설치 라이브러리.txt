@@ -1,0 +1,7 @@
+npm i react-hook-form
+npm i recoil
+npm i react-query
+npm i react-router-dom
+npm i @types/styled-components
+npm i styled-components
+npm beautiful dnd
