@@ -1,0 +1,28 @@
+원래 배열 : ["a", "b", "c", "d", "e"]
+
+수정 배열 : [ "b", "a", "c", "d", "e"]
+
+> 배열에 어떤 메서드 함수!!!
+splice 배열!!!
+splice(0, 1)
+splice(2, 0, a)
+
+*원시타입 변수의 값들은 non-mutation 기능을 가지고 있는 반면
+*참조타입 변수의 값들은 mutation 기능을 가지고 있다!!!!
+
+X-man
+
+배열 => 객체 // 객체를 배열로 바꿀 수 있는 방법?
+=> Object.keys /Object.values
+
+1.연결리스트
+- 배열이 갖고 있지 못한 장점!!!
+
+2.형태
+1) stack : First in Last Out
+(*오직 head에만 data 삽입.제거할 수 있는 자료구조)
+
+2) queue : First in First Out
+(*head는 삽입 / tail은 제거)
+
+3) deque : 삽입 & 제거를 head & tail 두 군데에서 모두 할 수 있음
