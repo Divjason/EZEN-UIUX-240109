@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  font-size: 22px;
+  overflow: hidden;
+  display: block;
+}
+body::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url("./images/background.jpg") center;
+  background-size: cover;
+  z-index: 0;
+}
+body > * {
+  z-index: 1;
+  position: relative;
+}
+.file-zone {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+}
+.file-zone.on {
+  background-color: rgba(97, 131, 209, 0.9);
+}
+.file-preview-area {
+  width: 100%;
+  height: 550px;
+  border-top: 1px solid #fff;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+h1 {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+.file-preview-area .image-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 550px;
+  gap: 10px;
+}
+.file-preview-area .image-list > img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}

@@ -1,0 +1,12 @@
+framer motion
+- Animate + Presence(*존재)
+ex) 버튼을 클릭하게 된다면, A || B
+- 삼항조건 연산자!!!
+- useState(false)
+- 1 ? 2 : 3
+- 만약, 버튼 클릭 A => B
+- 단, B가 사라질 때 디졸브하게 사라지게 하세요!
+
+framer motion : Cumstom Property
+> 사용자가 직접 커스터마이징 속성!!!
+

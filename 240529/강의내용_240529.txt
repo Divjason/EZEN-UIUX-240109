@@ -1,0 +1,53 @@
+*IT 및 디자인업계 취업현황
+
+1) 웹 디자이너 항상 오픈!!!
+> MD, MKT 요구 > 그 이상
+
+2) IT 역대급 상황x
+> 기사 : 37% 연체
+> 자본 x => 투자금 => 스타트업 성장 x / 비즈니스 창출 x
+> 채용 x / 기존 있던 사람들 나가세요!!
+
+3) 전찬영 : 500 : 1
+> 대기업 x / 중소기업
+> 학원 폐업
+
+역대급 악순환!!!
+
+> 원래 IT업계 호황 별로
+(*코로나)
+
+> 업계 회전
+
+대화!!!
+> 피그마
+
+전국 UI/UX 강좌 모집인원 / 수료인원
+> 작년 대비 60%
+> 풀스택 / AI 150%
+
+유행!!!
+
+*React.js 실행
+> npx create-react-app 명령어!!! => node / public / src 등등 폴더 및 파일들이 알아서 자동으로 생성!!!
+> 수정을 원하는 영역 & 코드 편집
+> Boiler Plate 코드!!!
+
+npm i styled-components @types/styled-components recoil react-router-dom react-query framer-motion react-hook-form
+ 
+npm i styled-components
+npm i @types/styled-components
+
+npm i recoil
+
+npm i react-router-dom
+
+npm i react-query
+
+npm i framer-motion
+
+npm i react-hook-form
+
+사용자가 어떤 이벤트!!! => 동시에 발생해야하는 애니메이션이 복수!!! 다양한 애니메이션 20개가 동시에 일어나면서 일부는 시차를 가지고 작동!!!
+
+
