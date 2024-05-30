@@ -3,16 +3,16 @@ const BASE_PATH = "https://api.themoviedb.org/3";
 
 interface IMovie {
   id: number;
-  title: string;
-  overview: string;
   backdrop_path: string;
   poster_path: string;
+  title: string;
+  overview: string;
 }
 
-export interface IGetmoviesResult {
+export interface IGetMoviesResult {
   dates: {
     maximum: string;
-    minimun: string;
+    minimum: string;
   };
   page: number;
   results: IMovie[];
@@ -22,6 +22,6 @@ export interface IGetmoviesResult {
 
 export const getMovies = () => {
   return fetch(
-    `${BASE_PATH}/movie/now_playing?api_key=${API_KEY}&language=ko-kr&region=kr`
+    `${BASE_PATH}/movie/now_playing?api_key=${API_KEY}&language=ko-kr&page=1&region=kr`
   ).then((response) => response.json());
 };

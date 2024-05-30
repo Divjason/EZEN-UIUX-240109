@@ -11,6 +11,7 @@ const Nav = styled(motion.nav)`
   top: 0;
   width: 100%;
   height: 80px;
+  /* background-color: #000; */
   color: #fff;
   font-size: 18px;
   padding: 0 20px;
@@ -86,11 +87,6 @@ const Input = styled(motion.input)`
   background-color: transparent;
   color: #fff;
   z-index: -1;
-  border: none;
-  &:focus {
-    outline: none;
-    border-bottom: 1px solid ${(props) => props.theme.red};
-  }
 `;
 
 const logoVariants = {
@@ -102,7 +98,7 @@ const logoVariants = {
 };
 
 const navVariants = {
-  top: { backgroundColor: "rgba(0, 0, 0, 1)" },
+  top: { backgroundColor: "rgba(255, 255, 255, 0)" },
   scroll: { backgroundColor: "rgba(255, 255, 255, 1)" },
 };
 
