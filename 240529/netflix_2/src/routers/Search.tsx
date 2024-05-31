@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { useLocation } from "react-router-dom";
 import { useQuery } from "react-query";
-import { IGetmoviesResult, IGetGeneresResult, getGenres } from "../api";
+import { IGetmoviesResult, IGetGeneresResult, getGenres, IMovie } from "../api";
 import { makeImagePath } from "../utils";
 
 const SearchBox = styled.div`
@@ -87,6 +87,18 @@ const SearchGeneres = styled.div`
   }
 `;
 
+const ReviewSection = styled.div`
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  color: red;
+  border-radius: 10px;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+`;
+
 const Search = () => {
   const location = useLocation();
   const keyword = new URLSearchParams(location.search).get("keyword");
@@ -105,6 +117,35 @@ const Search = () => {
 
   const { data: genereData, isLoading: genereLoading } =
     useQuery<IGetGeneresResult>(["getGeneres"], getGenres);
+
+  type ReviewsState = {
+    [key: number]: string[];
+  };
+
+  const [reviews, setReviews] = useState<ReviewsState>({});
+
+  const fetchReviews = (movieId: number) => {
+    return fetch(
+      `${BASE_PATH}/movie/${movieId}/reviews?language=en-US&page=1&api_key=${API_KEY}`
+    ).then((response) => response.json());
+  };
+
+  useEffect(() => {
+    if (movieData) {
+      movieData.results.forEach((movie) => {
+        fetchReviews(movie.id).then((reviewData) =>
+          setReviews((prev) => ({
+            ...prev,
+            [movie.id]: reviewData?.results?.map(
+              (review: any) => review.content
+            ),
+          }))
+        );
+      });
+    }
+  }, [movieData]);
+
+  console.log(movieData, reviews);
 
   return (
     <div>
@@ -150,6 +191,16 @@ const Search = () => {
                       .join(", ")
                   : "N/A"}
               </SearchGeneres>
+              <ReviewSection>
+                <h3>리뷰모음</h3>
+                {reviews[movie.id]?.length > 0 ? (
+                  reviews[movie.id].map((content, reviewIndex) => (
+                    <p key={reviewIndex}>{content}</p>
+                  ))
+                ) : (
+                  <p>No reviews available.</p>
+                )}
+              </ReviewSection>
             </div>
           </SearchBox>
         ))
