@@ -6,12 +6,25 @@ import { IGetmoviesResult, IGetGeneresResult, getGenres, IMovie } from "../api";
 import { makeImagePath } from "../utils";
 
 const SearchBox = styled.div`
-  padding: 100px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+const ContentSection = styled.div`
   display: flex;
   img {
     width: 800px;
     margin-right: 20px;
   }
+`;
+
+const ContentInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 800px;
 `;
 
 const SearchTitle = styled.div`
@@ -60,7 +73,7 @@ const SearchValue = styled.div`
 
 const SearchPoint = styled.div`
   font-size: 18px;
-  margin: 10px 0;
+  margin-bottom: 10px;
   span {
     display: inline-block;
     width: 100px;
@@ -91,12 +104,23 @@ const ReviewSection = styled.div`
   margin-top: 20px;
   padding: 20px;
   background-color: #f8f9fa;
-  color: red;
+  color: ${(props) => props.theme.black.darker};
   border-radius: 10px;
+  width: 1620px;
   p {
+    width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 10px;
+    div {
+      width: 100%;
+    }
   }
+`;
+
+const ReviewTitle = styled.span`
+  font-size: 18px;
+  font-weight: bold;
+  color: ${(props) => props.theme.red};
 `;
 
 const Search = () => {
@@ -154,54 +178,62 @@ const Search = () => {
       ) : (
         movieData?.results.map((movie, index) => (
           <SearchBox key={index}>
-            <img src={makeImagePath(movie?.backdrop_path)} />
-            <div>
-              <SearchTitle>
-                ({movie?.title} {movie?.name})
-              </SearchTitle>
-              <SearchOverview>{movie?.overview}</SearchOverview>
-              <SearchDate>
-                <span>릴리즈</span>
-                {movie?.release_date} {movie?.first_air_date}
-              </SearchDate>
-              <SearchValue>
-                <span>관람등급</span>
-                {movie?.adult ? "청소년관람불가" : "전체관람가"}
-              </SearchValue>
-              <SearchPoint>
-                <span>영화평점</span>
-                {movie?.vote_average !== undefined
-                  ? movie?.vote_average.toFixed(2)
-                  : "N/A"}
-                {movie?.vote_count
-                  ? movie?.vote_count.toLocaleString("ko-kr")
-                  : "0"}
-                명 투표참여)
-              </SearchPoint>
-              <SearchGeneres>
-                <span>장르</span>
-                {movie?.genre_ids
-                  ? movie?.genre_ids
-                      .map(
-                        (id) =>
-                          genereData?.genres.find((item) => item.id === id)
-                            ?.name
-                      )
-                      .filter((name) => name)
-                      .join(", ")
-                  : "N/A"}
-              </SearchGeneres>
-              <ReviewSection>
-                <h3>리뷰모음</h3>
-                {reviews[movie.id]?.length > 0 ? (
-                  reviews[movie.id].map((content, reviewIndex) => (
-                    <p key={reviewIndex}>{content}</p>
-                  ))
-                ) : (
-                  <p>No reviews available.</p>
-                )}
-              </ReviewSection>
-            </div>
+            <ContentSection>
+              <img src={makeImagePath(movie?.backdrop_path)} />
+              <ContentInfo>
+                <SearchTitle>
+                  ({movie?.title} {movie?.name})
+                </SearchTitle>
+                <SearchOverview>{movie?.overview}</SearchOverview>
+                <SearchDate>
+                  <span>릴리즈</span>
+                  {movie?.release_date}
+                  {movie?.first_air_date}
+                </SearchDate>
+                <SearchValue>
+                  <span>관람등급</span>
+                  {movie?.adult ? "청소년관람불가" : "전체관람가"}
+                </SearchValue>
+                <SearchPoint>
+                  <span>영화평점</span>
+                  {movie?.vote_average !== undefined
+                    ? movie?.vote_average.toFixed(2)
+                    : "N/A"}
+                  /
+                  {movie?.vote_count
+                    ? movie?.vote_count.toLocaleString("ko-kr")
+                    : "0"}
+                  명 투표참여
+                </SearchPoint>
+                <SearchGeneres>
+                  <span>장르</span>
+                  {movie?.genre_ids
+                    ? movie?.genre_ids
+                        .map(
+                          (id) =>
+                            genereData?.genres.find((item) => item.id === id)
+                              ?.name
+                        )
+                        .filter((name) => name)
+                        .join(", ")
+                    : "N/A"}
+                </SearchGeneres>
+              </ContentInfo>
+            </ContentSection>
+            <ReviewSection>
+              <h3>😤😲Review😍😅</h3>
+              {reviews[movie.id]?.length > 0 ? (
+                reviews[movie.id].slice(0, 1).map((content, reviewIndex) => (
+                  <p key={reviewIndex}>
+                    <div>
+                      <ReviewTitle>🤩User Talk</ReviewTitle> : {content}
+                    </div>
+                  </p>
+                ))
+              ) : (
+                <p>No reviews available.</p>
+              )}
+            </ReviewSection>
           </SearchBox>
         ))
       )}

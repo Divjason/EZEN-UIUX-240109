@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { useLocation } from "react-router-dom";
 import { useQuery } from "react-query";
@@ -7,11 +7,25 @@ import { makeImagePath } from "../utils";
 
 const SearchBox = styled.div`
   padding: 100px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+const ContentSection = styled.div`
   display: flex;
   img {
     width: 800px;
     margin-right: 20px;
   }
+`;
+
+const ContentInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 800px;
 `;
 
 const SearchTitle = styled.div`
@@ -60,7 +74,7 @@ const SearchValue = styled.div`
 
 const SearchPoint = styled.div`
   font-size: 18px;
-  margin: 10px 0;
+  margin-bottom: 10px;
   span {
     display: inline-block;
     width: 100px;
@@ -87,6 +101,28 @@ const SearchGeneres = styled.div`
   }
 `;
 
+const ReviewSection = styled.div`
+  background-color: #f8f9fa;
+  color: ${(props) => props.theme.black.darker};
+  margin-top: 20px;
+  padding: 20px;
+  width: 1620px;
+  border-radius: 10px;
+  p {
+    width: 100%;
+    padding: 10px;
+    div {
+      width: 100%;
+    }
+  }
+`;
+
+const ReviewTitle = styled.span`
+  font-size: 18px;
+  font-weight: bold;
+  color: ${(props) => props.theme.red};
+`;
+
 const Search = () => {
   const location = useLocation();
   const keyword = new URLSearchParams(location.search).get("keyword");
@@ -106,6 +142,35 @@ const Search = () => {
   const { data: genereData, isLoading: genereLoading } =
     useQuery<IGetGeneresResult>(["getGeneres"], getGenres);
 
+  type ReviewState = {
+    [key: number]: string[];
+  };
+
+  const [reviews, setReviews] = useState<ReviewState>({});
+
+  const fetchReviews = (movieId: number) => {
+    return fetch(
+      `${BASE_PATH}/movie/${movieId}/reviews?language=en-US&page=1&api_key=${API_KEY}`
+    ).then((response) => response.json());
+  };
+
+  useEffect(() => {
+    if (movieData) {
+      movieData.results.forEach((movie) => {
+        fetchReviews(movie.id).then((reviewData) =>
+          setReviews((prev) => ({
+            ...prev,
+            [movie.id]: reviewData?.results?.map(
+              (review: any) => review.content
+            ),
+          }))
+        );
+      });
+    }
+  }, [movieData]);
+
+  console.log(movieData, reviews);
+
   return (
     <div>
       {movieLoading && genereLoading ? (
@@ -113,44 +178,63 @@ const Search = () => {
       ) : (
         movieData?.results.map((movie, index) => (
           <SearchBox key={index}>
-            <img src={makeImagePath(movie?.backdrop_path)} />
-            <div>
-              <SearchTitle>
-                ({movie?.title} {movie?.name})
-              </SearchTitle>
-              <SearchOverview>{movie?.overview}</SearchOverview>
-              <SearchDate>
-                <span>릴리즈</span>
-                {movie?.release_date} {movie?.first_air_date}
-              </SearchDate>
-              <SearchValue>
-                <span>관람등급</span>
-                {movie?.adult ? "청소년관람불가" : "전체관람가"}
-              </SearchValue>
-              <SearchPoint>
-                <span>영화평점</span>
-                {movie?.vote_average !== undefined
-                  ? movie?.vote_average.toFixed(2)
-                  : "N/A"}
-                {movie?.vote_count
-                  ? movie?.vote_count.toLocaleString("ko-kr")
-                  : "0"}
-                명 투표참여)
-              </SearchPoint>
-              <SearchGeneres>
-                <span>장르</span>
-                {movie?.genre_ids
-                  ? movie?.genre_ids
-                      .map(
-                        (id) =>
-                          genereData?.genres.find((item) => item.id === id)
-                            ?.name
-                      )
-                      .filter((name) => name)
-                      .join(", ")
-                  : "N/A"}
-              </SearchGeneres>
-            </div>
+            <ContentSection>
+              <img src={makeImagePath(movie?.backdrop_path)} />
+              <ContentInfo>
+                <SearchTitle>
+                  ({movie?.title}
+                  {movie?.name})
+                </SearchTitle>
+                <SearchOverview>{movie?.overview}</SearchOverview>
+                <SearchDate>
+                  <span>릴리즈</span>
+                  {movie?.release_date}
+                  {movie?.first_air_date}
+                </SearchDate>
+                <SearchValue>
+                  <span>관람등급</span>
+                  {movie?.adult ? "청소년관람불가" : "전체관람가"}
+                </SearchValue>
+                <SearchPoint>
+                  <span>영화평점</span>
+                  {movie?.vote_average !== undefined
+                    ? movie?.vote_average.toFixed(2)
+                    : "N/A"}
+                  /
+                  {movie?.vote_count
+                    ? movie?.vote_count.toLocaleString("ko-kr")
+                    : "0"}
+                  명 투표참여
+                </SearchPoint>
+                <SearchGeneres>
+                  <span>장르</span>
+                  {movie?.genre_ids
+                    ? movie?.genre_ids
+                        .map(
+                          (id) =>
+                            genereData?.genres.find((item) => item.id === id)
+                              ?.name
+                        )
+                        .filter((name) => name)
+                        .join(", ")
+                    : "N/A"}
+                </SearchGeneres>
+              </ContentInfo>
+            </ContentSection>
+            <ReviewSection>
+              <h3>😂😍Review😤😛</h3>
+              {reviews[movie.id]?.length > 0 ? (
+                reviews[movie.id].map((content, reviewIndex) => (
+                  <p key={reviewIndex}>
+                    <div>
+                      <ReviewTitle>🤩User Talk</ReviewTitle> : {content}
+                    </div>
+                  </p>
+                ))
+              ) : (
+                <p>No Reviews Available...</p>
+              )}
+            </ReviewSection>
           </SearchBox>
         ))
       )}

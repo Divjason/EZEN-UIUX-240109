@@ -1,0 +1,21 @@
+1.react.js 쇼핑몰 구현 > 상품 썸네일 이미지 클릭 => 로그인이 안되어있는 경우, redirect(*로그인 페이지로 이동) => 로그인 완료!!!
+(*state를 활용해서 => 로그인 여부 boolean)
+
+2.header => 로그인 버튼 필요함
+
+3.메인 index페이지 영화데이터 추가 => now playing 무비 리스트만 출력
++ popular + top rated + upcoming
+
+4.메인 index페이지 bottom 배너 및 광고 프로모션 컨텐츠
+
+5.메인 index페이지 footer 사업자 정보 및 기타 정보
+
+6.TV SHOWS페이지 구현
+
+7.Search 컴포넌트 => 리뷰박스 toggle 기능
+
+8.filter기능 => 리뷰작성된 기간
+
+9.Pagenation 기능 => Search 결과 데이터를 1면에 5개씩 보여준다면?
+
+10.Search 컴포넌트 => 영화 이미지 클릭 시, 유튜브 영화 예고편 리뷰영상 출력!!!
