@@ -1,0 +1,105 @@
+4일동안
+
+<덕후 기질>
+포트폴리오 첨삭
+면접 관련 Q&A
+
+git-hub 면접 준비
+
+react > recoil
+react > props
+react > redux
+react native
+
+a(href="edit") Edit Video &rarr;
+http://localhost:4000/videos/edit
+> 상대경로!!!!
+
+a(href="/edit") Edit Video &rarr;
+http://localhost:4000/edit
+> 절대경로!!!!
+
+- css 공부!!!
+
+*평가 => 넷플릭스 코드
+> 추천영상 & 라우터 네스팅
+
+*자료구조 및 알고리즘 관련 코딩 테스트 문제
+
+1.html을 활용해서 웹 브라우저 화면 출력
+
+2.partial > 공통적으로 사용되는 요소를 정의 > include
+(*한 번 정의한 템플릿 안에 값을 가변적으로 변경 x)
+
+3.block > 특정 pug에 삽입되어야 하는 내용
+
+4.variabls > 변수값을 정의하고 삽입
+
+5.conditional > boolean
+
+6.iteration 기능
+
+7.mixin > scss : 템플릿
+하나의 템플릿을 만들어놓고 여러 pug에서 가져다가 사용하고자 하는 목적!!!
+
+----------------------------------------------------------------
+
+템플릿 끝내고 / DB 다루고, Hosting
+
+----------------------------------------------------------------
+
+html요소의 style을 보다 효율적 관리!!!!
+mvp.css
+
+사용자가 업로드가 되어진 영상 편집 || 삭제!!!
+=> 백엔드 관점
+
+*쿠팡 / 네이버 웹 페이지
+=> 신규회원가입
+
+*로그인 / 로그아웃
+=> 특정버튼 / 폼태그 id & pw
+
+*Pug를 활용 > 조건에 따른 UI구현
+
+*Pug를 활용 > 반복문 사용!!
+
+----------------------------------------------------------------
+
+Data VS DB
+- 서버에 어떤 컨텐츠 내용 존재
+- client 요청 (*줄 수 있는 내용)
+- 요청 > 수신 > 수정 & 가공 > 발신 > 요청
+
+form > action => url :
+사용자가 어떤 이벤트 및 액션을 실행했을 때, 해당 값을 전달할 주소!!!
+
+method : get / post
+
+get 혹은 post 등의 method를 지정하지 않고, action의 값만 넣는다면, 기본 default의 method는 get이 됩니다!!!
+
+get : 서버에 어떤 데이터를 요청
+post : 서버에 어떤 데이터를 전달 / db에 있는 값을 바꾸고자 할 때
+
+DB // MogoDB -> Mongoose
+Login 페이지 
+
+UI작업 영상 / 수정 / 편집 / 삭제
+
+배포
+
+1.추천영화 데이터 찾아오기!!!
+fetchRecommends( )함수
+
+2.useEffect( )
+컴포넌트 마운트 시점 혹은 찾고자 하는 영화 데이터가 변경될 때마다 추천영화를 새롭게 찾아오기 위한목적
+
+3.state 관리
+useState( ) => 타입 정의!!!!
+제네릭
+
+4.사용자가 특정 탭을 클릭했는지 여부!!!!
+
+npm i react-js-pagination
+npm i @types/react-js-pagination
+

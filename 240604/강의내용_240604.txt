@@ -1,0 +1,56 @@
+1.React.js > 유튜브 컨텐츠를 가져와서 사용하려면 npm
+> 리액트 유튜브!!!
+npm install react-youtube
+
+2.tmdb > 영화 ID를 활용해서 재생할 수 있도록 도와주는 URL
+
+*데이터통신
+
+Server (*항상 켜져있는 꺼지지 않는 창고 혹은 24편의점) 
+> Client 요청(request).요구사항 귀기울이고 있음
+> listening
+> Node는 JS기반으로~
+
+<-> Client : get
+
+사용자는 웹브라우저라는 매개체를 활용해서 특정 브랜드 및 서비스 제품의 데이터를 요청!!!
+
+웹 브라우저 > 사용자를 대신해서 서버에 요청!!! = 클라이언트
+
+클라이언트가 나이키 서버한테 어떤 request
+https://www.nike.com/kr/?NaPm=ct%3Dlwzqwqxm%7Cci%3Dcheckout%7Ctr%3Dds%7Ctrx%3Dnull%7Chk%3D2ee8f6ffd7915c3d5472c9e834b007601d226072
+
+request, response => 매개변수
+req, res
+
+서버를 구현할 때에는 컨셉!!!!
+- redux : 미들웨어 (*하드 VS 소프트)
+
+1) client & request
+
+2) 미들웨어 (*next( ))
+
+3) 파이널웨어 (*출력)
+
+*app.get( ) : client request 존재, 미들웨어, 파이널웨서
+*app.use( ) : global 미들웨어 => 어떤 URL에서든지간에 작동이 가능한 미들웨어!!!!
+> 전역요소의 미들웨어를 만들어서 사용할 때에는 반드시 get( )먼저 실행!!!
+> 로그인여부 체크 / 사용자 조건 체크!!!
+> 복수의 다양한 미들웨어를 동시에 실행!!!
+> 미들웨어 중에서 기존에 이미 만들어진 미들웨어를 가져다가 사용!! (*미들웨어를 통해서 확인할 수 있는 client 정보 워낙 다양!!)
+> morgan
+
+페이지 라우팅!!!
+- react 프로젝트 : todolist / 감정일기장
+- 만들어내야할 페이지의 개수 x Rest APIx
+
+*라우터 VS 컨트롤러!!!!
+
+*export default VS export
+
+1) 파일에서 출력가능한 파일 개수를 정의
+2) export default : import해오는 파일에서 파일명 수정!!!
+3) export : import해오는 파일에서 절대 파일명 수정 불가!!!
+> import를 해오는 공간에서 중괄호로 감싸안아서 가져옴!!!
+
+Node.js에서 페이지 Router는 url에 접속하기 위한 일종의 포털(관문)
