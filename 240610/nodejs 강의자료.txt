@@ -1,0 +1,104 @@
+*Node.js
+
+0) babel & nodemon
+- babel : node 2가지의 module (*cjs / esm) => js 데이터 모듈로서 가져오고자할 때 방법 상이 / 화살표함수 등 => 가장 최신 js 문법
+
+- nodemon : node monitor (*js파일 업데이트 || 사용자 특정 url 접속) => 에러메세지 혹은 콘솔데이터 node 명령어를 입력하지 않아도 알아서 변경되고 있는 상황을 모니터링 & 출력
+
+- script : npm run dev
+
+1) Server를 구현 목적
+
+2) Client 존재 이해
+
+3) User <-> Clinet(*웹브라우저) <-> Server
+
+4) Server는 어떻게 생성?!!
+- express : framework
+
+5) Server : Client의 요청 들어야 한다
+- app.listen( ) : 어떤 포트를 통해서 client가 무언가를 요청하는지 확인!!! / Callback 함수를 통해서 client 요청확인 후 실행!!!
+
+6) Page Routing : 복수의 페이지를 가지고 홈페이지 서비스를 구현 => 각각의 페이지마다 url에 client가 접속하게 되었을 때,  웹브라우저 화면 내용 출력!!!
+
+> Global Routing
+20~30개 url 개별적 & 독립적
+main 판단되는 동적 파라미터를 공통 + 추가 파라미터를 입력
+
+> middleware (*컨셉 개념)
+서버화 되어있는 객체에 use( ) 함수를 사용
+
+> controller
+middleware > 특정경로에 접속 > 웹 브라우저 화면 출력 (*실제)
+
+> 각각의 개별 파일 export VS 해당 파일 export default
+
+> method : get, post
+사용자가 단순히 특정 페이지에 접속했을 때, 실행 : get
+사용자가 어떤 값을 입력해서 입력한 값으로 data를 수정하거나 업데이트를 하고자 할 때에는 : post
+
+> get & post를 한번에 작성할 수 있도록 해주는 route( ) => get & post 메서드 함수를 체이닝기법으로 사용할 수 있도록
+
+> express.urlencoded( ) : form 태그에서 특정 값을 입력했을 때, 그 값을 객체의 형태 구조로 찾아올 수 있도록 해주는 함수!!!
+
+*DB = 복수의 data를 하나의 그룹화를 시킨 후 일정한 패턴 혹은 행과 열의 기준을 가지고 분류시켜놓은 구조!!!!
+
+*Fake DB : 데이터 베이스의 형태를 띄고 있음!!
+데이터 업그레이드 / 삭제 / 신규 생성
+CRUD 가능!!
+
+Create
+Read
+Update
+Delete
+
+Global Router > Callback > Controller > html & js
+축약 / 공통 / 변수 : pug
+- base.pug => extends
+- block => 변수
+- patial => footer.pug (*include)
+
+Controller를 사용할 때, render( ) 함수를 사용해서 특정 pug를 불러올 수 있었음 + 객체 형태로 변수를 전달 할 수 있었음
+
+DB 생성 & 관리!!!!
+
+특정 데이터를 수정!!!
+
+특정 데이터를 업로드!!!
+
+
+2009년 MongoDB => 2025 + 딜레마
+> DB 구조화 심플 & 단순화
+> 비관계형 데이터베이스 구조
+
+관계형 데이터베이스 구조 특화 전문 DB 플랫폼
+MySQL
+
+MongoDB 구조
+데이터 작성 => 찾아
+
+Node.js 서버 < JS를 기반 & 서버 & DB구조 > => 구조화 DB MongoDB
+
+Mongoose
+
+MongoDB 2가지!!!!
+
+Java : 에디터!!!
+> 백엔드 : iOS / Android / window
+> eclips > python / 인텔리J
+
+Node.js => NPM
+Window => Package Manager / Chocolatey
+
+
+다운로드 > 압축해제 > c드라이브 > ProgramData > chocolately 폴더 > 제가 공유드린 데이터를 복붙!!!
+
+choco install mongodb-compass
+choco install mongodb-shell
+
+mongosh
+
+
+
+
+

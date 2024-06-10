@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Divjason/nodejstest#readme",
   "dependencies": {
     "express": "^4.19.2",
+    "mongoose": "^8.4.1",
     "morgan": "^1.10.0",
     "pug": "^3.0.3"
   },
