@@ -1,56 +1,49 @@
-const videos = [
-  {
-    id: 1,
-    title: "First Video",
-    createdAt: "2 minutes ago",
-    views: 1,
-    comment: 2,
-    rating: 5,
-  },
-  {
-    id: 2,
-    title: "Second Video",
-    createdAt: "2 minutes ago",
-    views: 59,
-    comment: 2,
-    rating: 5,
-  },
-  {
-    id: 3,
-    title: "Third Video",
-    createdAt: "2 minutes ago",
-    views: 59,
-    comment: 2,
-    rating: 5,
-  },
-];
+import Video from "../models/Video";
 
-export const trending = (req, res) => {
-  return res.render("home", {
-    pageTitle: "Home",
-    videos,
-  });
+// export const home = (req, res) => {
+//   console.log("Start");
+//   Video.find()
+//     .then((videos) => {
+//       console.log("videos", videos);
+//       return res.render("home", { pageTitle: "Home", videos: [] });
+//     })
+//     .catch((err) => console.log("errors", err));
+// };
+
+// export const home = async (req, res) => {
+//   console.log("Start");
+//   const videos = await Video.find({});
+//   console.log("Finished");
+//   console.log(videos);
+//   return res.render("home", { pageTitle: "Home", videos });
+// };
+
+export const home = async (req, res) => {
+  try {
+    const videos = await Video.find({});
+    console.log(videos);
+    return res.render("home", { pageTitle: "Home", videos });
+  } catch (error) {
+    return res.render("Server-error", { error });
+  }
 };
 
 export const watch = (req, res) => {
   const { id } = req.params;
-  const video = videos[id - 1];
   return res.render("watch", {
-    pageTitle: `Watching ${video.title}`,
+    pageTitle: `Watching`,
     video,
   });
 };
 
 export const getEdit = (req, res) => {
   const { id } = req.params;
-  const video = videos[id - 1];
-  return res.render("edit", { pageTitle: `Editing ${video.title}`, video });
+  return res.render("edit", { pageTitle: `Editing` });
 };
 
 export const postEdit = (req, res) => {
   const { id } = req.params;
   const { title } = req.body;
-  videos[id - 1].title = title;
   return res.redirect(`/videos/${id}`);
 };
 
@@ -60,18 +53,22 @@ export const getUpload = (req, res) => {
   });
 };
 
-export const postUpload = (req, res) => {
-  const { title } = req.body;
-  const newVideo = {
-    id: videos.length + 1,
-    title,
-    createdAt: "just now",
-    views: 0,
-    comment: 0,
-    rating: 0,
-  };
-  videos.push(newVideo);
-  return res.redirect("/");
+export const postUpload = async (req, res) => {
+  const { title, description, hashtags } = req.body;
+  try {
+    await Video.create({
+      title,
+      description,
+      hashtags: hashtags.split(",").map((word) => `#${word}`),
+    });
+    return res.redirect("/");
+  } catch (err) {
+    console.log(err);
+    return res.render("upload", {
+      pageTitle: "Upload Video",
+      errorMessage: err._message,
+    });
+  }
 };
 
 export const search = (req, res) => {
