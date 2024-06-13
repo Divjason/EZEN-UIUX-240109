@@ -1,0 +1,34 @@
+1.git-hub
+- Makeup : 면접관 => 포트폴리오 마음에 들어함
+- 확신!!!
+
+2.모든 포트폴리오 code x
+
+3.포트폴리오 > code
+- git-hub
+
+4.프로젝트 완성 > firebase || netlify 등 호스팅!!!
+> git-hub 주소 > Landing page
+> 포트폴리오 홈페이지 Landing page
+https://github.com/Divjason
+
+> 개별 포트폴리오 : git-hub 주소 코드
+> 각각의 포트폴리오 레파지토리 링크
+
+나의 프로젝트 어떤 목적 시작 / 중간과정 / 기회요소
+> Notion
+> Git-hub
+> Home-Page
+
+https://shields.io/
+https://simpleicons.org/
+https://skillicons.dev/
+https://github.com/anuraghazra/github-readme-stats
+
+mongodb => ID /
+24바이트의 16진수
+https://www.regexpal.com/
+
+
+
+
