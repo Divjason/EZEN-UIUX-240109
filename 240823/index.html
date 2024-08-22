@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./script.js"></script>
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #f0f0f0;
+      }
+
+      .container {
+        display: flex;
+        gap: 10px;
+        background: dodgerblue;
+        /* height: 500px; */
+        color: #fff;
+        padding: 10px 20px;
+        width: 500px;
+        border-radius: 10px;
+        font-size: 24px;
+        position: relative;
+        & > span {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        .timeItems {
+          display: flex;
+          margin-left: 260px;
+          align-items: center;
+          position: relative;
+
+          /* border: 1px solid #00f; */
+          .secText {
+            position: absolute;
+            top: 50%;
+            right: 34px;
+            transform: translateY(-50%);
+          }
+        }
+
+        .timeItem {
+          position: relative;
+          display: inline-block;
+          width: 85px;
+          height: 50px;
+          overflow: hidden;
+          /* border: 1px solid #f00; */
+          &.min {
+            width: 60px;
+          }
+        }
+
+        .timeItem span {
+          display: block;
+          transition: transform 0.5s ease;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 100%;
+          text-align: left;
+          /* border: 1px solid #f00; */
+        }
+
+        .timeItem .old {
+          transform: translateY(-50%);
+        }
+
+        .timeItem .new {
+          transform: translateY(-200%);
+        }
+
+        .timeItem.updating .old {
+          transform: translateY(100%);
+        }
+
+        .timeItem.updating .new {
+          transform: translateY(-200%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <span>수업종료까지 남은시간</span>
+      <div class="timeItems"><span class="secText">초</span></div>
+    </main>
+  </body>
+</html>
